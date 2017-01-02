@@ -11,7 +11,9 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="technicalTroubleshooter" startnode="1" creator="Twine" creator-version="2.0.11" ifid="0C57C1FB-99FB-417D-8B30-36A65134EB4F" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Welcome" tags="" position="806.6666666666667,291.6666666666667">&lt;h1&gt;Are you experiencing technical difficulties?&lt;/h1&gt;
+<tw-storydata name="technicalTroubleshooter" startnode="1" creator="Twine" creator-version="2.0.11" ifid="0C57C1FB-99FB-417D-8B30-36A65134EB4F" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-passage {
+	width: 60%; padding: 2em; margin: auto; font-family: "Helvetica Neue", Helvetica, sans-serif; font-size: 16px; color:rgba(54,54,54,1); text-align:left;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Welcome" tags="" position="806.6666666666667,291.6666666666667">&lt;h1&gt;Are you experiencing technical difficulties?&lt;/h1&gt;
  
 Sometimes issues happen and we appreciate your understanding and patience with us! In order to identify the issue, we would like to narrow down the possibilities until we reach the root cause.
  
@@ -19,17 +21,16 @@ This tutorial will take you through the basic steps for troubleshooting general 
 
 [[Start Here]]
 </tw-passagedata>
-<tw-passagedata pid="2" name="Start Here" tags="" position="813.3333333333334,446.6666666666667">Which Browser are you using?
+<tw-passagedata pid="2" name="Start Here" tags="" position="813.3333333333334,445">Which Browser are you using?
 
-&lt;ul&gt;
-&lt;li&gt;[[Google Chrome]]
-&lt;li&gt;[[Firefox]]
-&lt;li&gt;[[Safari]]
-&lt;li&gt;[[Internet Explorer]]
-&lt;li&gt;[[Edge]]
-&lt;li&gt;[[Other or Unsure]]
-&lt;/ul&gt;</tw-passagedata>
-<tw-passagedata pid="3" name="Google Chrome" tags="" position="512,600">(set: $browser to &quot;Chrome&quot;) 
+* [[Google Chrome]]
+* [[Firefox]]
+* [[Safari]]
+* [[Internet Explorer]]
+* [[Edge]]
+* [[Other or Unsure]]
+</tw-passagedata>
+<tw-passagedata pid="3" name="Google Chrome" tags="" position="510,598.3333333333334">(set: $browser to &quot;Chrome&quot;) 
 If you are using $browser , then please check &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;whatbrowser.org&lt;/a&gt; to make sure  you are using the latest version of $browser.
 
 If you are not using the latest version of $browser, please update your browser, and check if the issue still occurs.
