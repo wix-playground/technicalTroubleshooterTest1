@@ -1,0 +1,1431 @@
+<tw-storydata name="de-technicalTroubleshooter" startnode="1" creator="Twine" creator-version="2.0.11" ifid="0C57C1FB-99FB-417D-8B30-36A65134EB4F" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+	width: 100%;
+}
+tw-passage {
+	width: 100%; 
+	padding: 2em; 
+	margin: auto; 
+	font-family: "Helvetica Neue", Helvetica, sans-serif; 
+	font-size: 16px; 
+	color:rgba(54,54,54,1); 
+	text-align:left;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="Welcome" tags="" position="806,290">&lt;img src=&quot;https://static.wixstatic.com/media/9edcba_1c27a53f223b4ae1b999741855663eb8.png&quot; width=&quot;100%&quot; alt=&quot;dead computer&quot;&gt;
+
+&lt;h1 style=&quot;font-size: 29px; font-weight: normal;&quot;&gt;Are you experiencing technical difficulties?&lt;/h1&gt;
+ 
+Sometimes issues happen and we appreciate your understanding and patience with us! In order to identify the issue, we would like to narrow down the possibilities until we reach the root cause.
+ 
+This tutorial will take you through the basic steps for troubleshooting general issues that you may encounter.
+
+[[Continue-&gt;Chose Browser]]
+</tw-passagedata>
+<tw-passagedata pid="2" name="Chose Browser" tags="" position="808,452">Which Browser are you using?
+
+* (link: &quot;Google Chrome&quot;)[(set: $browser to &quot;Chrome&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Mozilla Firefox&quot;)[(set: $browser to &quot;Firefox&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;macOS Safari&quot;)[(set: $browser to &quot;Safari&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Microsoft Internet Explorer&quot;)[(set: $browser to &quot;Internet Explorer&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Microsoft 10 Edge&quot;)[(set: $browser to &quot;Edge&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Other Browser or Unsure which browser&quot;)[(set: $browser to &quot;other&quot;)(goto: &quot;Other or Unsure which Browser&quot;)]</tw-passagedata>
+<tw-passagedata pid="3" name="Updated Browser" tags="" position="813,595">If you are using $browser , then please check &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;whatbrowser.org&lt;/a&gt; to make sure  you are using the latest version of $browser.
+
+If you are not using the latest version of $browser, please update your browser, and check if the issue still occurs.
+
+If you experience the issue while using the latest version of your chosen browser, and are still having issues, click [[Continue-&gt;Checked Incognito/Private Browsing]].</tw-passagedata>
+<tw-passagedata pid="4" name="Checked Incognito/Private Browsing" tags="" position="811,740">Since the issue was not resolved by updating $browser, please try &lt;a href=&quot;https://www.wix.com/support/html5/article/opening-your-browser-in-incognitoprivate-browsing-mode&quot;&gt;Opening Your Browser in Incognito/Private Browsing Mode&lt;/a&gt;.
+
+By using Incognito/Private Browsing Mode, your browser will not use any cache or cookies you may have in your local storage. This will help us identify simple cache and cookie issues.
+
+If Incognito/Private Browsing Mode fixes the issue, simply
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.wix.com/support/html5/article/clearing-wix-cookies&quot;&gt;Clear your browser&#39;s cookies&lt;/a&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.wix.com/support/html5/article/clearing-your-browsers-cache&quot;&gt;Clear your browser&#39;s cache&lt;/a&gt;
+&lt;/ol&gt;
+
+If clearing your cookies and cache does not fix the issue, but incognito/private browsing mode does fix the issue [[click here-&gt;extension issue?]].
+
+If using Incognito/Private Browsing Mode does not resolve the issue, please click [[Continue-&gt;Used a Different Browser]]</tw-passagedata>
+<tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,453">Please check &lt;a href=&quot;https://www.wix.com/support/html5/article/supported-browsers&quot;&gt;our list of Supported Browsers&lt;/a&gt; to make sure you are using a supported browser.
+
+If you are not using a supported browser, please try using a supported browser, and check if the issue still occurs.
+
+[[Start Over-&gt;Chose Browser]].</tw-passagedata>
+<tw-passagedata pid="6" name="Used a Different Browser" tags="" position="811,892">Please leave this tutorial window open and use a different, updated browser to load your site and/or editor.
+ 
+Suggested browsers include:
+(unless: $browser is &quot;Chrome&quot;)[* &lt;a href=&quot;https://www.google.com/chrome/browser/desktop/index.html&quot;&gt;Google Chrome&lt;/a&gt;]
+(unless: $browser is &quot;Firefox&quot;)[* &lt;a href=&quot;https://www.getfirefox.com&quot;&gt;Firefox&lt;/a&gt;]
+
+By using a different browser, we can establish if this is a browser specific issue.
+
+If neither of these browsers work, please click [[Continue-&gt;Checked Network issues]]</tw-passagedata>
+<tw-passagedata pid="7" name="Checked Network issues" tags="" position="811,1036">Sometimes your router, your system’s administrator or your network&#39;s firewall may block the connection. Using another Internet connection will allow you to test if this is the problem.
+ 
+Please try connecting your computer to a different Internet connection,
+then login to your Wix account and try opening your site and/or editor again.
+
+Did this help?
+[[Yes-&gt;internet connection issue template]]
+[[No-&gt;changed computer?]]
+[[I don&#39;t have access to a different internet connection-&gt;changed computer?]]</tw-passagedata>
+<tw-passagedata pid="8" name="internet connection issue template" tags="" position="501,1403">It seems that the issue you are experiencing is related to your Internet connection.
+ 
+In order for us to investigate and assist you, please submit a ticket here and make sure to include the following information:
+
+I have gone through the steps in the General Troubleshooter. The issue that
+I have been experiencing is related to my Internet connection.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of
+the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] 
+
+(history:)</tw-passagedata>
+<tw-passagedata pid="9" name="changed computer?" tags="" position="910,1208">Try connecting to Wix from a different computer. Please sign in to your Wix account and try opening your site and/or
+editor again.
+
+Did this help?
+* [[Yes-&gt;local issue template]]
+* [[No-&gt;non-local issue template]]
+* [[I don&#39;t have a different computer-&gt;possibly local issue template]]</tw-passagedata>
+<tw-passagedata pid="10" name="local issue template" tags="" position="800,1403">It seems that the issue you are experiencing is a local issue on your computer.
+ 
+In order for us to investigate and assist you, please submit a ticket here and make sure to include the following information: 
+
+I have gone through the steps in the General Troubleshooter. The issue does not occur in private browsing, yet it persists after disabling add-ons and clearing cache.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] </tw-passagedata>
+<tw-passagedata pid="11" name="non-local issue template" tags="" position="1003,1402">In order for us to investigate and assist you, please submit a ticket &lt;a href=&quot;http://www.wix.com/support/html5/submit-a-ticket&quot;&gt;HERE&lt;/a&gt; and make sure to include the following information:
+ 
+I have gone through the steps in the General Troubleshooter. The issue 
+occurs in private browsing, and persists after disabling add-ons and
+clearing cache.
+ 
+In addition, please provide us with the following details:
+1. A detailed description of the issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] 
+</tw-passagedata>
+<tw-passagedata pid="12" name="possibly local issue template" tags="" position="1208,1406">In order for us to investigate and assist you, please submit a ticket HERE and make sure to include the following information:
+ 
+I have gone through the steps in the General Troubleshooter. The issue 
+occurs in private browsing, and persists after disabling add-ons and
+clearing cache.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] </tw-passagedata>
+<tw-passagedata pid="13" name="Start Over" tags="header" position="1005,291">&lt;u&gt;Wix Troubleshooter&lt;/u&gt; &lt;i&gt;[[Start Over-&gt;Welcome]]&lt;/i&gt;
+
+</tw-passagedata>
+<tw-passagedata pid="14" name="extension issue?" tags="" position="1005,741">One of your browser add-ons or extensions may be the source of the issue.
+
+Please try to disable your browser add-ons\extensions, one at a time, to determine which one is causing the issue.
+
+(if: $browser is &quot;Chrome&quot;)[For instructions on how to disable add-ons in Google Chrome, please &lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769&quot;&gt;click here&lt;/a&gt;.]</tw-passagedata>
+<tw-passagedata pid="15" name="Screenshot please" tags="" position="1003,1552">For instructions on how to take a screenshot, click &lt;a href=&quot;https://www.wix.com/support/html5/article/adding-a-screenshot-to-a-ticket&quot;&gt;this link to our help center article&lt;/a&gt;.
+
+If you need to describe a series of steps, please record a screencast. For instructions from our help center, click &lt;a href=&quot;https://www.wix.com/support/html5/article/adding-a-video-to-a-ticket&quot;&gt;here&lt;/a&gt;
+
+(set: $history to (history:))
+(set: $previous to $history&#39;s last)
+
+[[Go Back-&gt;$previous]]</tw-passagedata>
+</tw-storydata>
+
+
+<tw-storydata name="es-technicalTroubleshooter" startnode="1" creator="Twine" creator-version="2.0.11" ifid="0C57C1FB-99FB-417D-8B30-36A65134EB4F" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+	width: 100%;
+}
+tw-passage {
+	width: 100%; 
+	padding: 2em; 
+	margin: auto; 
+	font-family: "Helvetica Neue", Helvetica, sans-serif; 
+	font-size: 16px; 
+	color:rgba(54,54,54,1); 
+	text-align:left;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="Welcome" tags="" position="806,290">&lt;img src=&quot;https://static.wixstatic.com/media/9edcba_1c27a53f223b4ae1b999741855663eb8.png&quot; width=&quot;100%&quot; alt=&quot;dead computer&quot;&gt;
+
+&lt;h1 style=&quot;font-size: 29px; font-weight: normal;&quot;&gt;Are you experiencing technical difficulties?&lt;/h1&gt;
+ 
+Sometimes issues happen and we appreciate your understanding and patience with us! In order to identify the issue, we would like to narrow down the possibilities until we reach the root cause.
+ 
+This tutorial will take you through the basic steps for troubleshooting general issues that you may encounter.
+
+[[Continue-&gt;Chose Browser]]
+</tw-passagedata>
+<tw-passagedata pid="2" name="Chose Browser" tags="" position="808,452">Which Browser are you using?
+
+* (link: &quot;Google Chrome&quot;)[(set: $browser to &quot;Chrome&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Mozilla Firefox&quot;)[(set: $browser to &quot;Firefox&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;macOS Safari&quot;)[(set: $browser to &quot;Safari&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Microsoft Internet Explorer&quot;)[(set: $browser to &quot;Internet Explorer&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Microsoft 10 Edge&quot;)[(set: $browser to &quot;Edge&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Other Browser or Unsure which browser&quot;)[(set: $browser to &quot;other&quot;)(goto: &quot;Other or Unsure which Browser&quot;)]</tw-passagedata>
+<tw-passagedata pid="3" name="Updated Browser" tags="" position="813,595">If you are using $browser , then please check &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;whatbrowser.org&lt;/a&gt; to make sure  you are using the latest version of $browser.
+
+If you are not using the latest version of $browser, please update your browser, and check if the issue still occurs.
+
+If you experience the issue while using the latest version of your chosen browser, and are still having issues, click [[Continue-&gt;Checked Incognito/Private Browsing]].</tw-passagedata>
+<tw-passagedata pid="4" name="Checked Incognito/Private Browsing" tags="" position="811,740">Since the issue was not resolved by updating $browser, please try &lt;a href=&quot;https://www.wix.com/support/html5/article/opening-your-browser-in-incognitoprivate-browsing-mode&quot;&gt;Opening Your Browser in Incognito/Private Browsing Mode&lt;/a&gt;.
+
+By using Incognito/Private Browsing Mode, your browser will not use any cache or cookies you may have in your local storage. This will help us identify simple cache and cookie issues.
+
+If Incognito/Private Browsing Mode fixes the issue, simply
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.wix.com/support/html5/article/clearing-wix-cookies&quot;&gt;Clear your browser&#39;s cookies&lt;/a&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.wix.com/support/html5/article/clearing-your-browsers-cache&quot;&gt;Clear your browser&#39;s cache&lt;/a&gt;
+&lt;/ol&gt;
+
+If clearing your cookies and cache does not fix the issue, but incognito/private browsing mode does fix the issue [[click here-&gt;extension issue?]].
+
+If using Incognito/Private Browsing Mode does not resolve the issue, please click [[Continue-&gt;Used a Different Browser]]</tw-passagedata>
+<tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,453">Please check &lt;a href=&quot;https://www.wix.com/support/html5/article/supported-browsers&quot;&gt;our list of Supported Browsers&lt;/a&gt; to make sure you are using a supported browser.
+
+If you are not using a supported browser, please try using a supported browser, and check if the issue still occurs.
+
+[[Start Over-&gt;Chose Browser]].</tw-passagedata>
+<tw-passagedata pid="6" name="Used a Different Browser" tags="" position="811,892">Please leave this tutorial window open and use a different, updated browser to load your site and/or editor.
+ 
+Suggested browsers include:
+(unless: $browser is &quot;Chrome&quot;)[* &lt;a href=&quot;https://www.google.com/chrome/browser/desktop/index.html&quot;&gt;Google Chrome&lt;/a&gt;]
+(unless: $browser is &quot;Firefox&quot;)[* &lt;a href=&quot;https://www.getfirefox.com&quot;&gt;Firefox&lt;/a&gt;]
+
+By using a different browser, we can establish if this is a browser specific issue.
+
+If neither of these browsers work, please click [[Continue-&gt;Checked Network issues]]</tw-passagedata>
+<tw-passagedata pid="7" name="Checked Network issues" tags="" position="811,1036">Sometimes your router, your system’s administrator or your network&#39;s firewall may block the connection. Using another Internet connection will allow you to test if this is the problem.
+ 
+Please try connecting your computer to a different Internet connection,
+then login to your Wix account and try opening your site and/or editor again.
+
+Did this help?
+[[Yes-&gt;internet connection issue template]]
+[[No-&gt;changed computer?]]
+[[I don&#39;t have access to a different internet connection-&gt;changed computer?]]</tw-passagedata>
+<tw-passagedata pid="8" name="internet connection issue template" tags="" position="501,1403">It seems that the issue you are experiencing is related to your Internet connection.
+ 
+In order for us to investigate and assist you, please submit a ticket here and make sure to include the following information:
+
+I have gone through the steps in the General Troubleshooter. The issue that
+I have been experiencing is related to my Internet connection.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of
+the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] 
+
+(history:)</tw-passagedata>
+<tw-passagedata pid="9" name="changed computer?" tags="" position="910,1208">Try connecting to Wix from a different computer. Please sign in to your Wix account and try opening your site and/or
+editor again.
+
+Did this help?
+* [[Yes-&gt;local issue template]]
+* [[No-&gt;non-local issue template]]
+* [[I don&#39;t have a different computer-&gt;possibly local issue template]]</tw-passagedata>
+<tw-passagedata pid="10" name="local issue template" tags="" position="800,1403">It seems that the issue you are experiencing is a local issue on your computer.
+ 
+In order for us to investigate and assist you, please submit a ticket here and make sure to include the following information: 
+
+I have gone through the steps in the General Troubleshooter. The issue does not occur in private browsing, yet it persists after disabling add-ons and clearing cache.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] </tw-passagedata>
+<tw-passagedata pid="11" name="non-local issue template" tags="" position="1003,1402">In order for us to investigate and assist you, please submit a ticket &lt;a href=&quot;http://www.wix.com/support/html5/submit-a-ticket&quot;&gt;HERE&lt;/a&gt; and make sure to include the following information:
+ 
+I have gone through the steps in the General Troubleshooter. The issue 
+occurs in private browsing, and persists after disabling add-ons and
+clearing cache.
+ 
+In addition, please provide us with the following details:
+1. A detailed description of the issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] 
+</tw-passagedata>
+<tw-passagedata pid="12" name="possibly local issue template" tags="" position="1208,1406">In order for us to investigate and assist you, please submit a ticket HERE and make sure to include the following information:
+ 
+I have gone through the steps in the General Troubleshooter. The issue 
+occurs in private browsing, and persists after disabling add-ons and
+clearing cache.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] </tw-passagedata>
+<tw-passagedata pid="13" name="Start Over" tags="header" position="1005,291">&lt;u&gt;Wix Troubleshooter&lt;/u&gt; &lt;i&gt;[[Start Over-&gt;Welcome]]&lt;/i&gt;
+
+</tw-passagedata>
+<tw-passagedata pid="14" name="extension issue?" tags="" position="1005,741">One of your browser add-ons or extensions may be the source of the issue.
+
+Please try to disable your browser add-ons\extensions, one at a time, to determine which one is causing the issue.
+
+(if: $browser is &quot;Chrome&quot;)[For instructions on how to disable add-ons in Google Chrome, please &lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769&quot;&gt;click here&lt;/a&gt;.]</tw-passagedata>
+<tw-passagedata pid="15" name="Screenshot please" tags="" position="1003,1552">For instructions on how to take a screenshot, click &lt;a href=&quot;https://www.wix.com/support/html5/article/adding-a-screenshot-to-a-ticket&quot;&gt;this link to our help center article&lt;/a&gt;.
+
+If you need to describe a series of steps, please record a screencast. For instructions from our help center, click &lt;a href=&quot;https://www.wix.com/support/html5/article/adding-a-video-to-a-ticket&quot;&gt;here&lt;/a&gt;
+
+(set: $history to (history:))
+(set: $previous to $history&#39;s last)
+
+[[Go Back-&gt;$previous]]</tw-passagedata>
+</tw-storydata>
+
+
+<tw-storydata name="fr-technicalTroubleshooter" startnode="1" creator="Twine" creator-version="2.0.11" ifid="0C57C1FB-99FB-417D-8B30-36A65134EB4F" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+	width: 100%;
+}
+tw-passage {
+	width: 100%; 
+	padding: 2em; 
+	margin: auto; 
+	font-family: "Helvetica Neue", Helvetica, sans-serif; 
+	font-size: 16px; 
+	color:rgba(54,54,54,1); 
+	text-align:left;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="Welcome" tags="" position="806,290">&lt;img src=&quot;https://static.wixstatic.com/media/9edcba_1c27a53f223b4ae1b999741855663eb8.png&quot; width=&quot;100%&quot; alt=&quot;dead computer&quot;&gt;
+
+&lt;h1 style=&quot;font-size: 29px; font-weight: normal;&quot;&gt;Are you experiencing technical difficulties?&lt;/h1&gt;
+ 
+Sometimes issues happen and we appreciate your understanding and patience with us! In order to identify the issue, we would like to narrow down the possibilities until we reach the root cause.
+ 
+This tutorial will take you through the basic steps for troubleshooting general issues that you may encounter.
+
+[[Continue-&gt;Chose Browser]]
+</tw-passagedata>
+<tw-passagedata pid="2" name="Chose Browser" tags="" position="808,452">Which Browser are you using?
+
+* (link: &quot;Google Chrome&quot;)[(set: $browser to &quot;Chrome&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Mozilla Firefox&quot;)[(set: $browser to &quot;Firefox&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;macOS Safari&quot;)[(set: $browser to &quot;Safari&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Microsoft Internet Explorer&quot;)[(set: $browser to &quot;Internet Explorer&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Microsoft 10 Edge&quot;)[(set: $browser to &quot;Edge&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Other Browser or Unsure which browser&quot;)[(set: $browser to &quot;other&quot;)(goto: &quot;Other or Unsure which Browser&quot;)]</tw-passagedata>
+<tw-passagedata pid="3" name="Updated Browser" tags="" position="813,595">If you are using $browser , then please check &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;whatbrowser.org&lt;/a&gt; to make sure  you are using the latest version of $browser.
+
+If you are not using the latest version of $browser, please update your browser, and check if the issue still occurs.
+
+If you experience the issue while using the latest version of your chosen browser, and are still having issues, click [[Continue-&gt;Checked Incognito/Private Browsing]].</tw-passagedata>
+<tw-passagedata pid="4" name="Checked Incognito/Private Browsing" tags="" position="811,740">Since the issue was not resolved by updating $browser, please try &lt;a href=&quot;https://www.wix.com/support/html5/article/opening-your-browser-in-incognitoprivate-browsing-mode&quot;&gt;Opening Your Browser in Incognito/Private Browsing Mode&lt;/a&gt;.
+
+By using Incognito/Private Browsing Mode, your browser will not use any cache or cookies you may have in your local storage. This will help us identify simple cache and cookie issues.
+
+If Incognito/Private Browsing Mode fixes the issue, simply
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.wix.com/support/html5/article/clearing-wix-cookies&quot;&gt;Clear your browser&#39;s cookies&lt;/a&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.wix.com/support/html5/article/clearing-your-browsers-cache&quot;&gt;Clear your browser&#39;s cache&lt;/a&gt;
+&lt;/ol&gt;
+
+If clearing your cookies and cache does not fix the issue, but incognito/private browsing mode does fix the issue [[click here-&gt;extension issue?]].
+
+If using Incognito/Private Browsing Mode does not resolve the issue, please click [[Continue-&gt;Used a Different Browser]]</tw-passagedata>
+<tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,453">Please check &lt;a href=&quot;https://www.wix.com/support/html5/article/supported-browsers&quot;&gt;our list of Supported Browsers&lt;/a&gt; to make sure you are using a supported browser.
+
+If you are not using a supported browser, please try using a supported browser, and check if the issue still occurs.
+
+[[Start Over-&gt;Chose Browser]].</tw-passagedata>
+<tw-passagedata pid="6" name="Used a Different Browser" tags="" position="811,892">Please leave this tutorial window open and use a different, updated browser to load your site and/or editor.
+ 
+Suggested browsers include:
+(unless: $browser is &quot;Chrome&quot;)[* &lt;a href=&quot;https://www.google.com/chrome/browser/desktop/index.html&quot;&gt;Google Chrome&lt;/a&gt;]
+(unless: $browser is &quot;Firefox&quot;)[* &lt;a href=&quot;https://www.getfirefox.com&quot;&gt;Firefox&lt;/a&gt;]
+
+By using a different browser, we can establish if this is a browser specific issue.
+
+If neither of these browsers work, please click [[Continue-&gt;Checked Network issues]]</tw-passagedata>
+<tw-passagedata pid="7" name="Checked Network issues" tags="" position="811,1036">Sometimes your router, your system’s administrator or your network&#39;s firewall may block the connection. Using another Internet connection will allow you to test if this is the problem.
+ 
+Please try connecting your computer to a different Internet connection,
+then login to your Wix account and try opening your site and/or editor again.
+
+Did this help?
+[[Yes-&gt;internet connection issue template]]
+[[No-&gt;changed computer?]]
+[[I don&#39;t have access to a different internet connection-&gt;changed computer?]]</tw-passagedata>
+<tw-passagedata pid="8" name="internet connection issue template" tags="" position="501,1403">It seems that the issue you are experiencing is related to your Internet connection.
+ 
+In order for us to investigate and assist you, please submit a ticket here and make sure to include the following information:
+
+I have gone through the steps in the General Troubleshooter. The issue that
+I have been experiencing is related to my Internet connection.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of
+the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] 
+
+(history:)</tw-passagedata>
+<tw-passagedata pid="9" name="changed computer?" tags="" position="910,1208">Try connecting to Wix from a different computer. Please sign in to your Wix account and try opening your site and/or
+editor again.
+
+Did this help?
+* [[Yes-&gt;local issue template]]
+* [[No-&gt;non-local issue template]]
+* [[I don&#39;t have a different computer-&gt;possibly local issue template]]</tw-passagedata>
+<tw-passagedata pid="10" name="local issue template" tags="" position="800,1403">It seems that the issue you are experiencing is a local issue on your computer.
+ 
+In order for us to investigate and assist you, please submit a ticket here and make sure to include the following information: 
+
+I have gone through the steps in the General Troubleshooter. The issue does not occur in private browsing, yet it persists after disabling add-ons and clearing cache.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] </tw-passagedata>
+<tw-passagedata pid="11" name="non-local issue template" tags="" position="1003,1402">In order for us to investigate and assist you, please submit a ticket &lt;a href=&quot;http://www.wix.com/support/html5/submit-a-ticket&quot;&gt;HERE&lt;/a&gt; and make sure to include the following information:
+ 
+I have gone through the steps in the General Troubleshooter. The issue 
+occurs in private browsing, and persists after disabling add-ons and
+clearing cache.
+ 
+In addition, please provide us with the following details:
+1. A detailed description of the issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] 
+</tw-passagedata>
+<tw-passagedata pid="12" name="possibly local issue template" tags="" position="1208,1406">In order for us to investigate and assist you, please submit a ticket HERE and make sure to include the following information:
+ 
+I have gone through the steps in the General Troubleshooter. The issue 
+occurs in private browsing, and persists after disabling add-ons and
+clearing cache.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] </tw-passagedata>
+<tw-passagedata pid="13" name="Start Over" tags="header" position="1005,291">&lt;u&gt;Wix Troubleshooter&lt;/u&gt; &lt;i&gt;[[Start Over-&gt;Welcome]]&lt;/i&gt;
+
+</tw-passagedata>
+<tw-passagedata pid="14" name="extension issue?" tags="" position="1005,741">One of your browser add-ons or extensions may be the source of the issue.
+
+Please try to disable your browser add-ons\extensions, one at a time, to determine which one is causing the issue.
+
+(if: $browser is &quot;Chrome&quot;)[For instructions on how to disable add-ons in Google Chrome, please &lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769&quot;&gt;click here&lt;/a&gt;.]</tw-passagedata>
+<tw-passagedata pid="15" name="Screenshot please" tags="" position="1003,1552">For instructions on how to take a screenshot, click &lt;a href=&quot;https://www.wix.com/support/html5/article/adding-a-screenshot-to-a-ticket&quot;&gt;this link to our help center article&lt;/a&gt;.
+
+If you need to describe a series of steps, please record a screencast. For instructions from our help center, click &lt;a href=&quot;https://www.wix.com/support/html5/article/adding-a-video-to-a-ticket&quot;&gt;here&lt;/a&gt;
+
+(set: $history to (history:))
+(set: $previous to $history&#39;s last)
+
+[[Go Back-&gt;$previous]]</tw-passagedata>
+</tw-storydata>
+
+
+<tw-storydata name="it-technicalTroubleshooter" startnode="1" creator="Twine" creator-version="2.0.11" ifid="0C57C1FB-99FB-417D-8B30-36A65134EB4F" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+	width: 100%;
+}
+tw-passage {
+	width: 100%; 
+	padding: 2em; 
+	margin: auto; 
+	font-family: "Helvetica Neue", Helvetica, sans-serif; 
+	font-size: 16px; 
+	color:rgba(54,54,54,1); 
+	text-align:left;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="Welcome" tags="" position="806,290">&lt;img src=&quot;https://static.wixstatic.com/media/9edcba_1c27a53f223b4ae1b999741855663eb8.png&quot; width=&quot;100%&quot; alt=&quot;dead computer&quot;&gt;
+
+&lt;h1 style=&quot;font-size: 29px; font-weight: normal;&quot;&gt;Are you experiencing technical difficulties?&lt;/h1&gt;
+ 
+Sometimes issues happen and we appreciate your understanding and patience with us! In order to identify the issue, we would like to narrow down the possibilities until we reach the root cause.
+ 
+This tutorial will take you through the basic steps for troubleshooting general issues that you may encounter.
+
+[[Continue-&gt;Chose Browser]]
+</tw-passagedata>
+<tw-passagedata pid="2" name="Chose Browser" tags="" position="808,452">Which Browser are you using?
+
+* (link: &quot;Google Chrome&quot;)[(set: $browser to &quot;Chrome&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Mozilla Firefox&quot;)[(set: $browser to &quot;Firefox&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;macOS Safari&quot;)[(set: $browser to &quot;Safari&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Microsoft Internet Explorer&quot;)[(set: $browser to &quot;Internet Explorer&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Microsoft 10 Edge&quot;)[(set: $browser to &quot;Edge&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Other Browser or Unsure which browser&quot;)[(set: $browser to &quot;other&quot;)(goto: &quot;Other or Unsure which Browser&quot;)]</tw-passagedata>
+<tw-passagedata pid="3" name="Updated Browser" tags="" position="813,595">If you are using $browser , then please check &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;whatbrowser.org&lt;/a&gt; to make sure  you are using the latest version of $browser.
+
+If you are not using the latest version of $browser, please update your browser, and check if the issue still occurs.
+
+If you experience the issue while using the latest version of your chosen browser, and are still having issues, click [[Continue-&gt;Checked Incognito/Private Browsing]].</tw-passagedata>
+<tw-passagedata pid="4" name="Checked Incognito/Private Browsing" tags="" position="811,740">Since the issue was not resolved by updating $browser, please try &lt;a href=&quot;https://www.wix.com/support/html5/article/opening-your-browser-in-incognitoprivate-browsing-mode&quot;&gt;Opening Your Browser in Incognito/Private Browsing Mode&lt;/a&gt;.
+
+By using Incognito/Private Browsing Mode, your browser will not use any cache or cookies you may have in your local storage. This will help us identify simple cache and cookie issues.
+
+If Incognito/Private Browsing Mode fixes the issue, simply
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.wix.com/support/html5/article/clearing-wix-cookies&quot;&gt;Clear your browser&#39;s cookies&lt;/a&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.wix.com/support/html5/article/clearing-your-browsers-cache&quot;&gt;Clear your browser&#39;s cache&lt;/a&gt;
+&lt;/ol&gt;
+
+If clearing your cookies and cache does not fix the issue, but incognito/private browsing mode does fix the issue [[click here-&gt;extension issue?]].
+
+If using Incognito/Private Browsing Mode does not resolve the issue, please click [[Continue-&gt;Used a Different Browser]]</tw-passagedata>
+<tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,453">Please check &lt;a href=&quot;https://www.wix.com/support/html5/article/supported-browsers&quot;&gt;our list of Supported Browsers&lt;/a&gt; to make sure you are using a supported browser.
+
+If you are not using a supported browser, please try using a supported browser, and check if the issue still occurs.
+
+[[Start Over-&gt;Chose Browser]].</tw-passagedata>
+<tw-passagedata pid="6" name="Used a Different Browser" tags="" position="811,892">Please leave this tutorial window open and use a different, updated browser to load your site and/or editor.
+ 
+Suggested browsers include:
+(unless: $browser is &quot;Chrome&quot;)[* &lt;a href=&quot;https://www.google.com/chrome/browser/desktop/index.html&quot;&gt;Google Chrome&lt;/a&gt;]
+(unless: $browser is &quot;Firefox&quot;)[* &lt;a href=&quot;https://www.getfirefox.com&quot;&gt;Firefox&lt;/a&gt;]
+
+By using a different browser, we can establish if this is a browser specific issue.
+
+If neither of these browsers work, please click [[Continue-&gt;Checked Network issues]]</tw-passagedata>
+<tw-passagedata pid="7" name="Checked Network issues" tags="" position="811,1036">Sometimes your router, your system’s administrator or your network&#39;s firewall may block the connection. Using another Internet connection will allow you to test if this is the problem.
+ 
+Please try connecting your computer to a different Internet connection,
+then login to your Wix account and try opening your site and/or editor again.
+
+Did this help?
+[[Yes-&gt;internet connection issue template]]
+[[No-&gt;changed computer?]]
+[[I don&#39;t have access to a different internet connection-&gt;changed computer?]]</tw-passagedata>
+<tw-passagedata pid="8" name="internet connection issue template" tags="" position="501,1403">It seems that the issue you are experiencing is related to your Internet connection.
+ 
+In order for us to investigate and assist you, please submit a ticket here and make sure to include the following information:
+
+I have gone through the steps in the General Troubleshooter. The issue that
+I have been experiencing is related to my Internet connection.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of
+the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] 
+
+(history:)</tw-passagedata>
+<tw-passagedata pid="9" name="changed computer?" tags="" position="910,1208">Try connecting to Wix from a different computer. Please sign in to your Wix account and try opening your site and/or
+editor again.
+
+Did this help?
+* [[Yes-&gt;local issue template]]
+* [[No-&gt;non-local issue template]]
+* [[I don&#39;t have a different computer-&gt;possibly local issue template]]</tw-passagedata>
+<tw-passagedata pid="10" name="local issue template" tags="" position="800,1403">It seems that the issue you are experiencing is a local issue on your computer.
+ 
+In order for us to investigate and assist you, please submit a ticket here and make sure to include the following information: 
+
+I have gone through the steps in the General Troubleshooter. The issue does not occur in private browsing, yet it persists after disabling add-ons and clearing cache.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] </tw-passagedata>
+<tw-passagedata pid="11" name="non-local issue template" tags="" position="1003,1402">In order for us to investigate and assist you, please submit a ticket &lt;a href=&quot;http://www.wix.com/support/html5/submit-a-ticket&quot;&gt;HERE&lt;/a&gt; and make sure to include the following information:
+ 
+I have gone through the steps in the General Troubleshooter. The issue 
+occurs in private browsing, and persists after disabling add-ons and
+clearing cache.
+ 
+In addition, please provide us with the following details:
+1. A detailed description of the issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] 
+</tw-passagedata>
+<tw-passagedata pid="12" name="possibly local issue template" tags="" position="1208,1406">In order for us to investigate and assist you, please submit a ticket HERE and make sure to include the following information:
+ 
+I have gone through the steps in the General Troubleshooter. The issue 
+occurs in private browsing, and persists after disabling add-ons and
+clearing cache.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] </tw-passagedata>
+<tw-passagedata pid="13" name="Start Over" tags="header" position="1005,291">&lt;u&gt;Wix Troubleshooter&lt;/u&gt; &lt;i&gt;[[Start Over-&gt;Welcome]]&lt;/i&gt;
+
+</tw-passagedata>
+<tw-passagedata pid="14" name="extension issue?" tags="" position="1005,741">One of your browser add-ons or extensions may be the source of the issue.
+
+Please try to disable your browser add-ons\extensions, one at a time, to determine which one is causing the issue.
+
+(if: $browser is &quot;Chrome&quot;)[For instructions on how to disable add-ons in Google Chrome, please &lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769&quot;&gt;click here&lt;/a&gt;.]</tw-passagedata>
+<tw-passagedata pid="15" name="Screenshot please" tags="" position="1003,1552">For instructions on how to take a screenshot, click &lt;a href=&quot;https://www.wix.com/support/html5/article/adding-a-screenshot-to-a-ticket&quot;&gt;this link to our help center article&lt;/a&gt;.
+
+If you need to describe a series of steps, please record a screencast. For instructions from our help center, click &lt;a href=&quot;https://www.wix.com/support/html5/article/adding-a-video-to-a-ticket&quot;&gt;here&lt;/a&gt;
+
+(set: $history to (history:))
+(set: $previous to $history&#39;s last)
+
+[[Go Back-&gt;$previous]]</tw-passagedata>
+</tw-storydata>
+
+
+<tw-storydata name="ja-technicalTroubleshooter" startnode="1" creator="Twine" creator-version="2.0.11" ifid="0C57C1FB-99FB-417D-8B30-36A65134EB4F" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+	width: 100%;
+}
+tw-passage {
+	width: 100%; 
+	padding: 2em; 
+	margin: auto; 
+	font-family: "Helvetica Neue", Helvetica, sans-serif; 
+	font-size: 16px; 
+	color:rgba(54,54,54,1); 
+	text-align:left;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="Welcome" tags="" position="806,290">&lt;img src=&quot;https://static.wixstatic.com/media/9edcba_1c27a53f223b4ae1b999741855663eb8.png&quot; width=&quot;100%&quot; alt=&quot;dead computer&quot;&gt;
+
+&lt;h1 style=&quot;font-size: 29px; font-weight: normal;&quot;&gt;Are you experiencing technical difficulties?&lt;/h1&gt;
+ 
+Sometimes issues happen and we appreciate your understanding and patience with us! In order to identify the issue, we would like to narrow down the possibilities until we reach the root cause.
+ 
+This tutorial will take you through the basic steps for troubleshooting general issues that you may encounter.
+
+[[Continue-&gt;Chose Browser]]
+</tw-passagedata>
+<tw-passagedata pid="2" name="Chose Browser" tags="" position="808,452">Which Browser are you using?
+
+* (link: &quot;Google Chrome&quot;)[(set: $browser to &quot;Chrome&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Mozilla Firefox&quot;)[(set: $browser to &quot;Firefox&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;macOS Safari&quot;)[(set: $browser to &quot;Safari&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Microsoft Internet Explorer&quot;)[(set: $browser to &quot;Internet Explorer&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Microsoft 10 Edge&quot;)[(set: $browser to &quot;Edge&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Other Browser or Unsure which browser&quot;)[(set: $browser to &quot;other&quot;)(goto: &quot;Other or Unsure which Browser&quot;)]</tw-passagedata>
+<tw-passagedata pid="3" name="Updated Browser" tags="" position="813,595">If you are using $browser , then please check &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;whatbrowser.org&lt;/a&gt; to make sure  you are using the latest version of $browser.
+
+If you are not using the latest version of $browser, please update your browser, and check if the issue still occurs.
+
+If you experience the issue while using the latest version of your chosen browser, and are still having issues, click [[Continue-&gt;Checked Incognito/Private Browsing]].</tw-passagedata>
+<tw-passagedata pid="4" name="Checked Incognito/Private Browsing" tags="" position="811,740">Since the issue was not resolved by updating $browser, please try &lt;a href=&quot;https://www.wix.com/support/html5/article/opening-your-browser-in-incognitoprivate-browsing-mode&quot;&gt;Opening Your Browser in Incognito/Private Browsing Mode&lt;/a&gt;.
+
+By using Incognito/Private Browsing Mode, your browser will not use any cache or cookies you may have in your local storage. This will help us identify simple cache and cookie issues.
+
+If Incognito/Private Browsing Mode fixes the issue, simply
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.wix.com/support/html5/article/clearing-wix-cookies&quot;&gt;Clear your browser&#39;s cookies&lt;/a&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.wix.com/support/html5/article/clearing-your-browsers-cache&quot;&gt;Clear your browser&#39;s cache&lt;/a&gt;
+&lt;/ol&gt;
+
+If clearing your cookies and cache does not fix the issue, but incognito/private browsing mode does fix the issue [[click here-&gt;extension issue?]].
+
+If using Incognito/Private Browsing Mode does not resolve the issue, please click [[Continue-&gt;Used a Different Browser]]</tw-passagedata>
+<tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,453">Please check &lt;a href=&quot;https://www.wix.com/support/html5/article/supported-browsers&quot;&gt;our list of Supported Browsers&lt;/a&gt; to make sure you are using a supported browser.
+
+If you are not using a supported browser, please try using a supported browser, and check if the issue still occurs.
+
+[[Start Over-&gt;Chose Browser]].</tw-passagedata>
+<tw-passagedata pid="6" name="Used a Different Browser" tags="" position="811,892">Please leave this tutorial window open and use a different, updated browser to load your site and/or editor.
+ 
+Suggested browsers include:
+(unless: $browser is &quot;Chrome&quot;)[* &lt;a href=&quot;https://www.google.com/chrome/browser/desktop/index.html&quot;&gt;Google Chrome&lt;/a&gt;]
+(unless: $browser is &quot;Firefox&quot;)[* &lt;a href=&quot;https://www.getfirefox.com&quot;&gt;Firefox&lt;/a&gt;]
+
+By using a different browser, we can establish if this is a browser specific issue.
+
+If neither of these browsers work, please click [[Continue-&gt;Checked Network issues]]</tw-passagedata>
+<tw-passagedata pid="7" name="Checked Network issues" tags="" position="811,1036">Sometimes your router, your system’s administrator or your network&#39;s firewall may block the connection. Using another Internet connection will allow you to test if this is the problem.
+ 
+Please try connecting your computer to a different Internet connection,
+then login to your Wix account and try opening your site and/or editor again.
+
+Did this help?
+[[Yes-&gt;internet connection issue template]]
+[[No-&gt;changed computer?]]
+[[I don&#39;t have access to a different internet connection-&gt;changed computer?]]</tw-passagedata>
+<tw-passagedata pid="8" name="internet connection issue template" tags="" position="501,1403">It seems that the issue you are experiencing is related to your Internet connection.
+ 
+In order for us to investigate and assist you, please submit a ticket here and make sure to include the following information:
+
+I have gone through the steps in the General Troubleshooter. The issue that
+I have been experiencing is related to my Internet connection.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of
+the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] 
+
+(history:)</tw-passagedata>
+<tw-passagedata pid="9" name="changed computer?" tags="" position="910,1208">Try connecting to Wix from a different computer. Please sign in to your Wix account and try opening your site and/or
+editor again.
+
+Did this help?
+* [[Yes-&gt;local issue template]]
+* [[No-&gt;non-local issue template]]
+* [[I don&#39;t have a different computer-&gt;possibly local issue template]]</tw-passagedata>
+<tw-passagedata pid="10" name="local issue template" tags="" position="800,1403">It seems that the issue you are experiencing is a local issue on your computer.
+ 
+In order for us to investigate and assist you, please submit a ticket here and make sure to include the following information: 
+
+I have gone through the steps in the General Troubleshooter. The issue does not occur in private browsing, yet it persists after disabling add-ons and clearing cache.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] </tw-passagedata>
+<tw-passagedata pid="11" name="non-local issue template" tags="" position="1003,1402">In order for us to investigate and assist you, please submit a ticket &lt;a href=&quot;http://www.wix.com/support/html5/submit-a-ticket&quot;&gt;HERE&lt;/a&gt; and make sure to include the following information:
+ 
+I have gone through the steps in the General Troubleshooter. The issue 
+occurs in private browsing, and persists after disabling add-ons and
+clearing cache.
+ 
+In addition, please provide us with the following details:
+1. A detailed description of the issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] 
+</tw-passagedata>
+<tw-passagedata pid="12" name="possibly local issue template" tags="" position="1208,1406">In order for us to investigate and assist you, please submit a ticket HERE and make sure to include the following information:
+ 
+I have gone through the steps in the General Troubleshooter. The issue 
+occurs in private browsing, and persists after disabling add-ons and
+clearing cache.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] </tw-passagedata>
+<tw-passagedata pid="13" name="Start Over" tags="header" position="1005,291">&lt;u&gt;Wix Troubleshooter&lt;/u&gt; &lt;i&gt;[[Start Over-&gt;Welcome]]&lt;/i&gt;
+
+</tw-passagedata>
+<tw-passagedata pid="14" name="extension issue?" tags="" position="1005,741">One of your browser add-ons or extensions may be the source of the issue.
+
+Please try to disable your browser add-ons\extensions, one at a time, to determine which one is causing the issue.
+
+(if: $browser is &quot;Chrome&quot;)[For instructions on how to disable add-ons in Google Chrome, please &lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769&quot;&gt;click here&lt;/a&gt;.]</tw-passagedata>
+<tw-passagedata pid="15" name="Screenshot please" tags="" position="1003,1552">For instructions on how to take a screenshot, click &lt;a href=&quot;https://www.wix.com/support/html5/article/adding-a-screenshot-to-a-ticket&quot;&gt;this link to our help center article&lt;/a&gt;.
+
+If you need to describe a series of steps, please record a screencast. For instructions from our help center, click &lt;a href=&quot;https://www.wix.com/support/html5/article/adding-a-video-to-a-ticket&quot;&gt;here&lt;/a&gt;
+
+(set: $history to (history:))
+(set: $previous to $history&#39;s last)
+
+[[Go Back-&gt;$previous]]</tw-passagedata>
+</tw-storydata>
+
+
+<tw-storydata name="ko-technicalTroubleshooter" startnode="1" creator="Twine" creator-version="2.0.11" ifid="0C57C1FB-99FB-417D-8B30-36A65134EB4F" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+	width: 100%;
+}
+tw-passage {
+	width: 100%; 
+	padding: 2em; 
+	margin: auto; 
+	font-family: "Helvetica Neue", Helvetica, sans-serif; 
+	font-size: 16px; 
+	color:rgba(54,54,54,1); 
+	text-align:left;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="Welcome" tags="" position="806,290">&lt;img src=&quot;https://static.wixstatic.com/media/9edcba_1c27a53f223b4ae1b999741855663eb8.png&quot; width=&quot;100%&quot; alt=&quot;dead computer&quot;&gt;
+
+&lt;h1 style=&quot;font-size: 29px; font-weight: normal;&quot;&gt;Are you experiencing technical difficulties?&lt;/h1&gt;
+ 
+Sometimes issues happen and we appreciate your understanding and patience with us! In order to identify the issue, we would like to narrow down the possibilities until we reach the root cause.
+ 
+This tutorial will take you through the basic steps for troubleshooting general issues that you may encounter.
+
+[[Continue-&gt;Chose Browser]]
+</tw-passagedata>
+<tw-passagedata pid="2" name="Chose Browser" tags="" position="808,452">Which Browser are you using?
+
+* (link: &quot;Google Chrome&quot;)[(set: $browser to &quot;Chrome&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Mozilla Firefox&quot;)[(set: $browser to &quot;Firefox&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;macOS Safari&quot;)[(set: $browser to &quot;Safari&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Microsoft Internet Explorer&quot;)[(set: $browser to &quot;Internet Explorer&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Microsoft 10 Edge&quot;)[(set: $browser to &quot;Edge&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Other Browser or Unsure which browser&quot;)[(set: $browser to &quot;other&quot;)(goto: &quot;Other or Unsure which Browser&quot;)]</tw-passagedata>
+<tw-passagedata pid="3" name="Updated Browser" tags="" position="813,595">If you are using $browser , then please check &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;whatbrowser.org&lt;/a&gt; to make sure  you are using the latest version of $browser.
+
+If you are not using the latest version of $browser, please update your browser, and check if the issue still occurs.
+
+If you experience the issue while using the latest version of your chosen browser, and are still having issues, click [[Continue-&gt;Checked Incognito/Private Browsing]].</tw-passagedata>
+<tw-passagedata pid="4" name="Checked Incognito/Private Browsing" tags="" position="811,740">Since the issue was not resolved by updating $browser, please try &lt;a href=&quot;https://www.wix.com/support/html5/article/opening-your-browser-in-incognitoprivate-browsing-mode&quot;&gt;Opening Your Browser in Incognito/Private Browsing Mode&lt;/a&gt;.
+
+By using Incognito/Private Browsing Mode, your browser will not use any cache or cookies you may have in your local storage. This will help us identify simple cache and cookie issues.
+
+If Incognito/Private Browsing Mode fixes the issue, simply
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.wix.com/support/html5/article/clearing-wix-cookies&quot;&gt;Clear your browser&#39;s cookies&lt;/a&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.wix.com/support/html5/article/clearing-your-browsers-cache&quot;&gt;Clear your browser&#39;s cache&lt;/a&gt;
+&lt;/ol&gt;
+
+If clearing your cookies and cache does not fix the issue, but incognito/private browsing mode does fix the issue [[click here-&gt;extension issue?]].
+
+If using Incognito/Private Browsing Mode does not resolve the issue, please click [[Continue-&gt;Used a Different Browser]]</tw-passagedata>
+<tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,453">Please check &lt;a href=&quot;https://www.wix.com/support/html5/article/supported-browsers&quot;&gt;our list of Supported Browsers&lt;/a&gt; to make sure you are using a supported browser.
+
+If you are not using a supported browser, please try using a supported browser, and check if the issue still occurs.
+
+[[Start Over-&gt;Chose Browser]].</tw-passagedata>
+<tw-passagedata pid="6" name="Used a Different Browser" tags="" position="811,892">Please leave this tutorial window open and use a different, updated browser to load your site and/or editor.
+ 
+Suggested browsers include:
+(unless: $browser is &quot;Chrome&quot;)[* &lt;a href=&quot;https://www.google.com/chrome/browser/desktop/index.html&quot;&gt;Google Chrome&lt;/a&gt;]
+(unless: $browser is &quot;Firefox&quot;)[* &lt;a href=&quot;https://www.getfirefox.com&quot;&gt;Firefox&lt;/a&gt;]
+
+By using a different browser, we can establish if this is a browser specific issue.
+
+If neither of these browsers work, please click [[Continue-&gt;Checked Network issues]]</tw-passagedata>
+<tw-passagedata pid="7" name="Checked Network issues" tags="" position="811,1036">Sometimes your router, your system’s administrator or your network&#39;s firewall may block the connection. Using another Internet connection will allow you to test if this is the problem.
+ 
+Please try connecting your computer to a different Internet connection,
+then login to your Wix account and try opening your site and/or editor again.
+
+Did this help?
+[[Yes-&gt;internet connection issue template]]
+[[No-&gt;changed computer?]]
+[[I don&#39;t have access to a different internet connection-&gt;changed computer?]]</tw-passagedata>
+<tw-passagedata pid="8" name="internet connection issue template" tags="" position="501,1403">It seems that the issue you are experiencing is related to your Internet connection.
+ 
+In order for us to investigate and assist you, please submit a ticket here and make sure to include the following information:
+
+I have gone through the steps in the General Troubleshooter. The issue that
+I have been experiencing is related to my Internet connection.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of
+the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] 
+
+(history:)</tw-passagedata>
+<tw-passagedata pid="9" name="changed computer?" tags="" position="910,1208">Try connecting to Wix from a different computer. Please sign in to your Wix account and try opening your site and/or
+editor again.
+
+Did this help?
+* [[Yes-&gt;local issue template]]
+* [[No-&gt;non-local issue template]]
+* [[I don&#39;t have a different computer-&gt;possibly local issue template]]</tw-passagedata>
+<tw-passagedata pid="10" name="local issue template" tags="" position="800,1403">It seems that the issue you are experiencing is a local issue on your computer.
+ 
+In order for us to investigate and assist you, please submit a ticket here and make sure to include the following information: 
+
+I have gone through the steps in the General Troubleshooter. The issue does not occur in private browsing, yet it persists after disabling add-ons and clearing cache.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] </tw-passagedata>
+<tw-passagedata pid="11" name="non-local issue template" tags="" position="1003,1402">In order for us to investigate and assist you, please submit a ticket &lt;a href=&quot;http://www.wix.com/support/html5/submit-a-ticket&quot;&gt;HERE&lt;/a&gt; and make sure to include the following information:
+ 
+I have gone through the steps in the General Troubleshooter. The issue 
+occurs in private browsing, and persists after disabling add-ons and
+clearing cache.
+ 
+In addition, please provide us with the following details:
+1. A detailed description of the issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] 
+</tw-passagedata>
+<tw-passagedata pid="12" name="possibly local issue template" tags="" position="1208,1406">In order for us to investigate and assist you, please submit a ticket HERE and make sure to include the following information:
+ 
+I have gone through the steps in the General Troubleshooter. The issue 
+occurs in private browsing, and persists after disabling add-ons and
+clearing cache.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] </tw-passagedata>
+<tw-passagedata pid="13" name="Start Over" tags="header" position="1005,291">&lt;u&gt;Wix Troubleshooter&lt;/u&gt; &lt;i&gt;[[Start Over-&gt;Welcome]]&lt;/i&gt;
+
+</tw-passagedata>
+<tw-passagedata pid="14" name="extension issue?" tags="" position="1005,741">One of your browser add-ons or extensions may be the source of the issue.
+
+Please try to disable your browser add-ons\extensions, one at a time, to determine which one is causing the issue.
+
+(if: $browser is &quot;Chrome&quot;)[For instructions on how to disable add-ons in Google Chrome, please &lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769&quot;&gt;click here&lt;/a&gt;.]</tw-passagedata>
+<tw-passagedata pid="15" name="Screenshot please" tags="" position="1003,1552">For instructions on how to take a screenshot, click &lt;a href=&quot;https://www.wix.com/support/html5/article/adding-a-screenshot-to-a-ticket&quot;&gt;this link to our help center article&lt;/a&gt;.
+
+If you need to describe a series of steps, please record a screencast. For instructions from our help center, click &lt;a href=&quot;https://www.wix.com/support/html5/article/adding-a-video-to-a-ticket&quot;&gt;here&lt;/a&gt;
+
+(set: $history to (history:))
+(set: $previous to $history&#39;s last)
+
+[[Go Back-&gt;$previous]]</tw-passagedata>
+</tw-storydata>
+
+
+<tw-storydata name="pt-technicalTroubleshooter" startnode="1" creator="Twine" creator-version="2.0.11" ifid="0C57C1FB-99FB-417D-8B30-36A65134EB4F" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+	width: 100%;
+}
+tw-passage {
+	width: 100%; 
+	padding: 2em; 
+	margin: auto; 
+	font-family: "Helvetica Neue", Helvetica, sans-serif; 
+	font-size: 16px; 
+	color:rgba(54,54,54,1); 
+	text-align:left;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="Welcome" tags="" position="806,290">&lt;img src=&quot;https://static.wixstatic.com/media/9edcba_1c27a53f223b4ae1b999741855663eb8.png&quot; width=&quot;100%&quot; alt=&quot;dead computer&quot;&gt;
+
+&lt;h1 style=&quot;font-size: 29px; font-weight: normal;&quot;&gt;Are you experiencing technical difficulties?&lt;/h1&gt;
+ 
+Sometimes issues happen and we appreciate your understanding and patience with us! In order to identify the issue, we would like to narrow down the possibilities until we reach the root cause.
+ 
+This tutorial will take you through the basic steps for troubleshooting general issues that you may encounter.
+
+[[Continue-&gt;Chose Browser]]
+</tw-passagedata>
+<tw-passagedata pid="2" name="Chose Browser" tags="" position="808,452">Which Browser are you using?
+
+* (link: &quot;Google Chrome&quot;)[(set: $browser to &quot;Chrome&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Mozilla Firefox&quot;)[(set: $browser to &quot;Firefox&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;macOS Safari&quot;)[(set: $browser to &quot;Safari&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Microsoft Internet Explorer&quot;)[(set: $browser to &quot;Internet Explorer&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Microsoft 10 Edge&quot;)[(set: $browser to &quot;Edge&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Other Browser or Unsure which browser&quot;)[(set: $browser to &quot;other&quot;)(goto: &quot;Other or Unsure which Browser&quot;)]</tw-passagedata>
+<tw-passagedata pid="3" name="Updated Browser" tags="" position="813,595">If you are using $browser , then please check &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;whatbrowser.org&lt;/a&gt; to make sure  you are using the latest version of $browser.
+
+If you are not using the latest version of $browser, please update your browser, and check if the issue still occurs.
+
+If you experience the issue while using the latest version of your chosen browser, and are still having issues, click [[Continue-&gt;Checked Incognito/Private Browsing]].</tw-passagedata>
+<tw-passagedata pid="4" name="Checked Incognito/Private Browsing" tags="" position="811,740">Since the issue was not resolved by updating $browser, please try &lt;a href=&quot;https://www.wix.com/support/html5/article/opening-your-browser-in-incognitoprivate-browsing-mode&quot;&gt;Opening Your Browser in Incognito/Private Browsing Mode&lt;/a&gt;.
+
+By using Incognito/Private Browsing Mode, your browser will not use any cache or cookies you may have in your local storage. This will help us identify simple cache and cookie issues.
+
+If Incognito/Private Browsing Mode fixes the issue, simply
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.wix.com/support/html5/article/clearing-wix-cookies&quot;&gt;Clear your browser&#39;s cookies&lt;/a&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.wix.com/support/html5/article/clearing-your-browsers-cache&quot;&gt;Clear your browser&#39;s cache&lt;/a&gt;
+&lt;/ol&gt;
+
+If clearing your cookies and cache does not fix the issue, but incognito/private browsing mode does fix the issue [[click here-&gt;extension issue?]].
+
+If using Incognito/Private Browsing Mode does not resolve the issue, please click [[Continue-&gt;Used a Different Browser]]</tw-passagedata>
+<tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,453">Please check &lt;a href=&quot;https://www.wix.com/support/html5/article/supported-browsers&quot;&gt;our list of Supported Browsers&lt;/a&gt; to make sure you are using a supported browser.
+
+If you are not using a supported browser, please try using a supported browser, and check if the issue still occurs.
+
+[[Start Over-&gt;Chose Browser]].</tw-passagedata>
+<tw-passagedata pid="6" name="Used a Different Browser" tags="" position="811,892">Please leave this tutorial window open and use a different, updated browser to load your site and/or editor.
+ 
+Suggested browsers include:
+(unless: $browser is &quot;Chrome&quot;)[* &lt;a href=&quot;https://www.google.com/chrome/browser/desktop/index.html&quot;&gt;Google Chrome&lt;/a&gt;]
+(unless: $browser is &quot;Firefox&quot;)[* &lt;a href=&quot;https://www.getfirefox.com&quot;&gt;Firefox&lt;/a&gt;]
+
+By using a different browser, we can establish if this is a browser specific issue.
+
+If neither of these browsers work, please click [[Continue-&gt;Checked Network issues]]</tw-passagedata>
+<tw-passagedata pid="7" name="Checked Network issues" tags="" position="811,1036">Sometimes your router, your system’s administrator or your network&#39;s firewall may block the connection. Using another Internet connection will allow you to test if this is the problem.
+ 
+Please try connecting your computer to a different Internet connection,
+then login to your Wix account and try opening your site and/or editor again.
+
+Did this help?
+[[Yes-&gt;internet connection issue template]]
+[[No-&gt;changed computer?]]
+[[I don&#39;t have access to a different internet connection-&gt;changed computer?]]</tw-passagedata>
+<tw-passagedata pid="8" name="internet connection issue template" tags="" position="501,1403">It seems that the issue you are experiencing is related to your Internet connection.
+ 
+In order for us to investigate and assist you, please submit a ticket here and make sure to include the following information:
+
+I have gone through the steps in the General Troubleshooter. The issue that
+I have been experiencing is related to my Internet connection.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of
+the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] 
+
+(history:)</tw-passagedata>
+<tw-passagedata pid="9" name="changed computer?" tags="" position="910,1208">Try connecting to Wix from a different computer. Please sign in to your Wix account and try opening your site and/or
+editor again.
+
+Did this help?
+* [[Yes-&gt;local issue template]]
+* [[No-&gt;non-local issue template]]
+* [[I don&#39;t have a different computer-&gt;possibly local issue template]]</tw-passagedata>
+<tw-passagedata pid="10" name="local issue template" tags="" position="800,1403">It seems that the issue you are experiencing is a local issue on your computer.
+ 
+In order for us to investigate and assist you, please submit a ticket here and make sure to include the following information: 
+
+I have gone through the steps in the General Troubleshooter. The issue does not occur in private browsing, yet it persists after disabling add-ons and clearing cache.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] </tw-passagedata>
+<tw-passagedata pid="11" name="non-local issue template" tags="" position="1003,1402">In order for us to investigate and assist you, please submit a ticket &lt;a href=&quot;http://www.wix.com/support/html5/submit-a-ticket&quot;&gt;HERE&lt;/a&gt; and make sure to include the following information:
+ 
+I have gone through the steps in the General Troubleshooter. The issue 
+occurs in private browsing, and persists after disabling add-ons and
+clearing cache.
+ 
+In addition, please provide us with the following details:
+1. A detailed description of the issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] 
+</tw-passagedata>
+<tw-passagedata pid="12" name="possibly local issue template" tags="" position="1208,1406">In order for us to investigate and assist you, please submit a ticket HERE and make sure to include the following information:
+ 
+I have gone through the steps in the General Troubleshooter. The issue 
+occurs in private browsing, and persists after disabling add-ons and
+clearing cache.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] </tw-passagedata>
+<tw-passagedata pid="13" name="Start Over" tags="header" position="1005,291">&lt;u&gt;Wix Troubleshooter&lt;/u&gt; &lt;i&gt;[[Start Over-&gt;Welcome]]&lt;/i&gt;
+
+</tw-passagedata>
+<tw-passagedata pid="14" name="extension issue?" tags="" position="1005,741">One of your browser add-ons or extensions may be the source of the issue.
+
+Please try to disable your browser add-ons\extensions, one at a time, to determine which one is causing the issue.
+
+(if: $browser is &quot;Chrome&quot;)[For instructions on how to disable add-ons in Google Chrome, please &lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769&quot;&gt;click here&lt;/a&gt;.]</tw-passagedata>
+<tw-passagedata pid="15" name="Screenshot please" tags="" position="1003,1552">For instructions on how to take a screenshot, click &lt;a href=&quot;https://www.wix.com/support/html5/article/adding-a-screenshot-to-a-ticket&quot;&gt;this link to our help center article&lt;/a&gt;.
+
+If you need to describe a series of steps, please record a screencast. For instructions from our help center, click &lt;a href=&quot;https://www.wix.com/support/html5/article/adding-a-video-to-a-ticket&quot;&gt;here&lt;/a&gt;
+
+(set: $history to (history:))
+(set: $previous to $history&#39;s last)
+
+[[Go Back-&gt;$previous]]</tw-passagedata>
+</tw-storydata>
+
+
+<tw-storydata name="ru-technicalTroubleshooter" startnode="1" creator="Twine" creator-version="2.0.11" ifid="0C57C1FB-99FB-417D-8B30-36A65134EB4F" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+	width: 100%;
+}
+tw-passage {
+	width: 100%; 
+	padding: 2em; 
+	margin: auto; 
+	font-family: "Helvetica Neue", Helvetica, sans-serif; 
+	font-size: 16px; 
+	color:rgba(54,54,54,1); 
+	text-align:left;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="Welcome" tags="" position="806,290">&lt;img src=&quot;https://static.wixstatic.com/media/9edcba_1c27a53f223b4ae1b999741855663eb8.png&quot; width=&quot;100%&quot; alt=&quot;dead computer&quot;&gt;
+
+&lt;h1 style=&quot;font-size: 29px; font-weight: normal;&quot;&gt;Are you experiencing technical difficulties?&lt;/h1&gt;
+ 
+Sometimes issues happen and we appreciate your understanding and patience with us! In order to identify the issue, we would like to narrow down the possibilities until we reach the root cause.
+ 
+This tutorial will take you through the basic steps for troubleshooting general issues that you may encounter.
+
+[[Continue-&gt;Chose Browser]]
+</tw-passagedata>
+<tw-passagedata pid="2" name="Chose Browser" tags="" position="808,452">Which Browser are you using?
+
+* (link: &quot;Google Chrome&quot;)[(set: $browser to &quot;Chrome&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Mozilla Firefox&quot;)[(set: $browser to &quot;Firefox&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;macOS Safari&quot;)[(set: $browser to &quot;Safari&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Microsoft Internet Explorer&quot;)[(set: $browser to &quot;Internet Explorer&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Microsoft 10 Edge&quot;)[(set: $browser to &quot;Edge&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Other Browser or Unsure which browser&quot;)[(set: $browser to &quot;other&quot;)(goto: &quot;Other or Unsure which Browser&quot;)]</tw-passagedata>
+<tw-passagedata pid="3" name="Updated Browser" tags="" position="813,595">If you are using $browser , then please check &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;whatbrowser.org&lt;/a&gt; to make sure  you are using the latest version of $browser.
+
+If you are not using the latest version of $browser, please update your browser, and check if the issue still occurs.
+
+If you experience the issue while using the latest version of your chosen browser, and are still having issues, click [[Continue-&gt;Checked Incognito/Private Browsing]].</tw-passagedata>
+<tw-passagedata pid="4" name="Checked Incognito/Private Browsing" tags="" position="811,740">Since the issue was not resolved by updating $browser, please try &lt;a href=&quot;https://www.wix.com/support/html5/article/opening-your-browser-in-incognitoprivate-browsing-mode&quot;&gt;Opening Your Browser in Incognito/Private Browsing Mode&lt;/a&gt;.
+
+By using Incognito/Private Browsing Mode, your browser will not use any cache or cookies you may have in your local storage. This will help us identify simple cache and cookie issues.
+
+If Incognito/Private Browsing Mode fixes the issue, simply
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.wix.com/support/html5/article/clearing-wix-cookies&quot;&gt;Clear your browser&#39;s cookies&lt;/a&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.wix.com/support/html5/article/clearing-your-browsers-cache&quot;&gt;Clear your browser&#39;s cache&lt;/a&gt;
+&lt;/ol&gt;
+
+If clearing your cookies and cache does not fix the issue, but incognito/private browsing mode does fix the issue [[click here-&gt;extension issue?]].
+
+If using Incognito/Private Browsing Mode does not resolve the issue, please click [[Continue-&gt;Used a Different Browser]]</tw-passagedata>
+<tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,453">Please check &lt;a href=&quot;https://www.wix.com/support/html5/article/supported-browsers&quot;&gt;our list of Supported Browsers&lt;/a&gt; to make sure you are using a supported browser.
+
+If you are not using a supported browser, please try using a supported browser, and check if the issue still occurs.
+
+[[Start Over-&gt;Chose Browser]].</tw-passagedata>
+<tw-passagedata pid="6" name="Used a Different Browser" tags="" position="811,892">Please leave this tutorial window open and use a different, updated browser to load your site and/or editor.
+ 
+Suggested browsers include:
+(unless: $browser is &quot;Chrome&quot;)[* &lt;a href=&quot;https://www.google.com/chrome/browser/desktop/index.html&quot;&gt;Google Chrome&lt;/a&gt;]
+(unless: $browser is &quot;Firefox&quot;)[* &lt;a href=&quot;https://www.getfirefox.com&quot;&gt;Firefox&lt;/a&gt;]
+
+By using a different browser, we can establish if this is a browser specific issue.
+
+If neither of these browsers work, please click [[Continue-&gt;Checked Network issues]]</tw-passagedata>
+<tw-passagedata pid="7" name="Checked Network issues" tags="" position="811,1036">Sometimes your router, your system’s administrator or your network&#39;s firewall may block the connection. Using another Internet connection will allow you to test if this is the problem.
+ 
+Please try connecting your computer to a different Internet connection,
+then login to your Wix account and try opening your site and/or editor again.
+
+Did this help?
+[[Yes-&gt;internet connection issue template]]
+[[No-&gt;changed computer?]]
+[[I don&#39;t have access to a different internet connection-&gt;changed computer?]]</tw-passagedata>
+<tw-passagedata pid="8" name="internet connection issue template" tags="" position="501,1403">It seems that the issue you are experiencing is related to your Internet connection.
+ 
+In order for us to investigate and assist you, please submit a ticket here and make sure to include the following information:
+
+I have gone through the steps in the General Troubleshooter. The issue that
+I have been experiencing is related to my Internet connection.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of
+the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] 
+
+(history:)</tw-passagedata>
+<tw-passagedata pid="9" name="changed computer?" tags="" position="910,1208">Try connecting to Wix from a different computer. Please sign in to your Wix account and try opening your site and/or
+editor again.
+
+Did this help?
+* [[Yes-&gt;local issue template]]
+* [[No-&gt;non-local issue template]]
+* [[I don&#39;t have a different computer-&gt;possibly local issue template]]</tw-passagedata>
+<tw-passagedata pid="10" name="local issue template" tags="" position="800,1403">It seems that the issue you are experiencing is a local issue on your computer.
+ 
+In order for us to investigate and assist you, please submit a ticket here and make sure to include the following information: 
+
+I have gone through the steps in the General Troubleshooter. The issue does not occur in private browsing, yet it persists after disabling add-ons and clearing cache.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] </tw-passagedata>
+<tw-passagedata pid="11" name="non-local issue template" tags="" position="1003,1402">In order for us to investigate and assist you, please submit a ticket &lt;a href=&quot;http://www.wix.com/support/html5/submit-a-ticket&quot;&gt;HERE&lt;/a&gt; and make sure to include the following information:
+ 
+I have gone through the steps in the General Troubleshooter. The issue 
+occurs in private browsing, and persists after disabling add-ons and
+clearing cache.
+ 
+In addition, please provide us with the following details:
+1. A detailed description of the issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] 
+</tw-passagedata>
+<tw-passagedata pid="12" name="possibly local issue template" tags="" position="1208,1406">In order for us to investigate and assist you, please submit a ticket HERE and make sure to include the following information:
+ 
+I have gone through the steps in the General Troubleshooter. The issue 
+occurs in private browsing, and persists after disabling add-ons and
+clearing cache.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] </tw-passagedata>
+<tw-passagedata pid="13" name="Start Over" tags="header" position="1005,291">&lt;u&gt;Wix Troubleshooter&lt;/u&gt; &lt;i&gt;[[Start Over-&gt;Welcome]]&lt;/i&gt;
+
+</tw-passagedata>
+<tw-passagedata pid="14" name="extension issue?" tags="" position="1005,741">One of your browser add-ons or extensions may be the source of the issue.
+
+Please try to disable your browser add-ons\extensions, one at a time, to determine which one is causing the issue.
+
+(if: $browser is &quot;Chrome&quot;)[For instructions on how to disable add-ons in Google Chrome, please &lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769&quot;&gt;click here&lt;/a&gt;.]</tw-passagedata>
+<tw-passagedata pid="15" name="Screenshot please" tags="" position="1003,1552">For instructions on how to take a screenshot, click &lt;a href=&quot;https://www.wix.com/support/html5/article/adding-a-screenshot-to-a-ticket&quot;&gt;this link to our help center article&lt;/a&gt;.
+
+If you need to describe a series of steps, please record a screencast. For instructions from our help center, click &lt;a href=&quot;https://www.wix.com/support/html5/article/adding-a-video-to-a-ticket&quot;&gt;here&lt;/a&gt;
+
+(set: $history to (history:))
+(set: $previous to $history&#39;s last)
+
+[[Go Back-&gt;$previous]]</tw-passagedata>
+</tw-storydata>
+
+
+<tw-storydata name="technicalTroubleshooter" startnode="1" creator="Twine" creator-version="2.0.11" ifid="0C57C1FB-99FB-417D-8B30-36A65134EB4F" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+	width: 100%;
+}
+tw-passage {
+	width: 100%; 
+	padding: 2em; 
+	margin: auto; 
+	font-family: "Helvetica Neue", Helvetica, sans-serif; 
+	font-size: 16px; 
+	color:rgba(54,54,54,1); 
+	text-align:left;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="Welcome" tags="" position="806,290">&lt;img src=&quot;https://static.wixstatic.com/media/9edcba_1c27a53f223b4ae1b999741855663eb8.png&quot; width=&quot;100%&quot; alt=&quot;dead computer&quot;&gt;
+
+&lt;h1 style=&quot;font-size: 29px; font-weight: normal;&quot;&gt;Are you experiencing technical difficulties?&lt;/h1&gt;
+ 
+Sometimes issues happen and we appreciate your understanding and patience with us! In order to identify the issue, we would like to narrow down the possibilities until we reach the root cause.
+ 
+This tutorial will take you through the basic steps for troubleshooting general issues that you may encounter.
+
+[[Continue-&gt;Chose Browser]]
+</tw-passagedata>
+<tw-passagedata pid="2" name="Chose Browser" tags="" position="808,452">Which Browser are you using?
+
+* (link: &quot;Google Chrome&quot;)[(set: $browser to &quot;Chrome&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Mozilla Firefox&quot;)[(set: $browser to &quot;Firefox&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;macOS Safari&quot;)[(set: $browser to &quot;Safari&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Microsoft Internet Explorer&quot;)[(set: $browser to &quot;Internet Explorer&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Microsoft 10 Edge&quot;)[(set: $browser to &quot;Edge&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Other Browser or Unsure which browser&quot;)[(set: $browser to &quot;other&quot;)(goto: &quot;Other or Unsure which Browser&quot;)]</tw-passagedata>
+<tw-passagedata pid="3" name="Updated Browser" tags="" position="813,595">If you are using $browser , then please check &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;whatbrowser.org&lt;/a&gt; to make sure  you are using the latest version of $browser.
+
+If you are not using the latest version of $browser, please update your browser, and check if the issue still occurs.
+
+If you experience the issue while using the latest version of your chosen browser, and are still having issues, click [[Continue-&gt;Checked Incognito/Private Browsing]].</tw-passagedata>
+<tw-passagedata pid="4" name="Checked Incognito/Private Browsing" tags="" position="811,740">Since the issue was not resolved by updating $browser, please try &lt;a href=&quot;https://www.wix.com/support/html5/article/opening-your-browser-in-incognitoprivate-browsing-mode&quot;&gt;Opening Your Browser in Incognito/Private Browsing Mode&lt;/a&gt;.
+
+By using Incognito/Private Browsing Mode, your browser will not use any cache or cookies you may have in your local storage. This will help us identify simple cache and cookie issues.
+
+If Incognito/Private Browsing Mode fixes the issue, simply
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.wix.com/support/html5/article/clearing-wix-cookies&quot;&gt;Clear your browser&#39;s cookies&lt;/a&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.wix.com/support/html5/article/clearing-your-browsers-cache&quot;&gt;Clear your browser&#39;s cache&lt;/a&gt;
+&lt;/ol&gt;
+
+If clearing your cookies and cache does not fix the issue, but incognito/private browsing mode does fix the issue [[click here-&gt;extension issue?]].
+
+If using Incognito/Private Browsing Mode does not resolve the issue, please click [[Continue-&gt;Used a Different Browser]]</tw-passagedata>
+<tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,453">Please check &lt;a href=&quot;https://www.wix.com/support/html5/article/supported-browsers&quot;&gt;our list of Supported Browsers&lt;/a&gt; to make sure you are using a supported browser.
+
+If you are not using a supported browser, please try using a supported browser, and check if the issue still occurs.
+
+[[Start Over-&gt;Chose Browser]].</tw-passagedata>
+<tw-passagedata pid="6" name="Used a Different Browser" tags="" position="811,892">Please leave this tutorial window open and use a different, updated browser to load your site and/or editor.
+ 
+Suggested browsers include:
+(unless: $browser is &quot;Chrome&quot;)[* &lt;a href=&quot;https://www.google.com/chrome/browser/desktop/index.html&quot;&gt;Google Chrome&lt;/a&gt;]
+(unless: $browser is &quot;Firefox&quot;)[* &lt;a href=&quot;https://www.getfirefox.com&quot;&gt;Firefox&lt;/a&gt;]
+
+By using a different browser, we can establish if this is a browser specific issue.
+
+If neither of these browsers work, please click [[Continue-&gt;Checked Network issues]]</tw-passagedata>
+<tw-passagedata pid="7" name="Checked Network issues" tags="" position="811,1036">Sometimes your router, your system’s administrator or your network&#39;s firewall may block the connection. Using another Internet connection will allow you to test if this is the problem.
+ 
+Please try connecting your computer to a different Internet connection,
+then login to your Wix account and try opening your site and/or editor again.
+
+Did this help?
+[[Yes-&gt;internet connection issue template]]
+[[No-&gt;changed computer?]]
+[[I don&#39;t have access to a different internet connection-&gt;changed computer?]]</tw-passagedata>
+<tw-passagedata pid="8" name="internet connection issue template" tags="" position="501,1403">It seems that the issue you are experiencing is related to your Internet connection.
+ 
+In order for us to investigate and assist you, please submit a ticket here and make sure to include the following information:
+
+I have gone through the steps in the General Troubleshooter. The issue that
+I have been experiencing is related to my Internet connection.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of
+the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] 
+
+(history:)</tw-passagedata>
+<tw-passagedata pid="9" name="changed computer?" tags="" position="910,1208">Try connecting to Wix from a different computer. Please sign in to your Wix account and try opening your site and/or
+editor again.
+
+Did this help?
+* [[Yes-&gt;local issue template]]
+* [[No-&gt;non-local issue template]]
+* [[I don&#39;t have a different computer-&gt;possibly local issue template]]</tw-passagedata>
+<tw-passagedata pid="10" name="local issue template" tags="" position="800,1403">It seems that the issue you are experiencing is a local issue on your computer.
+ 
+In order for us to investigate and assist you, please submit a ticket here and make sure to include the following information: 
+
+I have gone through the steps in the General Troubleshooter. The issue does not occur in private browsing, yet it persists after disabling add-ons and clearing cache.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] </tw-passagedata>
+<tw-passagedata pid="11" name="non-local issue template" tags="" position="1003,1402">In order for us to investigate and assist you, please submit a ticket &lt;a href=&quot;http://www.wix.com/support/html5/submit-a-ticket&quot;&gt;HERE&lt;/a&gt; and make sure to include the following information:
+ 
+I have gone through the steps in the General Troubleshooter. The issue 
+occurs in private browsing, and persists after disabling add-ons and
+clearing cache.
+ 
+In addition, please provide us with the following details:
+1. A detailed description of the issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] 
+</tw-passagedata>
+<tw-passagedata pid="12" name="possibly local issue template" tags="" position="1208,1406">In order for us to investigate and assist you, please submit a ticket HERE and make sure to include the following information:
+ 
+I have gone through the steps in the General Troubleshooter. The issue 
+occurs in private browsing, and persists after disabling add-ons and
+clearing cache.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here-&gt;Screenshot please]] </tw-passagedata>
+<tw-passagedata pid="13" name="Start Over" tags="header" position="1005,291">&lt;u&gt;Wix Troubleshooter&lt;/u&gt; &lt;i&gt;[[Start Over-&gt;Welcome]]&lt;/i&gt;
+
+</tw-passagedata>
+<tw-passagedata pid="14" name="extension issue?" tags="" position="1005,741">One of your browser add-ons or extensions may be the source of the issue.
+
+Please try to disable your browser add-ons\extensions, one at a time, to determine which one is causing the issue.
+
+(if: $browser is &quot;Chrome&quot;)[For instructions on how to disable add-ons in Google Chrome, please &lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769&quot;&gt;click here&lt;/a&gt;.]</tw-passagedata>
+<tw-passagedata pid="15" name="Screenshot please" tags="" position="1003,1552">For instructions on how to take a screenshot, click &lt;a href=&quot;https://www.wix.com/support/html5/article/adding-a-screenshot-to-a-ticket&quot;&gt;this link to our help center article&lt;/a&gt;.
+
+If you need to describe a series of steps, please record a screencast. For instructions from our help center, click &lt;a href=&quot;https://www.wix.com/support/html5/article/adding-a-video-to-a-ticket&quot;&gt;here&lt;/a&gt;
+
+(set: $history to (history:))
+(set: $previous to $history&#39;s last)
+
+[[Go Back-&gt;$previous]]</tw-passagedata>
+</tw-storydata>
+
+
