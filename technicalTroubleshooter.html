@@ -22,7 +22,9 @@ tw-passage {
 	font-size: 16px; 
 	color:rgba(54,54,54,1); 
 	text-align:left;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Welcome" tags="" position="806.6666666666667,291.6666666666667">&lt;h1&gt;Are you experiencing technical difficulties?&lt;/h1&gt;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="Welcome" tags="" position="806,290">&lt;h1 style=&quot;font-size: 29px; font-weight: normal;&quot;&gt;Are you experiencing technical difficulties?&lt;/h1&gt;
  
 Sometimes issues happen and we appreciate your understanding and patience with us! In order to identify the issue, we would like to narrow down the possibilities until we reach the root cause.
  
@@ -30,46 +32,21 @@ This tutorial will take you through the basic steps for troubleshooting general 
 
 [[Start Here]]
 </tw-passagedata>
-<tw-passagedata pid="2" name="Start Here" tags="" position="813.3333333333334,445">Which Browser are you using?
+<tw-passagedata pid="2" name="Start Here" tags="" position="813,445">Which Browser are you using?
 
-* [[Google Chrome]]
-* [[Firefox]]
-* [[Safari]]
-* [[Internet Explorer]]
+* (set: $browser to &quot;Chrome&quot;)[[Google Chrome-&gt;Update Browser]]
+* (set: $browser to &quot;Firefox&quot;)[[Mozilla Firefox-&gt;Update Browser]]
+* (set: $browser to &quot;Safari&quot;)[[macOS Safari-&gt;Update Browser]]
+* (set: $browser to &quot;Internet Explorer&quot;)[[Microsoft Internet Explorer-&gt;Update Browser]]
 * [[Edge]]
 * [[Other or Unsure]]
 </tw-passagedata>
-<tw-passagedata pid="3" name="Google Chrome" tags="" position="510,598.3333333333334">(set: $browser to &quot;Chrome&quot;) 
-If you are using $browser , then please check &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;whatbrowser.org&lt;/a&gt; to make sure  you are using the latest version of $browser.
+<tw-passagedata pid="3" name="Update Browser" tags="" position="813,595">If you are using $browser , then please check &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;whatbrowser.org&lt;/a&gt; to make sure  you are using the latest version of $browser.
 
 If you are not using the latest version of $browser, please update your browser, and check if the issue still occurs.
 
 If you experience the issue while using the latest version of your chosen browser, and are still having issues, click [[Continue-&gt;Check Incognito/Private Browsing]].</tw-passagedata>
-<tw-passagedata pid="4" name="Firefox" tags="" position="662,600">(set: $browser to &quot;Firefox&quot;) 
-If you are using $browser , then please check &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;whatbrowser.org&lt;/a&gt; to make sure  you are using the latest version of $browser.
-
-If you are not using the latest version of $browser, please update your browser, and check if the issue still occurs.
-
-If you experience the issue while using the latest version of your chosen browser, and are still having issues, click [[Continue-&gt;Check Incognito/Private Browsing]].</tw-passagedata>
-<tw-passagedata pid="5" name="Safari" tags="" position="812,600">(set: $browser to &quot;Safari&quot;) 
-If you are using $browser , then please check &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;whatbrowser.org&lt;/a&gt; to make sure  you are using the latest version of $browser.
-
-If you are not using the latest version of $browser, please update your browser, and check if the issue still occurs.
-
-If you experience the issue while using the latest version of your chosen browser, and are still having issues, click [[Continue-&gt;Check Incognito/Private Browsing]].</tw-passagedata>
-<tw-passagedata pid="6" name="Internet Explorer" tags="" position="961.6666666666667,598.3333333333334">(set: $browser to &quot;IE&quot;) 
-If you are using $browser , then please check &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;whatbrowser.org&lt;/a&gt; to make sure  you are using the latest version of $browser.
-
-If you are not using the latest version of $browser, please update your browser, and check if the issue still occurs.
-
-If you experience the issue while using the latest version of your chosen browser, and are still having issues, click [[Continue-&gt;Check Incognito/Private Browsing]].</tw-passagedata>
-<tw-passagedata pid="7" name="Edge" tags="" position="1110,600">(set: $browser to &quot;Edge&quot;) 
-If you are using $browser , then please check &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;whatbrowser.org&lt;/a&gt; to make sure  you are using the latest version of $browser.
-
-If you are not using the latest version of $browser, please update your browser, and check if the issue still occurs.
-
-If you experience the issue while using the latest version of your chosen browser, and are still having issues, click [[Continue-&gt;Check Incognito/Private Browsing]].</tw-passagedata>
-<tw-passagedata pid="8" name="Check Incognito/Private Browsing" tags="" position="801.6666666666667,906.6666666666667">Since the issue was not resolved by updating $browser, please try &lt;a href=&quot;https://www.wix.com/support/html5/article/opening-your-browser-in-incognitoprivate-browsing-mode&quot;&gt;Opening Your Browser in Incognito/Private Browsing Mode&lt;/a&gt;.
+<tw-passagedata pid="4" name="Check Incognito/Private Browsing" tags="" position="811,740">Since the issue was not resolved by updating $browser, please try &lt;a href=&quot;https://www.wix.com/support/html5/article/opening-your-browser-in-incognitoprivate-browsing-mode&quot;&gt;Opening Your Browser in Incognito/Private Browsing Mode&lt;/a&gt;.
 
 By using Incognito/Private Browsing Mode, your browser will not use any cache or cookies you may have in your local storage. This will help us identify simple cache and cookie issues.
 
@@ -80,13 +57,13 @@ If Incognito/Private Browsing Mode fixes the issue, simply
 &lt;/ol&gt;
 
 If using Incognito/Private Browsing Mode does not resolve the issue, please click [[Continue-&gt;Different Browser]]</tw-passagedata>
-<tw-passagedata pid="9" name="Other or Unsure" tags="" position="1308.3333333333335,503.33333333333337">(set: $browser to &quot;unknown&quot;) 
+<tw-passagedata pid="5" name="Other or Unsure" tags="" position="1003,506">(set: $browser to &quot;unknown&quot;) 
 If you are using an $browser browser , then please check &lt;a href=&quot;https://www.wix.com/support/html5/article/supported-browsers&quot;&gt;our list of Supported Browsers&lt;/a&gt; to make sure you are using a supported browser.
 
 If you are not using a supported browser, please try using a supported browser, and check if the issue still occurs.
 
 [[Start Over-&gt;Start Here]].</tw-passagedata>
-<tw-passagedata pid="10" name="Different Browser" tags="" position="801.6666666666667,1056.6666666666667">Please leave this tutorial window open and use a different, updated browser to load your site and/or editor.
+<tw-passagedata pid="6" name="Different Browser" tags="" position="811,893">Please leave this tutorial window open and use a different, updated browser to load your site and/or editor.
  
 Suggested browsers include:
 * &lt;a href=&quot;https://www.google.com/chrome/browser/desktop/index.html&quot;&gt;Google Chrome&lt;/a&gt;
@@ -95,7 +72,7 @@ Suggested browsers include:
 By using a different browser, we can establish if this is a browser specific issue.
 
 If neither of these browsers work, please click [[Continue-&gt;Check Network]]</tw-passagedata>
-<tw-passagedata pid="11" name="Check Network" tags="" position="801.6666666666667,1206.6666666666667">Sometimes your router, your system’s administrator or your network&#39;s firewall may block the connection. Using another Internet connection will allow you to test if this is the problem.
+<tw-passagedata pid="7" name="Check Network" tags="" position="811,1036">Sometimes your router, your system’s administrator or your network&#39;s firewall may block the connection. Using another Internet connection will allow you to test if this is the problem.
  
 Please try connecting your computer to a different Internet connection,
 then login to your Wix account and try opening your site and/or editor again.
@@ -104,18 +81,19 @@ Did this help?
 [[Yes-&gt;internet connection issue template]]
 [[No-&gt;change computer]]
 [[I don&#39;t have access to a different internet connection-&gt;change computer]]</tw-passagedata>
-<tw-passagedata pid="12" name="internet connection issue template" tags="" position="805,1505">Template</tw-passagedata>
-<tw-passagedata pid="13" name="change computer" tags="" position="951.6666666666667,1358.3333333333335">Try connecting to Wix from a different computer. Please sign in to your Wix account and try opening your site and/or
+<tw-passagedata pid="8" name="internet connection issue template" tags="" position="708,1206">[[new slide]]</tw-passagedata>
+<tw-passagedata pid="9" name="change computer" tags="" position="910,1208">Try connecting to Wix from a different computer. Please sign in to your Wix account and try opening your site and/or
 editor again.
 
 Did this help?
 * [[Yes-&gt;local issue template]]
 * [[No-&gt;non-local issue template]]
 * [[I don&#39;t have a different computer-&gt;possibly local issue template]]</tw-passagedata>
-<tw-passagedata pid="14" name="local issue template" tags="" position="951.6666666666667,1508.3333333333335">Template</tw-passagedata>
-<tw-passagedata pid="15" name="non-local issue template" tags="" position="1100,1508.3333333333335">Template</tw-passagedata>
-<tw-passagedata pid="16" name="possibly local issue template" tags="" position="1306.6666666666667,1506.6666666666667">Template</tw-passagedata>
-<tw-passagedata pid="17" name="Start Over" tags="header" position="1045,363.33333333333337">&lt;u&gt;Wix Troubleshooter&lt;/u&gt; &lt;i&gt;[[Start Over-&gt;Welcome]]&lt;/i&gt;
+<tw-passagedata pid="10" name="local issue template" tags="" position="810,1406">Template</tw-passagedata>
+<tw-passagedata pid="11" name="non-local issue template" tags="" position="1003,1402">Template
+[[new slide]] </tw-passagedata>
+<tw-passagedata pid="12" name="possibly local issue template" tags="" position="1206,1406">Template</tw-passagedata>
+<tw-passagedata pid="13" name="Start Over" tags="header" position="1005,303">&lt;u&gt;Wix Troubleshooter&lt;/u&gt; &lt;i&gt;[[Start Over-&gt;Welcome]]&lt;/i&gt;
 
 </tw-passagedata>
 </tw-storydata>
