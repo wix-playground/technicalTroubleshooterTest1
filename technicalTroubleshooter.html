@@ -24,7 +24,9 @@ tw-passage {
 	text-align:left;
 }
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
-</script><tw-passagedata pid="1" name="Welcome" tags="" position="806,290">&lt;h1 style=&quot;font-size: 29px; font-weight: normal;&quot;&gt;Are you experiencing technical difficulties?&lt;/h1&gt;
+</script><tw-passagedata pid="1" name="Welcome" tags="" position="806,290">&lt;img src=&quot;https://static.wixstatic.com/media/9edcba_1c27a53f223b4ae1b999741855663eb8.png&quot; width=&quot;100%&quot; alt=&quot;dead computer&quot;&gt;
+
+&lt;h1 style=&quot;font-size: 29px; font-weight: normal;&quot;&gt;Are you experiencing technical difficulties?&lt;/h1&gt;
  
 Sometimes issues happen and we appreciate your understanding and patience with us! In order to identify the issue, we would like to narrow down the possibilities until we reach the root cause.
  
@@ -32,14 +34,14 @@ This tutorial will take you through the basic steps for troubleshooting general 
 
 [[Start Here]]
 </tw-passagedata>
-<tw-passagedata pid="2" name="Start Here" tags="" position="813,445">Which Browser are you using?
+<tw-passagedata pid="2" name="Start Here" tags="" position="813,444">Which Browser are you using?
 
-* (set: $browser to &quot;Chrome&quot;)[[Google Chrome-&gt;Update Browser]]
-* (set: $browser to &quot;Firefox&quot;)[[Mozilla Firefox-&gt;Update Browser]]
-* (set: $browser to &quot;Safari&quot;)[[macOS Safari-&gt;Update Browser]]
-* (set: $browser to &quot;Internet Explorer&quot;)[[Microsoft Internet Explorer-&gt;Update Browser]]
-* [[Edge]]
-* [[Other or Unsure]]
+* (link: &quot;Google Chrome&quot;)[(set: $browser to &quot;Chrome&quot;)(goto: &quot;Update Browser&quot;)]
+* (link: &quot;Mozilla Firefox&quot;)[(set: $browser to &quot;Firefox&quot;)(goto: &quot;Update Browser&quot;)]
+* (link: &quot;macOS Safari&quot;)[(set: $browser to &quot;Safari&quot;)(goto: &quot;Update Browser&quot;)]
+* (link: &quot;Microsoft Internet Explorer&quot;)[(set: $browser to &quot;Internet Explorer&quot;)(goto: &quot;Update Browser&quot;)]
+* (set: $browser to &quot;Edge&quot;)[[Microsoft 10 Edge-&gt;Update Browser]]
+* (set: $browser to &quot;other&quot;)[[Other or Unsure]]
 </tw-passagedata>
 <tw-passagedata pid="3" name="Update Browser" tags="" position="813,595">If you are using $browser , then please check &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;whatbrowser.org&lt;/a&gt; to make sure  you are using the latest version of $browser.
 
