@@ -23,147 +23,169 @@ tw-passage {
 	color:rgba(54,54,54,1); 
 	text-align:left;
 }
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 </script><tw-passagedata pid="1" name="Welcome" tags="" position="806,290">&lt;img src=&quot;https://static.wixstatic.com/media/9edcba_1c27a53f223b4ae1b999741855663eb8.png&quot; width=&quot;100%&quot; alt=&quot;dead computer&quot;&gt;
 
-&lt;h1 style=&quot;font-size: 29px; font-weight: normal;&quot;&gt;¿Estás experimentando dificultades técnicas?
+&lt;h1 style=&quot;font-size: 29px; font-weight: normal;&quot;&gt;Вы столкнулись с техническими проблемами?
 &lt;/h1&gt;
  
-¡A veces, los inconvenientes y/o errores ocurren. Apreciamos tu comprensión y paciencia con nosotros al resolverlos! Para poder identificar el inconveniente, nos gustaría reducir las posibilidades hasta llegar a la raíz del mismo.
+Иногда ошибки случаются, и мы благодарим вас за терпение и понимание. Для того, чтобы определить, в чем именно состоит проблема, нам нужно максимально сузить круг причин ее возникновения.
  
-Este tutorial te guiará, a través de unos pasos básicos para solucionar problemas generales que puedan surgir.
+В этом руководстве описаны все базовые шаги по устранению неполадок.
 
-[[Comienza Aqui-&gt;Chose Browser]]
+[[НАЧАТЬ-&gt;Chose Browser]]
 </tw-passagedata>
-<tw-passagedata pid="2" name="Chose Browser" tags="" position="808,452">¿Qué navegador estás usando?
+<tw-passagedata pid="2" name="Chose Browser" tags="" position="808,452">Какой браузер вы используете?
 
 * (link: &quot;Google Chrome&quot;)[(set: $browser to &quot;Chrome&quot;)(goto: &quot;Updated Browser&quot;)]
 * (link: &quot;Mozilla Firefox&quot;)[(set: $browser to &quot;Firefox&quot;)(goto: &quot;Updated Browser&quot;)]
-* (link: &quot;macOS Safari&quot;)[(set: $browser to &quot;Safari&quot;)(goto: &quot;Updated Browser&quot;)]
+* (link: &quot;Safari&quot;)[(set: $browser to &quot;Safari&quot;)(goto: &quot;Updated Browser&quot;)]
 * (link: &quot;Microsoft Internet Explorer&quot;)[(set: $browser to &quot;Internet Explorer&quot;)(goto: &quot;Updated Browser&quot;)]
 * (link: &quot;Microsoft 10 Edge&quot;)[(set: $browser to &quot;Edge&quot;)(goto: &quot;Updated Browser&quot;)]
-* (link: &quot;Other Browser or Unsure which browser&quot;)[(set: $browser to &quot;other&quot;)(goto: &quot;Other or Unsure which Browser&quot;)]</tw-passagedata>
-<tw-passagedata pid="3" name="Updated Browser" tags="" position="813,594">¿Está actualizado tu navegador de $browser a la versión más reciente?
+* (link: &quot;Другой браузер&quot;)[(set: $browser to &quot;other&quot;)(goto: &quot;Other or Unsure which Browser&quot;)]</tw-passagedata>
+<tw-passagedata pid="3" name="Updated Browser" tags="" position="813,593">Для работы с HTML5 очень важно обновить браузер до самой последней его версии
 
-Para instrucciones sobre cómo revisar la versión del navegador $browser, por favor haz &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;clic aqui&lt;/a&gt;.
+Ваш $browser обновлен?
+Чтобы узнать версию вашего браузера $browser, пожалуйста, нажмите &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;здесь&lt;/a&gt;.
 
-Si aún tienes problemas, por favor haz clic en 
- [[CONTINUAR-&gt;Checked Incognito/Private Browsing]].</tw-passagedata>
-<tw-passagedata pid="4" name="Checked Incognito/Private Browsing" tags="" position="811,740">Este problema puede ser causado por una extensión instalada en tu navegador. Por favor, abre $browser en modo de “Navegador Incógnito&quot; para ver si el error persiste.
+Если проблема сохранилась, нажмите [[ПРОДОЛЖИТЬ-&gt;Checked Incognito/Private Browsing]].</tw-passagedata>
+<tw-passagedata pid="4" name="Checked Incognito/Private Browsing" tags="" position="811,741">Причиной для возникновения проблемы может быть расширение, установленное на вашем браузере. Пожалуйста, откройте $browser в режиме инкогнито и проверьте, сохранилась ли проблема.
 
-Puedes también usar el atajo: CTRL+SHIFT+N
+Для того, чтобы открыть $browser в режиме инкогнито
+Зайдите в главное меню в $browser, затем нажмите на значок Настройки, в выпадающем списке выберите &quot;Перейти в режим инкогнито&quot;.
+Вы также можете использовать сочетание клавиш: CTRL+SHIFT+N
 
-¿Fue útil?
-[[si-&gt;extension issue?]].
-[[no-&gt;Used a Different Browser]]</tw-passagedata>
-<tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,453">Please check &lt;a href=&quot;https://www.wix.com/support/html5/article/supported-browsers&quot;&gt;our list of Supported Browsers&lt;/a&gt; to make sure you are using a supported browser.
+Это помогло?
 
-If you are not using a supported browser, please try using a supported browser, and check if the issue still occurs.
+[[ДА-&gt;extension issue?]]
+[[НЕТ-&gt;Used a Different Browser]]</tw-passagedata>
+<tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,454">Пожалуйста ознакомьтесь со списком  &lt;a href=&quot;https://support.wix.com/ru/article/какие-браузеры-совместимы-с-wix&quot;&gt;совместимых браузеров&lt;/a&gt;.
 
-[[Start Over-&gt;Chose Browser]].</tw-passagedata>
-<tw-passagedata pid="6" name="Used a Different Browser" tags="" position="811,892">Por favor deja esta ventana del tutorial abierta y utiliza una ventana diferente de un navegador actualizado para cargar tu página web/editor.
+Если вы используете не поддерживаемый браузер, пожалуйста, попробуйте проверить существует ли проблема в одном из совместимых браузеров.
+
+[[В начало -&gt;Chose Browser]].</tw-passagedata>
+<tw-passagedata pid="6" name="Used a Different Browser" tags="" position="811,892">Пожалуйста, оставьте окно этого руководства открытым и воспользуйтесь другим браузером, обновленным до последней версии, для загрузки вашего редактора и/или сайта.
  
-Navegadores recomendados: 
+Рекомендуемые браузеры:
 (unless: $browser is &quot;Chrome&quot;)[* &lt;a href=&quot;https://www.google.com/chrome/browser/desktop/index.html&quot;&gt;Google Chrome&lt;/a&gt;]
 (unless: $browser is &quot;Firefox&quot;)[* &lt;a href=&quot;https://www.getfirefox.com&quot;&gt;Firefox&lt;/a&gt;]
 
-¿Ocurre también el error en otros navegadores? [[Continuar-&gt;Checked Network issues]]</tw-passagedata>
-<tw-passagedata pid="7" name="Checked Network issues" tags="" position="811,1036">Hay veces que tu router, el administrador del sistema o el firewall de la red de internet puede bloquear la conexión o crear conflictos. Al usar una conexión de internet diferente puedes resolver el problema.
+Проблема сохранилась и в другом браузере? 
+[[ПРОДОЛЖИТЬ-&gt;Checked Network issues]]</tw-passagedata>
+<tw-passagedata pid="7" name="Checked Network issues" tags="" position="811,1037">
+Иногда ваш роутер, администратор сети или файервол могут блокировать соединение. Использование другого интернет-соединения поможет вам проверить, в этом ли источник проблемы.
  
-Por favor intenta conectar tu computadora a otra red de conexión a internet,
-luego, incia sesión en tu cuenta de Wix y prueba abrir tu sitio web y/o el editor neuvamente
+Пожалуйста, попробуйте подключиться, используя другое интернет-соединение, затем войдите в ваш аккаунт Wix и попробуйте открыть сайт и/или редактор снова.
 
-¿Fue Útil?
-[[Si-&gt;internet connection issue template]]
-[[No-&gt;changed computer?]]
-[[No tengo acceso a otra red de internet-&gt;changed computer?]]</tw-passagedata>
-<tw-passagedata pid="8" name="internet connection issue template" tags="" position="501,1403">Parece que el problema que estás experimentando está relacionado con tu conexión a internet.
+Помогло?
+[[ДА-&gt;internet connection issue template]]
+[[НЕТ-&gt;changed computer?]]
+[[У меня нет возможности использовать другое интернет-соединение-&gt;changed computer?]]</tw-passagedata>
+<tw-passagedata pid="8" name="internet connection issue template" tags="" position="472,1383">Кажется, ваша проблема связана с интернет-соединением.
+
+Для того, чтобы мы смогли помочь вам в решении этой проблемы, пожалуйста, пришлите нам информацию о вашей проблеме:
+
+Я прошел все шаги по устранению технических неполадок. Проблема, с которой я столкнулся, связана с интернет-соединением.
+
+Ответьте пожалуйста на следующие вопросы:
+
+1. С какой именно проблемой вы столкнулись?
  
-Para poder investigar y ayudarte a resolverlo, por favor envía un ticket al foro y asegúrate de incluir la siguiente información:  
-He realizado los pasos del tutorial interactivo para solucionar problemas generales. El error que estoy experimentando está relacionado con mi conexión a internet.
+2. Какие браузеры и их версии вы использовали при тестировании?
  
-Adicionalmente, por favor envíanos la siguiente información:
+3. Какие программы интернет-безопасности вы используете (антивирус, файервол и т.п)?
+
+Пожалуйста, пришлите нам полный &lt;a href=&quot;https://support.wix.com/ru/article/%D0%BA%D0%B0%D0%BA-%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C-%D1%81%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82-%D0%B2-%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81-%D0%BD%D0%B0-%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5&quot; target=&quot;_blank&quot;&gt;скриншот&lt;/a&gt; вашего экрана, на котором мы сможем увидеть проблему.
+
+Для того, чтобы задать нам вопрос нажмите &lt;a href=&quot;https://support.wix.com/ru/contact&quot; target=&quot;_blank&quot;&gt;здесь&lt;/a&gt;.
+
+
  
-1. La descripción detallada del problema que estás experimentando.
- 
-2. Los diferentes navegadores que probaste, por favor incluye la versión de dicho navegador.
- 
-3. Cualquier programa de seguridad de internet que tienes instalado en tu computadora (antivirus, firewall, etc.).
- 
-4. Una captura de pantalla del problema, si es posible tomarla. Para ver instrucciones sobre cómo tomar una captura de pantalla, por favor usa [[clic aqui-&gt;Screenshot please]] 
 
 (history:)</tw-passagedata>
-<tw-passagedata pid="9" name="changed computer?" tags="" position="910,1208">Intenta conectarte a Wix desde otra computadora. Por favor, inicia sesión en tu cuenta de Wix e intenta abrir el editor o tu sitio web nuevamente.
+<tw-passagedata pid="9" name="changed computer?" tags="" position="910,1207">Попробуйте зайти на Wix с другого компьютера. 
+Пожалуйста, зайдите в ваш аккаунт Wix и попробуйте открыть сайт и/или редактор снова.
 
-¿Fue Útil?
-* [[si-&gt;local issue template]]
-* [[no-&gt;non-local issue template]]
-* [[No tengo otra computadora-&gt;possibly local issue template]]</tw-passagedata>
-<tw-passagedata pid="10" name="local issue template" tags="" position="800,1403">Parece que el problema que estás experimentando es un error local en tu computadora.
+Помогло?
+* [[ДА-&gt;local issue template]]
+* [[НЕТ -&gt;non-local issue template]]
+* [[У меня нет возможности использовать другой компьютер-&gt;possibly local issue template]]</tw-passagedata>
+<tw-passagedata pid="10" name="local issue template" tags="" position="802,1405">Кажется, вы столкнулись с локальной проблемой.
  
-Para poder investigar y ayudarte a resolver, por favor envía un ticket al foro y asegúrate de incluir la siguiente información:  
-He realizado los pasos del tutorial interactivo para solucionar problemas generales. El error que estoy experimentando no ocurre en el modo de &quot;navegador incógnito&quot; pero persiste incluso después deshabilitar las extensiones del navegador y borra la caché e historial.
+Для того, чтобы мы смогли помочь вам, пожалуйста, пришлите нам информацию о вашей проблеме и начните ваше сообщения со следующих слов:
+
+Я прошел все шаги по устранению технических неполадок. Проблема, с которой я столкнулся, не возникает при использовании браузера в режиме инкогнито, но сохраняется после того, как я очистил историю браузера и отключил расширения.
+
+Ответьте пожалуйста на следующие вопросы:
  
-Adicionalmente, por favor envíanos la siguiente información:
+1. С какой именно проблемой вы столкнулись?
  
-1. La descripción detallada del problema que estás experimentando.
+2. Какие браузеры и их версии вы использовали при тестировании?
  
-2. Los diferentes navegadores que probaste, por favor incluye la versión de dicho navegador.
+3. Какие программы интернет-безопасности вы используете (антивирус, файервол и т.п)?
+
+Пожалуйста, пришлите нам полный &lt;a href=&quot;https://support.wix.com/ru/article/%D0%BA%D0%B0%D0%BA-%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C-%D1%81%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82-%D0%B2-%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81-%D0%BD%D0%B0-%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5&quot;target=&quot;_blank&quot;&gt;скриншот&lt;/a&gt; вашего экрана, на котором мы сможем увидеть проблему.
+
+Для того, чтобы задать нам вопрос нажмите &lt;a href=&quot;https://support.wix.com/ru/contact&quot; target=&quot;_blank&quot;&gt;здесь&lt;/a&gt;.
+
+(history:)</tw-passagedata>
+<tw-passagedata pid="11" name="non-local issue template" tags="" position="1004,1401">Кажется, вы столкнулись с общей проблемой.
  
-3. Cualquier programa de seguridad de internet que tienes instalado en tu computadora (antivirus, firewall, etc.).
+Для того, чтобы мы смогли помочь вам в решении этой проблемы, пожалуйста, пришлите нам информацию о вашей проблеме и начните ваше сообщения со следующих слов:
+
+Я прошел все шаги по устранению технических неполадок. Проблема, с которой я столкнулся, не возникает при использовании браузера в режиме инкогнито, но сохраняется после того, как я очистил историю браузера и отключил расширения.
  
-4. Una captura de pantalla del problema, si es posible tomarla. Para ver instrucciones sobre cómo tomar una captura de pantalla, por favor usa [[clic aqui-&gt;Screenshot please]] </tw-passagedata>
-<tw-passagedata pid="11" name="non-local issue template" tags="" position="1003,1402">Para poder investigar y ayudarte a resolver, por favor envía un ticket al equipo Wix haciendo &lt;a href=&quot;https://support.wix.com/es/submit-a-ticket&quot;&gt;clic aquí&lt;/a&gt; y asegúrate de incluir la siguiente información.
+Ответьте пожалуйста на следующие вопросы:
+
+1. С какой именно проблемой вы столкнулись?
  
-He realizado los pasos del tutorial interactivo para solucionar problemas generales. El error que estoy experimentando no sucede usando el navegador en modo &quot;incógnito&quot; y persiste incluso después de deshabilitar las extensiones del navegador y borrar la caché e historial.
+2. Какие браузеры и их версии вы использовали при тестировании?
  
-Adicionalmente, por favor envíanos la siguiente información:
+3. Какие программы интернет-безопасности вы используете (антивирус, файервол и т.п)?
+
+Пожалуйста, пришлите нам полный &lt;a href=&quot;https://support.wix.com/ru/article/%D0%BA%D0%B0%D0%BA-%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C-%D1%81%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82-%D0%B2-%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81-%D0%BD%D0%B0-%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5&quot; target=&quot;_blank&quot;&gt;скриншот&lt;/a&gt; вашего экрана, на котором мы сможем увидеть проблему.
+
+Для того, чтобы задать нам вопрос нажмите &lt;a href=&quot;https://support.wix.com/ru/contact&quot; target=&quot;_blank&quot;&gt;здесь&lt;/a&gt;.
+
+(history:)</tw-passagedata>
+<tw-passagedata pid="12" name="possibly local issue template" tags="" position="1208,1406">Кажется, вы столкнулись с общей проблемой.
  
-1. La descripción detallada del problema que estás experimentando.
+Для того, чтобы мы смогли помочь вам в решении этой проблемы, пожалуйста, пришлите нам информацию о вашей проблеме и начните ваше сообщения со следующих слов:
+
+Я прошел все шаги по устранению технических неполадок. Проблема, с которой я столкнулся, не возникает при использовании браузера в режиме инкогнито, но сохраняется после того, как я очистил историю браузера и отключил расширения.
  
-2. Los diferentes navegadores que probaste, por favor incluye la versión de dicho navegador.
+Ответьте пожалуйста на следующие вопросы:
+
+1. С какой именно проблемой вы столкнулись?
  
-3. Cualquier programa de seguridad de internet que tienes instalado en tu computadora (antivirus, firewall, etc.).
+2. Какие браузеры и их версии вы использовали при тестировании?
  
-4. Una captura de pantalla del problema, si es posible tomarla. Para ver instrucciones sobre cómo tomar una captura de pantalla, por favor usa [[este enlace-&gt;Screenshot please]] 
+3. Какие программы интернет-безопасности вы используете (антивирус, файервол и т.п)?
+
+Пожалуйста, пришлите нам полный &lt;a href=&quot;https://support.wix.com/ru/article/%D0%BA%D0%B0%D0%BA-%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C-%D1%81%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82-%D0%B2-%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81-%D0%BD%D0%B0-%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5&quot; target=&quot;_blank&quot;&gt;скриншот&lt;/a&gt; вашего экрана, на котором мы сможем увидеть проблему.
+
+Для того, чтобы задать нам вопрос нажмите &lt;a href=&quot;https://support.wix.com/ru/contact&quot; target=&quot;_blank&quot;&gt;здесь&lt;/a&gt;.
+
+(history:)</tw-passagedata>
+<tw-passagedata pid="13" name="Start Over" tags="header" position="1006,290">Интерактивное руководство по устранению неполадок 
+[[В начало-&gt;Welcome]]
+
 </tw-passagedata>
-<tw-passagedata pid="12" name="possibly local issue template" tags="" position="1208,1406">Para poder investigar y ayudarte a resolver, por favor envía un ticket al equipo Wix haciendo &lt;a href=&quot;https://support.wix.com/es/submit-a-ticket&quot;&gt;clic aquí&lt;/a&gt; y asegúrate de incluir la siguiente información.
+<tw-passagedata pid="14" name="extension issue?" tags="" position="1005,741">Кажется, одно из расширений или дополнений вашего браузера является причиной возникновения проблемы.
  
-He realizado los pasos del tutorial interactivo para solucionar problemas generales. El error que estoy experimentando no sucede usando el navegador en modo &quot;incógnito&quot; y persiste incluso después de deshabilitar las extensiones del navegador y borrar la caché e historial.
+Попробуйте отключить по очереди все расширения, которые были установлены, чтобы определить, какое из них является источником проблемы. 
  
-Adicionalmente, por favor envíanos la siguiente información:
- 
-1. La descripción detallada del problema que estás experimentando.
- 
-2. Los diferentes navegadores que probaste, por favor incluye la versión de dicho navegador.
- 
-3. Cualquier programa de seguridad de internet que tienes instalado en tu computadora (antivirus, firewall, etc.).
- 
-4. Una captura de pantalla del problema, si es posible tomarla. Para ver instrucciones sobre cómo tomar una captura de pantalla, por favor usa [[este enlace-&gt;Screenshot please]].</tw-passagedata>
-<tw-passagedata pid="13" name="Start Over" tags="header" position="1005,291">&lt;u&gt;Wix Troubleshooter&lt;/u&gt; &lt;i&gt;[[Start Over-&gt;Welcome]]&lt;/i&gt;
+Для получения инструкций по установке и управлению расширениями &lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769&quot;&gt;нажмите здесь.&lt;/a&gt;.
 
+Если проблема сохранилась, нажмите [[ПРОДОЛЖИТЬ-&gt;cacheCookies]]
 </tw-passagedata>
-<tw-passagedata pid="14" name="extension issue?" tags="" position="1005,741">Parece que una de tus extensiones o &quot;add-ons&quot; es el que causa este problema.
- 
-Por favor intenta deshabilitar las extensiones o &quot;add-ons&quot;, una a la vez, así podrás determinar cuál está causando el problema.
- 
-Para instrucciones sobre cómo deshabilitar las extensiones o &quot;add-ons&quot; &lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769&quot;&gt;por favor haz clic aquí.&lt;/a&gt;.
+<tw-passagedata pid="15" name="cacheCookies" tags="" position="1228,1099">Откройте $browser и очистите историю.
 
-Si aún tienes dificultades, por favor haz clic en [[CONTINUAR-&gt;cacheCookies]]
-</tw-passagedata>
-<tw-passagedata pid="15" name="Screenshot please" tags="" position="1003,1552">Para agregando una captura de pantalla a tu ticket
- &lt;a href=&quot;https://support.wix.com/es/article/agregando-una-captura-de-pantalla-a-tu-ticket&quot;&gt;clic aqui&lt;/a&gt;.
+Нажмите &lt;a href=&#39;https://support.wix.com/ru/article/limpiando-la-cach%C3%A9-de-tu-navegador&#39;&gt;здесь&lt;/a&gt;, чтобы узнать как очистить историю браузера.
 
-(set: $history to (history:))
-(set: $previous to $history&#39;s last)
-
-[[Continuar-&gt;$previous]]</tw-passagedata>
-<tw-passagedata pid="16" name="cacheCookies" tags="" position="1228,1099">Abre $browser, elimina la caché y las cookies del navegador.
-
-&lt;a href=&#39;https://support.wix.com/es/article/limpiando-la-cach%C3%A9-de-tu-navegador&#39;&gt;Limpiando la caché de tu navegador
-&lt;/a&gt;
-
-Si aún estás experimentando dificultades, por favor haz clic en [[CONTINUAR-&gt;local issue template]]
+Если проблема сохранится, нажмите [[ПРОДОЛЖИТЬ-&gt;local issue template]]
 </tw-passagedata>
 </tw-storydata>
 
