@@ -23,19 +23,20 @@ tw-passage {
 	color:rgba(54,54,54,1); 
 	text-align:left;
 }
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 </script><tw-passagedata pid="1" name="Welcome" tags="" position="806,290">&lt;img src=&quot;https://static.wixstatic.com/media/9edcba_1c27a53f223b4ae1b999741855663eb8.png&quot; width=&quot;100%&quot; alt=&quot;dead computer&quot;&gt;
 
-&lt;h1 style=&quot;font-size: 29px; font-weight: normal;&quot;&gt;¿Estás experimentando dificultades técnicas?
-&lt;/h1&gt;
+&lt;h1 style=&quot;font-size: 29px; font-weight: normal;&quot;&gt;기술적인 문제가 발생했나요?&lt;/h1&gt;
  
-¡A veces, los inconvenientes y/o errores ocurren. Apreciamos tu comprensión y paciencia con nosotros al resolverlos! Para poder identificar el inconveniente, nos gustaría reducir las posibilidades hasta llegar a la raíz del mismo.
+때로는 기술적인 문제가 일어날 수 있으며, 이에 대한 여러분의 인내와 이해심에 대해 무한한 감사드립니다. 문제를 정확히 파악하려면, 문제의 원인을 발견할 때까지 모든 가능성을 좁혀가야 합니다.
  
-Este tutorial te guiará, a través de unos pasos básicos para solucionar problemas generales que puedan surgir.
+이 지침서에서는 발생할 수 있는 일반적인 문제를 해결하기 위한 기본 단계로 여러분을 안내합니다. 
 
-[[Comienza Aqui-&gt;Chose Browser]]
+[[시작하기-&gt;Chose Browser]]
 </tw-passagedata>
-<tw-passagedata pid="2" name="Chose Browser" tags="" position="808,452">¿Qué navegador estás usando?
+<tw-passagedata pid="2" name="Chose Browser" tags="" position="808,452">사용중인 브라우저는 무엇인가요?
 
 * (link: &quot;Google Chrome&quot;)[(set: $browser to &quot;Chrome&quot;)(goto: &quot;Updated Browser&quot;)]
 * (link: &quot;Mozilla Firefox&quot;)[(set: $browser to &quot;Firefox&quot;)(goto: &quot;Updated Browser&quot;)]
@@ -43,19 +44,22 @@ Este tutorial te guiará, a través de unos pasos básicos para solucionar probl
 * (link: &quot;Microsoft Internet Explorer&quot;)[(set: $browser to &quot;Internet Explorer&quot;)(goto: &quot;Updated Browser&quot;)]
 * (link: &quot;Microsoft 10 Edge&quot;)[(set: $browser to &quot;Edge&quot;)(goto: &quot;Updated Browser&quot;)]
 * (link: &quot;Other Browser or Unsure which browser&quot;)[(set: $browser to &quot;other&quot;)(goto: &quot;Other or Unsure which Browser&quot;)]</tw-passagedata>
-<tw-passagedata pid="3" name="Updated Browser" tags="" position="813,594">¿Está actualizado tu navegador de $browser a la versión más reciente?
+<tw-passagedata pid="3" name="Updated Browser" tags="" position="813,594">가장 최신 버전의 $browser 브라우저를 사용하고 있나요?
 
-Para instrucciones sobre cómo revisar la versión del navegador $browser, por favor haz &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;clic aqui&lt;/a&gt;.
+사용중인 $browser 브라우저 버전을 확인하는 방법에 대한 자세한 내용은 &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;여기&lt;/a&gt; 를 클릭해 참고하세요.
 
-Si aún tienes problemas, por favor haz clic en 
- [[CONTINUAR-&gt;Checked Incognito/Private Browsing]].</tw-passagedata>
-<tw-passagedata pid="4" name="Checked Incognito/Private Browsing" tags="" position="811,740">Este problema puede ser causado por una extensión instalada en tu navegador. Por favor, abre $browser en modo de “Navegador Incógnito&quot; para ver si el error persiste.
+아직도 문제가 지속된다면, [[계속하기-&gt;Checked Incognito/Private Browsing]] 를 클릭하세요</tw-passagedata>
+<tw-passagedata pid="4" name="Checked Incognito/Private Browsing" tags="" position="811,740">비공개 또는 시크릿 브라우징 모드로 브라우저를 열 경우에는 내 사이트에서 발생하는 특정 이슈가 내 브라우저에 국한된 오류인지 확인하는데 도움을 줍니다.
 
-Puedes también usar el atajo: CTRL+SHIFT+N
+비공개 또는 시크릿 브라우징 모드를 열려면:
+(if: $browser is &quot;Chrome&quot;)[(print: &quot;Ctrl + Shift + N&quot;)]
+(if: $browser is &quot;Firefox&quot;)[(print: &quot;Ctrl + Shift + P&quot;)]
+(if: $browser is &quot;Internet Explorer&quot;)[(print: &quot;Ctrl + Shift + P&quot;)]
+(if: $browser is &quot;Safari&quot;)[(print: &quot;Shift + Command + N&quot;)]
 
-¿Fue útil?
-[[si-&gt;extension issue?]].
-[[no-&gt;Used a Different Browser]]</tw-passagedata>
+도움이 되셨나요?
+[[예-&gt;extension issue?]].
+[[아니-&gt;Used a Different Browser]]</tw-passagedata>
 <tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,453">Please check &lt;a href=&quot;https://www.wix.com/support/html5/article/supported-browsers&quot;&gt;our list of Supported Browsers&lt;/a&gt; to make sure you are using a supported browser.
 
 If you are not using a supported browser, please try using a supported browser, and check if the issue still occurs.
@@ -140,7 +144,7 @@ Adicionalmente, por favor envíanos la siguiente información:
 3. Cualquier programa de seguridad de internet que tienes instalado en tu computadora (antivirus, firewall, etc.).
  
 4. Una captura de pantalla del problema, si es posible tomarla. Para ver instrucciones sobre cómo tomar una captura de pantalla, por favor usa [[este enlace-&gt;Screenshot please]].</tw-passagedata>
-<tw-passagedata pid="13" name="Start Over" tags="header" position="1005,291">&lt;u&gt;Wix Troubleshooter&lt;/u&gt; &lt;i&gt;[[Start Over-&gt;Welcome]]&lt;/i&gt;
+<tw-passagedata pid="13" name="Start Over" tags="header" position="1005,291">&lt;u&gt;Wix Troubleshooter&lt;/u&gt; &lt;i&gt;[[다시 시작하기-&gt;Welcome]]&lt;/i&gt;
 
 </tw-passagedata>
 <tw-passagedata pid="14" name="extension issue?" tags="" position="1005,741">Parece que una de tus extensiones o &quot;add-ons&quot; es el que causa este problema.
