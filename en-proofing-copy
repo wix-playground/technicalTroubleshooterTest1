@@ -1,0 +1,142 @@
+en-technicalTroubleshooter
+
+<img src="https://static.wixstatic.com/media/9edcba_1c27a53f223b4ae1b999741855663eb8.png" width="100%" alt="dead computer">
+
+<h1 style="font-size: 29px; font-weight: normal;">Are you experiencing technical difficulties?</h1>
+ 
+Sometimes issues happen and we appreciate your understanding and patience with us! In order to identify the issue, we would like to narrow down the possibilities until we reach the root cause.
+ 
+This tutorial will take you through the basic steps for troubleshooting general issues that you may encounter.
+
+[[Continue->Chose Browser]]
+Which Browser are you using?
+
+* (link: "Google Chrome")[(set: $browser to "Chrome")(goto: "Updated Browser")]
+* (link: "Mozilla Firefox")[(set: $browser to "Firefox")(goto: "Updated Browser")]
+* (link: "macOS Safari")[(set: $browser to "Safari")(goto: "Updated Browser")]
+* (link: "Microsoft Internet Explorer")[(set: $browser to "Internet Explorer")(goto: "Updated Browser")]
+* (link: "Microsoft 10 Edge")[(set: $browser to "Edge")(goto: "Updated Browser")]
+* (link: "Other Browser or Unsure which browser")[(set: $browser to "other")(goto: "Other or Unsure which Browser")]
+If you are using $browser , then please check <a href="https://whatbrowser.org/">whatbrowser.org</a> to make sure  you are using the latest version of $browser.
+
+If you are not using the latest version of $browser, please update your browser, and check if the issue still occurs.
+
+If you experience the issue while using the latest version of your chosen browser, and are still having issues, click [[Continue->Checked Incognito/Private Browsing]].
+Since the issue was not resolved by updating $browser, please try <a href="https://www.wix.com/support/html5/article/opening-your-browser-in-incognitoprivate-browsing-mode">Opening Your Browser in Incognito/Private Browsing Mode</a>.
+
+By using Incognito/Private Browsing Mode, your browser will not use any cache or cookies you may have in your local storage. This will help us identify simple cache and cookie issues.
+
+If Incognito/Private Browsing Mode fixes the issue, simply
+<ol>
+<li><a href="https://www.wix.com/support/html5/article/clearing-wix-cookies">Clear your browser's cookies</a>
+<li><a href="https://www.wix.com/support/html5/article/clearing-your-browsers-cache">Clear your browser's cache</a>
+</ol>
+
+If clearing your cookies and cache does not fix the issue, but incognito/private browsing mode does fix the issue [[click here->extension issue?]].
+
+If using Incognito/Private Browsing Mode does not resolve the issue, please click [[Continue->Used a Different Browser]]
+Please check <a href="https://www.wix.com/support/html5/article/supported-browsers">our list of Supported Browsers</a> to make sure you are using a supported browser.
+
+If you are not using a supported browser, please try using a supported browser, and check if the issue still occurs.
+
+[[Start Over->Chose Browser]].
+Please leave this tutorial window open and use a different, updated browser to load your site and/or editor.
+ 
+Suggested browsers include:
+(unless: $browser is "Chrome")[* <a href="https://www.google.com/chrome/browser/desktop/index.html">Google Chrome</a>]
+(unless: $browser is "Firefox")[* <a href="https://www.getfirefox.com">Firefox</a>]
+
+By using a different browser, we can establish if this is a browser specific issue.
+
+If neither of these browsers work, please click [[Continue->Checked Network issues]]
+Sometimes your router, your system’s administrator or your network's firewall may block the connection. Using another Internet connection will allow you to test if this is the problem.
+ 
+Please try connecting your computer to a different Internet connection,
+then login to your Wix account and try opening your site and/or editor again.
+
+Did this help?
+[[Yes->internet connection issue template]]
+[[No->changed computer?]]
+[[I don't have access to a different internet connection->changed computer?]]
+It seems that the issue you are experiencing is related to your Internet connection.
+ 
+In order for us to investigate and assist you, please submit a ticket here and make sure to include the following information:
+
+I have gone through the steps in the General Troubleshooter. The issue that
+I have been experiencing is related to my Internet connection.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of
+the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here->Screenshot please]] 
+
+(history:)
+Try connecting to Wix from a different computer. Please sign in to your Wix account and try opening your site and/or
+editor again.
+
+Did this help?
+* [[Yes->local issue template]]
+* [[No->non-local issue template]]
+* [[I don't have a different computer->possibly local issue template]]
+It seems that the issue you are experiencing is a local issue on your computer.
+ 
+In order for us to investigate and assist you, please submit a ticket here and make sure to include the following information: 
+
+I have gone through the steps in the General Troubleshooter. The issue does not occur in private browsing, yet it persists after disabling add-ons and clearing cache.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here->Screenshot please]] 
+In order for us to investigate and assist you, please submit a ticket <a href="http://www.wix.com/support/html5/submit-a-ticket">HERE</a> and make sure to include the following information:
+ 
+I have gone through the steps in the General Troubleshooter. The issue 
+occurs in private browsing, and persists after disabling add-ons and
+clearing cache.
+ 
+In addition, please provide us with the following details:
+1. A detailed description of the issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here->Screenshot please]] 
+In order for us to investigate and assist you, please submit a ticket HERE and make sure to include the following information:
+ 
+I have gone through the steps in the General Troubleshooter. The issue 
+occurs in private browsing, and persists after disabling add-ons and
+clearing cache.
+ 
+In addition, please provide us with the following details:
+1. The exact issue you are experiencing.
+ 
+2. The different browsers that you have tried - please include the version of the browser
+ 
+3. Any Internet security programs that you have installed on your computer (antivirus, firewall, etc.).
+ 
+4. A full screen screenshot of the problem. For instructions on how to take a screenshot, please [[click here->Screenshot please]] 
+<u>Wix Troubleshooter</u> <i>[[Start Over->Welcome]]</i>
+
+One of your browser add-ons or extensions may be the source of the issue.
+
+Please try to disable your browser add-ons\extensions, one at a time, to determine which one is causing the issue.
+
+(if: $browser is "Chrome")[For instructions on how to disable add-ons in Google Chrome, please <a href="https://support.google.com/chrome_webstore/answer/2664769">click here</a>.]
+For instructions on how to take a screenshot, click <a href="https://www.wix.com/support/html5/article/adding-a-screenshot-to-a-ticket">this link to our help center article</a>.
+
+If you need to describe a series of steps, please record a screencast. For instructions from our help center, click <a href="https://www.wix.com/support/html5/article/adding-a-video-to-a-ticket">here</a>
+
+(set: $history to (history:))
+(set: $previous to $history's last)
+
+[[Go Back->$previous]]
