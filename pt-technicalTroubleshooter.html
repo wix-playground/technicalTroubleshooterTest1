@@ -23,7 +23,9 @@ tw-passage {
 	color:rgba(54,54,54,1); 
 	text-align:left;
 }
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 </script><tw-passagedata pid="1" name="Welcome" tags="" position="806,290">&lt;img src=&quot;https://static.wixstatic.com/media/9edcba_1c27a53f223b4ae1b999741855663eb8.png&quot; width=&quot;100%&quot; alt=&quot;dead computer&quot;&gt;
 
 &lt;h1 style=&quot;font-size: 29px; font-weight: normal;&quot;&gt;Enfrentando dificuldades técnicas?
@@ -45,7 +47,7 @@ Este tutorial lhe guiará pelos passos básicos para solucionar os problemas mai
 * (link: &quot;Microsoft 10 Edge&quot;)[(set: $browser to &quot;Edge&quot;)(goto: &quot;Updated Browser&quot;)]
 * (link: &quot;Other Browser or Unsure which browser&quot;)[(set: $browser to &quot;other&quot;)(goto: &quot;Other or Unsure which Browser&quot;)]</tw-passagedata>
 <tw-passagedata pid="3" name="Updated Browser" tags="" position="813,594">Seu $browser está atualizado?
-Para instruções sobre como saber a versão de seu navegador $browser, &lt;a href=&quot;http://www.whatbrowser.org/intl/pt-BR/&quot;&gt;clique aqui.&lt;/a&gt;.
+Para instruções sobre como saber a versão de seu navegador $browser, &lt;a href=&quot;http://www.whatbrowser.org/intl/pt-BR/&quot;target=&quot;_blank&quot;&gt;clique aqui.&lt;/a&gt;.
 
 Caso ainda enfrente dificuldades, clique em [[CONTINUAR-&gt;Checked Incognito/Private Browsing]].</tw-passagedata>
 <tw-passagedata pid="4" name="Checked Incognito/Private Browsing" tags="" position="811,740">Este problema puede ser causado por una extensión instalada en tu navegador. Por favor, abre $browser en modo de “Navegador Incógnito&quot; para ver si el error persiste.
@@ -55,16 +57,21 @@ Puedes también usar el atajo: CTRL+SHIFT+N
 ¿Fue útil?
 [[si-&gt;extension issue?]].
 [[no-&gt;Used a Different Browser]]</tw-passagedata>
-<tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,453">Please check &lt;a href=&quot;https://www.wix.com/support/html5/article/supported-browsers&quot;&gt;our list of Supported Browsers&lt;/a&gt; to make sure you are using a supported browser.
+<tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1000,453">O Wix é compatível com os seguintes navegadores. 
 
-If you are not using a supported browser, please try using a supported browser, and check if the issue still occurs.
+Google Chrome
+Firefox
+Safari para Mac (versão 8 e acima)
+Internet Explorer (versão 11)
 
-[[Start Over-&gt;Chose Browser]].</tw-passagedata>
+Para fazer o download da versão mais recente de cada navegador, &lt;a href=&quot;https://support.wix.com/pt/article/navegadores-compat%C3%ADveis&quot;target=&quot;_blank&quot;&gt;clique abaixo:&lt;/a&gt;
+
+[[para trás-&gt;Chose Browser]].</tw-passagedata>
 <tw-passagedata pid="6" name="Used a Different Browser" tags="" position="811,892">Por favor deja esta ventana del tutorial abierta y utiliza una ventana diferente de un navegador actualizado para cargar tu página web/editor.
  
 Navegadores recomendados: 
-(unless: $browser is &quot;Chrome&quot;)[* &lt;a href=&quot;https://www.google.com/chrome/browser/desktop/index.html&quot;&gt;Google Chrome&lt;/a&gt;]
-(unless: $browser is &quot;Firefox&quot;)[* &lt;a href=&quot;https://www.getfirefox.com&quot;&gt;Firefox&lt;/a&gt;]
+(unless: $browser is &quot;Chrome&quot;)[* &lt;a href=&quot;https://www.google.com/chrome/browser/desktop/index.html&quot;target=&quot;_blank&quot;&gt;Google Chrome&lt;/a&gt;]
+(unless: $browser is &quot;Firefox&quot;)[* &lt;a href=&quot;https://www.getfirefox.com&quot;target=&quot;_blank&quot;&gt;Firefox&lt;/a&gt;]
 
 ¿Ocurre también el error en otros navegadores? [[Continuar-&gt;Checked Network issues]]</tw-passagedata>
 <tw-passagedata pid="7" name="Checked Network issues" tags="" position="811,1036">Hay veces que tu router, el administrador del sistema o el firewall de la red de internet puede bloquear la conexión o crear conflictos. Al usar una conexión de internet diferente puedes resolver el problema.
@@ -112,7 +119,7 @@ Adicionalmente, por favor envíanos la siguiente información:
 3. Cualquier programa de seguridad de internet que tienes instalado en tu computadora (antivirus, firewall, etc.).
  
 4. Una captura de pantalla del problema, si es posible tomarla. Para ver instrucciones sobre cómo tomar una captura de pantalla, por favor usa [[clic aqui-&gt;Screenshot please]] </tw-passagedata>
-<tw-passagedata pid="11" name="non-local issue template" tags="" position="1003,1402">Para poder investigar y ayudarte a resolver, por favor envía un ticket al equipo Wix haciendo &lt;a href=&quot;https://support.wix.com/es/submit-a-ticket&quot;&gt;clic aquí&lt;/a&gt; y asegúrate de incluir la siguiente información.
+<tw-passagedata pid="11" name="non-local issue template" tags="" position="1003,1402">Para poder investigar y ayudarte a resolver, por favor envía un ticket al equipo Wix haciendo &lt;a href=&quot;https://support.wix.com/pt/submit-a-ticket&quot;target=&quot;_blank&quot;&gt;clic aquí&lt;/a&gt; y asegúrate de incluir la siguiente información.
  
 He realizado los pasos del tutorial interactivo para solucionar problemas generales. El error que estoy experimentando no sucede usando el navegador en modo &quot;incógnito&quot; y persiste incluso después de deshabilitar las extensiones del navegador y borrar la caché e historial.
  
@@ -126,7 +133,7 @@ Adicionalmente, por favor envíanos la siguiente información:
  
 4. Una captura de pantalla del problema, si es posible tomarla. Para ver instrucciones sobre cómo tomar una captura de pantalla, por favor usa [[este enlace-&gt;Screenshot please]] 
 </tw-passagedata>
-<tw-passagedata pid="12" name="possibly local issue template" tags="" position="1208,1406">Para poder investigar y ayudarte a resolver, por favor envía un ticket al equipo Wix haciendo &lt;a href=&quot;https://support.wix.com/es/submit-a-ticket&quot;&gt;clic aquí&lt;/a&gt; y asegúrate de incluir la siguiente información.
+<tw-passagedata pid="12" name="possibly local issue template" tags="" position="1208,1406">Para poder investigar y ayudarte a resolver, por favor envía un ticket al equipo Wix haciendo &lt;a href=&quot;https://support.wix.com/pt/submit-a-ticket&quot;target=&quot;_blank&quot;&gt;clic aquí&lt;/a&gt; y asegúrate de incluir la siguiente información.
  
 He realizado los pasos del tutorial interactivo para solucionar problemas generales. El error que estoy experimentando no sucede usando el navegador en modo &quot;incógnito&quot; y persiste incluso después de deshabilitar las extensiones del navegador y borrar la caché e historial.
  
@@ -142,27 +149,28 @@ Adicionalmente, por favor envíanos la siguiente información:
 <tw-passagedata pid="13" name="Start Over" tags="header" position="1005,291">&lt;u&gt;Wix Troubleshooter&lt;/u&gt; &lt;i&gt;[[Start Over-&gt;Welcome]]&lt;/i&gt;
 
 </tw-passagedata>
-<tw-passagedata pid="14" name="extension issue?" tags="" position="1005,741">Parece que una de tus extensiones o &quot;add-ons&quot; es el que causa este problema.
- 
-Por favor intenta deshabilitar las extensiones o &quot;add-ons&quot;, una a la vez, así podrás determinar cuál está causando el problema.
- 
-Para instrucciones sobre cómo deshabilitar las extensiones o &quot;add-ons&quot; &lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769&quot;&gt;por favor haz clic aquí.&lt;/a&gt;.
+<tw-passagedata pid="14" name="extension issue?" tags="" position="1004,904">Parece que uma das suas extensões ou &quot;add-ons&quot; que está causando esse problema.
+ 
+Por favor, tente desativar extensões ou &quot;add-ons&quot;, um de cada vez, para que você possa determinar o que está causando o problema.
+ 
+Para obter instruções sobre como desativar extensões ou &quot;add-ons&quot; &lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769&quot;target=&quot;_blank&quot;&gt; clique aqui. &lt;/a&gt; .
 
-Si aún tienes dificultades, por favor haz clic en [[CONTINUAR-&gt;cacheCookies]]
-</tw-passagedata>
+Se você ainda tiver dificuldades, por favor clique em [[continuar-&gt;cacheCookies]]</tw-passagedata>
 <tw-passagedata pid="15" name="Screenshot please" tags="" position="1003,1552">Para agregando una captura de pantalla a tu ticket
- &lt;a href=&quot;https://support.wix.com/es/article/agregando-una-captura-de-pantalla-a-tu-ticket&quot;&gt;clic aqui&lt;/a&gt;.
+ &lt;a href=&quot;https://support.wix.com/es/article/agregando-una-captura-de-pantalla-a-tu-ticket&quot;target=&quot;_blank&quot;&gt;clic aqui&lt;/a&gt;.
 
 (set: $history to (history:))
 (set: $previous to $history&#39;s last)
 
 [[Continuar-&gt;$previous]]</tw-passagedata>
-<tw-passagedata pid="16" name="cacheCookies" tags="" position="1228,1099">Abre $browser, elimina la caché y las cookies del navegador.
+<tw-passagedata pid="16" name="cacheCookies" tags="" position="1228,1099">$browser é aberto exclui os biscoitos de cache e navegador.
 
-&lt;a href=&#39;https://support.wix.com/es/article/limpiando-la-cach%C3%A9-de-tu-navegador&#39;&gt;Limpiando la caché de tu navegador
+&lt;a href=&#39;https://support.wix.com/pt/article/limpando-os-cookies-do-wix&#39; target=&quot;_blank&quot;&gt; limpar os cookies do seu navegador
+&lt;/a&gt;
+&lt;a href=&#39;https://support.wix.com/pt/article/limpando-o-cache-do-navegador&#39; target=&quot;_blank&quot;&gt;Limpando o Cache do Navegador
 &lt;/a&gt;
 
-Si aún estás experimentando dificultades, por favor haz clic en [[CONTINUAR-&gt;local issue template]]
+Se você ainda está passando por dificuldades, por favor clique em [[CONTINUAR-&gt;local issue template]]
 </tw-passagedata>
 </tw-storydata>
 
