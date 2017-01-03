@@ -11,10 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="ja-technicalTroubleshooter" startnode="1" creator="Twine" creator-version="2.0.11" ifid="0C57C1FB-99FB-417D-8B30-36A65134EB4F" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
-	width: 100%;
-}
-tw-passage {
+<tw-storydata name="ja-technicalTroubleshooter" startnode="1" creator="Twine" creator-version="2.0.11" ifid="0C57C1FB-99FB-417D-8B30-36A65134EB4F" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story, tw-passage{
 	width: 100%; 
 	padding: 2em; 
 	margin: auto; 
@@ -24,18 +21,20 @@ tw-passage {
 	text-align:left;
 }
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
-</script><tw-passagedata pid="1" name="Welcome" tags="" position="806,290">&lt;img src=&quot;https://static.wixstatic.com/media/9edcba_1c27a53f223b4ae1b999741855663eb8.png&quot; width=&quot;100%&quot; alt=&quot;dead computer&quot;&gt;
+</script><tw-passagedata pid="1" name="Welcome" tags="" position="801,295">&lt;img src=&quot;https://static.wixstatic.com/media/9edcba_1c27a53f223b4ae1b999741855663eb8.png&quot; width=&quot;100%&quot; alt=&quot;dead computer&quot;&gt;
 
-&lt;h1 style=&quot;font-size: 29px; font-weight: normal;&quot;&gt;¿Estás experimentando dificultades técnicas?
+&lt;h1 style=&quot;font-size: 29px; font-weight: normal;&quot;&gt;技術的問題が発生しましたか
 &lt;/h1&gt;
  
-¡A veces, los inconvenientes y/o errores ocurren. Apreciamos tu comprensión y paciencia con nosotros al resolverlos! Para poder identificar el inconveniente, nos gustaría reducir las posibilidades hasta llegar a la raíz del mismo.
+ユーザーの皆さまには、常に安心して Wix 体験をお楽しみいただけるよう万全を期しておりますが、万が一不具合が発生した場合は、早急に調査、調整を致しますので問題の内容と状況をなるべ詳しくお知らせください。
  
-Este tutorial te guiará, a través de unos pasos básicos para solucionar problemas generales que puedan surgir.
+また、お問い合わせいただく前に、まずはこちらのチュートリアルでご紹介しております「基本的トラブルシューティング方法」を試行し、問題が解消されるかどうかをご確認ください。
+ 
+ご理解、ご協力いただきますようお願い申し上げます。
 
-[[Comienza Aqui-&gt;Chose Browser]]
+[[スタート-&gt;Chose Browser]]
 </tw-passagedata>
-<tw-passagedata pid="2" name="Chose Browser" tags="" position="808,452">¿Qué navegador estás usando?
+<tw-passagedata pid="2" name="Chose Browser" tags="" position="808,452">ご利用のブラウザを選択してください。
 
 * (link: &quot;Google Chrome&quot;)[(set: $browser to &quot;Chrome&quot;)(goto: &quot;Updated Browser&quot;)]
 * (link: &quot;Mozilla Firefox&quot;)[(set: $browser to &quot;Firefox&quot;)(goto: &quot;Updated Browser&quot;)]
@@ -43,127 +42,118 @@ Este tutorial te guiará, a través de unos pasos básicos para solucionar probl
 * (link: &quot;Microsoft Internet Explorer&quot;)[(set: $browser to &quot;Internet Explorer&quot;)(goto: &quot;Updated Browser&quot;)]
 * (link: &quot;Microsoft 10 Edge&quot;)[(set: $browser to &quot;Edge&quot;)(goto: &quot;Updated Browser&quot;)]
 * (link: &quot;Other Browser or Unsure which browser&quot;)[(set: $browser to &quot;other&quot;)(goto: &quot;Other or Unsure which Browser&quot;)]</tw-passagedata>
-<tw-passagedata pid="3" name="Updated Browser" tags="" position="813,594">¿Está actualizado tu navegador de $browser a la versión más reciente?
+<tw-passagedata pid="3" name="Updated Browser" tags="" position="813,594">最新バージョンの $browser をご利用ですか？
+$browser のバージョンを更新する方法は、 &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;こちら&lt;/a&gt; をご参照ください。
 
-Para instrucciones sobre cómo revisar la versión del navegador $browser, por favor haz &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;clic aqui&lt;/a&gt;.
+問題が回避されない場合、[[ここをクリック-&gt;Checked Incognito/Private Browsing]] してください。</tw-passagedata>
+<tw-passagedata pid="4" name="Checked Incognito/Private Browsing" tags="" position="811,740">$browser の「プライベートブラウジング機能」をご利用ください。
 
-Si aún tienes problemas, por favor haz clic en 
- [[CONTINUAR-&gt;Checked Incognito/Private Browsing]].</tw-passagedata>
-<tw-passagedata pid="4" name="Checked Incognito/Private Browsing" tags="" position="811,740">Este problema puede ser causado por una extensión instalada en tu navegador. Por favor, abre $browser en modo de “Navegador Incógnito&quot; para ver si el error persiste.
 
-Puedes también usar el atajo: CTRL+SHIFT+N
 
-¿Fue útil?
-[[si-&gt;extension issue?]].
+問題は解決しましたか？
+[[yes-&gt;extension issue?]].
 [[no-&gt;Used a Different Browser]]</tw-passagedata>
-<tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,453">Please check &lt;a href=&quot;https://www.wix.com/support/html5/article/supported-browsers&quot;&gt;our list of Supported Browsers&lt;/a&gt; to make sure you are using a supported browser.
+<tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,453">私たちをチェックしてください &lt;a href=&quot;サポートされているブラウザのリスト&quot;&gt;サポートされているブラウザのリスト&lt;/a&gt; サポートされているブラウザを使用していることを確認してください。
 
-If you are not using a supported browser, please try using a supported browser, and check if the issue still occurs.
+サポートされているブラウザを使用していない場合は、サポートされているブラウザを使用して問題が解決されていないかどうかを確認してください。
 
-[[Start Over-&gt;Chose Browser]].</tw-passagedata>
-<tw-passagedata pid="6" name="Used a Different Browser" tags="" position="811,892">Por favor deja esta ventana del tutorial abierta y utiliza una ventana diferente de un navegador actualizado para cargar tu página web/editor.
- 
-Navegadores recomendados: 
+[[開始-&gt;Chose Browser]].</tw-passagedata>
+<tw-passagedata pid="6" name="Used a Different Browser" tags="" position="811,891">このチュートリアルを開いたまま、最新バージョンにアップデートされた別のブラウザを使って、サイトまたはエディタを開いてください。
+
+推奨ブラウザ： 
 (unless: $browser is &quot;Chrome&quot;)[* &lt;a href=&quot;https://www.google.com/chrome/browser/desktop/index.html&quot;&gt;Google Chrome&lt;/a&gt;]
 (unless: $browser is &quot;Firefox&quot;)[* &lt;a href=&quot;https://www.getfirefox.com&quot;&gt;Firefox&lt;/a&gt;]
 
-¿Ocurre también el error en otros navegadores? [[Continuar-&gt;Checked Network issues]]</tw-passagedata>
-<tw-passagedata pid="7" name="Checked Network issues" tags="" position="811,1036">Hay veces que tu router, el administrador del sistema o el firewall de la red de internet puede bloquear la conexión o crear conflictos. Al usar una conexión de internet diferente puedes resolver el problema.
+別のブラウザ上でも同様の問題が発生しましたか？ [[No-&gt;Checked Network issues]]</tw-passagedata>
+<tw-passagedata pid="7" name="Checked Network issues" tags="" position="811,1036">ルーターやシステムアドミニストレータ、ネットワークのファイアウォールなどが、接続をブロックする場合があります。別のインターネット回線を使って動作をご確認ください。
  
-Por favor intenta conectar tu computadora a otra red de conexión a internet,
-luego, incia sesión en tu cuenta de Wix y prueba abrir tu sitio web y/o el editor neuvamente
+現在ご利用のインターネット回線とは別の回線でインターネットに接続し、Wix アカウントにログインした後、サイトまたはエディタを開いてみてください。
 
-¿Fue Útil?
-[[Si-&gt;internet connection issue template]]
+問題は解決しましたか？
+[[Yes-&gt;internet connection issue template]]
 [[No-&gt;changed computer?]]
-[[No tengo acceso a otra red de internet-&gt;changed computer?]]</tw-passagedata>
-<tw-passagedata pid="8" name="internet connection issue template" tags="" position="501,1403">Parece que el problema que estás experimentando está relacionado con tu conexión a internet.
+[[別のインターネット回線へのアクセスがありません-&gt;changed computer?]]</tw-passagedata>
+<tw-passagedata pid="8" name="internet connection issue template" tags="" position="500,1403">ご利用のインターネット回線が原因で発生する問題である可能性が考えられます。
  
-Para poder investigar y ayudarte a resolverlo, por favor envía un ticket al foro y asegúrate de incluir la siguiente información:  
-He realizado los pasos del tutorial interactivo para solucionar problemas generales. El error que estoy experimentando está relacionado con mi conexión a internet.
+詳細をお調べいたしますので、&lt;a href=&quot;https://support.wix.com/ja/contact&quot;&gt;こちら&lt;/a&gt;をクリックしてフォーラムにチケットをご投稿の上お問い合わせください。その際下記情報を全てお知らせください。
+
+まずは、以下の文章をコピーして、チケットの本文にペーストしてください：
+
+一般的トラブルシューティングを実行しました。発生している問題は、使用しているインターネット回線への接続が原因で発生している可能性があるとの結果が表示されました。
  
-Adicionalmente, por favor envíanos la siguiente información:
+次に、以下で指定された項目の詳細をお知らせください：
  
-1. La descripción detallada del problema que estás experimentando.
- 
-2. Los diferentes navegadores que probaste, por favor incluye la versión de dicho navegador.
- 
-3. Cualquier programa de seguridad de internet que tienes instalado en tu computadora (antivirus, firewall, etc.).
- 
-4. Una captura de pantalla del problema, si es posible tomarla. Para ver instrucciones sobre cómo tomar una captura de pantalla, por favor usa [[clic aqui-&gt;Screenshot please]] 
+発生している問題に詳細（できるだけ詳しくご説明ください）
+使用した全てのブラウザの種類とバージョン情報
+お使いのコンピュータにインストールされたセキュリティプログラムの詳細
+問題が発生した画面のスクリーンショット
+（スクリーンショットの撮り方は、[[こちら-&gt;Screenshot please]]  をご覧ください） 
 
 (history:)</tw-passagedata>
-<tw-passagedata pid="9" name="changed computer?" tags="" position="910,1208">Intenta conectarte a Wix desde otra computadora. Por favor, inicia sesión en tu cuenta de Wix e intenta abrir el editor o tu sitio web nuevamente.
+<tw-passagedata pid="9" name="changed computer?" tags="" position="910,1208">別のコンピュータを使ってインターネットに接続した後、Wix アカウントにログインし、サイトまたはエディタを開いてみてください。
 
-¿Fue Útil?
-* [[si-&gt;local issue template]]
-* [[no-&gt;non-local issue template]]
-* [[No tengo otra computadora-&gt;possibly local issue template]]</tw-passagedata>
-<tw-passagedata pid="10" name="local issue template" tags="" position="800,1403">Parece que el problema que estás experimentando es un error local en tu computadora.
+問題は解決しましたか？
+* [[Yes-&gt;local issue template]]
+* [[No-&gt;non-local issue template]]
+* [[別のコンピュータへのアクセスがありません-&gt;possibly local issue template]]</tw-passagedata>
+<tw-passagedata pid="10" name="local issue template" tags="" position="800,1403">詳細をお調べいたしますので、&lt;a href=&quot;https://support.wix.com/ja/contact&quot;&gt;こちら&lt;/a&gt; をクリックしてフォーラムにチケットをご投稿の上お問い合わせください。その際下記情報を全てお知らせください。
  
-Para poder investigar y ayudarte a resolver, por favor envía un ticket al foro y asegúrate de incluir la siguiente información:  
-He realizado los pasos del tutorial interactivo para solucionar problemas generales. El error que estoy experimentando no ocurre en el modo de &quot;navegador incógnito&quot; pero persiste incluso después deshabilitar las extensiones del navegador y borra la caché e historial.
- 
-Adicionalmente, por favor envíanos la siguiente información:
- 
-1. La descripción detallada del problema que estás experimentando.
- 
-2. Los diferentes navegadores que probaste, por favor incluye la versión de dicho navegador.
- 
-3. Cualquier programa de seguridad de internet que tienes instalado en tu computadora (antivirus, firewall, etc.).
- 
-4. Una captura de pantalla del problema, si es posible tomarla. Para ver instrucciones sobre cómo tomar una captura de pantalla, por favor usa [[clic aqui-&gt;Screenshot please]] </tw-passagedata>
-<tw-passagedata pid="11" name="non-local issue template" tags="" position="1003,1402">Para poder investigar y ayudarte a resolver, por favor envía un ticket al equipo Wix haciendo &lt;a href=&quot;https://support.wix.com/es/submit-a-ticket&quot;&gt;clic aquí&lt;/a&gt; y asegúrate de incluir la siguiente información.
- 
-He realizado los pasos del tutorial interactivo para solucionar problemas generales. El error que estoy experimentando no sucede usando el navegador en modo &quot;incógnito&quot; y persiste incluso después de deshabilitar las extensiones del navegador y borrar la caché e historial.
- 
-Adicionalmente, por favor envíanos la siguiente información:
- 
-1. La descripción detallada del problema que estás experimentando.
- 
-2. Los diferentes navegadores que probaste, por favor incluye la versión de dicho navegador.
- 
-3. Cualquier programa de seguridad de internet que tienes instalado en tu computadora (antivirus, firewall, etc.).
- 
-4. Una captura de pantalla del problema, si es posible tomarla. Para ver instrucciones sobre cómo tomar una captura de pantalla, por favor usa [[este enlace-&gt;Screenshot please]] 
-</tw-passagedata>
-<tw-passagedata pid="12" name="possibly local issue template" tags="" position="1208,1406">Para poder investigar y ayudarte a resolver, por favor envía un ticket al equipo Wix haciendo &lt;a href=&quot;https://support.wix.com/es/submit-a-ticket&quot;&gt;clic aquí&lt;/a&gt; y asegúrate de incluir la siguiente información.
- 
-He realizado los pasos del tutorial interactivo para solucionar problemas generales. El error que estoy experimentando no sucede usando el navegador en modo &quot;incógnito&quot; y persiste incluso después de deshabilitar las extensiones del navegador y borrar la caché e historial.
- 
-Adicionalmente, por favor envíanos la siguiente información:
- 
-1. La descripción detallada del problema que estás experimentando.
- 
-2. Los diferentes navegadores que probaste, por favor incluye la versión de dicho navegador.
- 
-3. Cualquier programa de seguridad de internet que tienes instalado en tu computadora (antivirus, firewall, etc.).
- 
-4. Una captura de pantalla del problema, si es posible tomarla. Para ver instrucciones sobre cómo tomar una captura de pantalla, por favor usa [[este enlace-&gt;Screenshot please]].</tw-passagedata>
-<tw-passagedata pid="13" name="Start Over" tags="header" position="1005,291">&lt;u&gt;Wix Troubleshooter&lt;/u&gt; &lt;i&gt;[[Start Over-&gt;Welcome]]&lt;/i&gt;
+まずは、以下の文章をコピーして、チケットの本文にペーストしてください：
 
-</tw-passagedata>
-<tw-passagedata pid="14" name="extension issue?" tags="" position="1005,741">Parece que una de tus extensiones o &quot;add-ons&quot; es el que causa este problema.
+一般的トラブルシューティングを実行しました。「プライベートプラウズ機能」を有効化すると、問題は発生しませんでした。しかし、アドオン機能を無効化し、ブラウザキャッシュを消去しても継続して問題が発生しました。
  
-Por favor intenta deshabilitar las extensiones o &quot;add-ons&quot;, una a la vez, así podrás determinar cuál está causando el problema.
+次に、以下で指定された項目の詳細をお知らせください：
  
-Para instrucciones sobre cómo deshabilitar las extensiones o &quot;add-ons&quot; &lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769&quot;&gt;por favor haz clic aquí.&lt;/a&gt;.
+発生している問題に詳細（できるだけ詳しくご説明ください）
+使用した全てのブラウザの種類とバージョン情報
+お使いのコンピュータにインストールされたセキュリティプログラムの詳細
+問題が発生した画面のスクリーンショット
+（スクリーンショットの撮り方は、[[こちら-&gt;Screenshot please]]  をご覧ください）</tw-passagedata>
+<tw-passagedata pid="11" name="non-local issue template" tags="" position="1005,1403">詳細をお調べいたしますので、&lt;a href=&quot;https://support.wix.com/ja/contact&quot;&gt;こちら&lt;/a&gt;をクリックしてフォーラムにチケットをご投稿の上お問い合わせください。その際下記情報を全てお知らせください。
+ 
+まずは、以下の文章をコピーして、チケットの本文にペーストしてください：
 
-Si aún tienes dificultades, por favor haz clic en [[CONTINUAR-&gt;cacheCookies]]
+一般的トラブルシューティングを実行しました。「プライベートプラウズ機能」を有効化すると、問題は発生しませんでした。しかし、アドオン機能を無効化し、ブラウザキャッシュを消去しても継続して問題が発生しました。
+ 
+次に、以下で指定された項目の詳細をお知らせください：
+ 
+発生している問題に詳細（できるだけ詳しくご説明ください）
+使用した全てのブラウザの種類とバージョン情報
+お使いのコンピュータにインストールされたセキュリティプログラムの詳細
+問題が発生した画面のスクリーンショット
+（スクリーンショットの撮り方は、[[こちら-&gt;Screenshot please]]  をご覧ください）</tw-passagedata>
+<tw-passagedata pid="12" name="possibly local issue template" tags="" position="1208,1406">こちら&lt;/a&gt;詳細をお調べいたしますので、&lt;a href=&quot;https://support.wix.com/ja/contact&quot;&gt;をクリックしてフォーラムにチケットをご投稿の上お問い合わせください。その際下記情報を全てお知らせください。
+ 
+まずは、以下の文章をコピーして、チケットの本文にペーストしてください：
+
+一般的トラブルシューティングを実行しました。「プライベートプラウズ機能」を有効化すると、問題は発生しませんでした。しかし、アドオン機能を無効化し、ブラウザキャッシュを消去しても継続して問題が発生しました。
+ 
+次に、以下で指定された項目の詳細をお知らせください：
+ 
+発生している問題に詳細（できるだけ詳しくご説明ください）
+使用した全てのブラウザの種類とバージョン情報
+お使いのコンピュータにインストールされたセキュリティプログラムの詳細
+問題が発生した画面のスクリーンショット
+スクリーンショットの撮り方は、[[こちら-&gt;Screenshot please]]  をご覧ください）</tw-passagedata>
+<tw-passagedata pid="13" name="extension issue?" tags="" position="1005,741">ブラウザにインストールされたアドオンまたは拡張機能が原因で発生する問題である可能性が考えられます。
+ 
+アドオンまたは拡張機能を1つずつ無効にして動作を確認してください。
+
+問題が解決しない場合、 [[ここをクリック-&gt;cacheCookies]] してください。
 </tw-passagedata>
-<tw-passagedata pid="15" name="Screenshot please" tags="" position="1003,1552">Para agregando una captura de pantalla a tu ticket
- &lt;a href=&quot;https://support.wix.com/es/article/agregando-una-captura-de-pantalla-a-tu-ticket&quot;&gt;clic aqui&lt;/a&gt;.
+<tw-passagedata pid="14" name="Screenshot please" tags="" position="1003,1552">（スクリーンショットの撮り方は、 &lt;a href=&quot;https://support.wix.com/ja/article/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E3%82%92%E3%83%81%E3%82%B1%E3%83%83%E3%83%88%E3%81%AB%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B&quot;&gt;こちら&lt;/a&gt; をご覧ください）
+ 
 
 (set: $history to (history:))
 (set: $previous to $history&#39;s last)
 
-[[Continuar-&gt;$previous]]</tw-passagedata>
-<tw-passagedata pid="16" name="cacheCookies" tags="" position="1228,1099">Abre $browser, elimina la caché y las cookies del navegador.
+[[返る-&gt;$previous]]</tw-passagedata>
+<tw-passagedata pid="15" name="cacheCookies" tags="" position="1228,1099">$browser を開き、ブラウザのキャッシュと Cookie を消去してください。
+&lt;a href=&#39;https://support.wix.com/ja/article/wix-%E3%82%AF%E3%83%83%E3%82%AD%E3%83%BC%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B&#39;&gt;Wix クッキーを削除する&lt;/a&gt;
 
-&lt;a href=&#39;https://support.wix.com/es/article/limpiando-la-cach%C3%A9-de-tu-navegador&#39;&gt;Limpiando la caché de tu navegador
-&lt;/a&gt;
+&lt;a href=&quot;https://support.wix.com/ja/article/%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%81%AE%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%82%92%E6%B6%88%E5%8E%BB%E3%81%99%E3%82%8B&quot;&gt;ブラウザのキャッシュを消去する&lt;/a&gt;
 
-Si aún estás experimentando dificultades, por favor haz clic en [[CONTINUAR-&gt;local issue template]]
+問題が解決しない場合、[[ここをクリック-&gt;local issue template]] クしてください。
 </tw-passagedata>
 </tw-storydata>
 
