@@ -51,7 +51,12 @@ If you are not using the latest version of $browser, please update your browser,
 If you experience the issue while using the latest version of your chosen browser, and are still having issues, click [[Continue-&gt;Checked Incognito/Private Browsing]].</tw-passagedata>
 <tw-passagedata pid="4" name="Checked Incognito/Private Browsing" tags="" position="811,740">Since the issue was not resolved by updating $browser, please try &lt;a href=&quot;https://www.wix.com/support/html5/article/opening-your-browser-in-incognitoprivate-browsing-mode&quot;&gt;Opening Your Browser in Incognito/Private Browsing Mode&lt;/a&gt;.
 
+For $browser:
+(if: $browser is &quot;Chrome&quot;)[(print: &quot;Ctrl + Shift + N&quot;)](if: $browser is &quot;Firefox&quot;)[(print: &quot;Ctrl + Shift + P&quot;)](if: $browser is &quot;Internet Explorer&quot;)[(print: &quot;Ctrl + Shift + P&quot;)](if: $browser is &quot;Safari&quot;)[(print: &quot;Shift + Command + N&quot;)]
+
 By using Incognito/Private Browsing Mode, your browser will not use any cache or cookies you may have in your local storage. This will help us identify simple cache and cookie issues.
+
+
 
 If Incognito/Private Browsing Mode resolves the issue, [[click here-&gt;cacheCookies]]
 

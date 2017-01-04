@@ -25,19 +25,21 @@ tw-passage {
 }
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
 
-</script><tw-passagedata pid="1" name="Welcome" tags="" position="806,290">&lt;img src=&quot;https://static.wixstatic.com/media/9edcba_1c27a53f223b4ae1b999741855663eb8.png&quot; width=&quot;100%&quot; alt=&quot;dead computer&quot;&gt;
 
-&lt;h1 style=&quot;font-size: 29px; font-weight: normal;&quot;&gt;Êtes-vous confronté à une difficulté technique ?
+</script><tw-passagedata pid="1" name="Bienvenue" tags="" position="806,290">&lt;img src=&quot;https://static.wixstatic.com/media/9edcba_1c27a53f223b4ae1b999741855663eb8.png&quot; width=&quot;100%&quot; alt=&quot;dead computer&quot;&gt;
+
+&lt;h1 style=&quot;font-size: 29px; font-weight: normal;&quot;&gt;Êtes-vous confronté à une difficultés techniques?
 &lt;/h1&gt;
  
 Il peut arriver que des problèmes techniques surviennent et nous apprécions votre patience et votre compréhension.
  
 Ce tutoriel vous apprendra les étapes basiques à reproduire afin de vous dépanner lorsque vous êtes confronté à des difficultés technique.
 
-[[COMMENCEZ-&gt;Chose Browser]]
+[[Commencer-&gt;Chose Browser]]
 </tw-passagedata>
 <tw-passagedata pid="2" name="Chose Browser" tags="" position="808,452">Quel navigateur utilisez-vous ?
 
@@ -46,25 +48,23 @@ Ce tutoriel vous apprendra les étapes basiques à reproduire afin de vous dépa
 * (link: &quot;macOS Safari&quot;)[(set: $browser to &quot;Safari&quot;)(goto: &quot;Updated Browser&quot;)]
 * (link: &quot;Microsoft Internet Explorer&quot;)[(set: $browser to &quot;Internet Explorer&quot;)(goto: &quot;Updated Browser&quot;)]
 * (link: &quot;Microsoft 10 Edge&quot;)[(set: $browser to &quot;Edge&quot;)(goto: &quot;Updated Browser&quot;)]
-* (link: &quot;Other Browser or Unsure which browser&quot;)[(set: $browser to &quot;other&quot;)(goto: &quot;Other or Unsure which Browser&quot;)]</tw-passagedata>
-<tw-passagedata pid="3" name="Updated Browser" tags="" position="811,604">¿Está actualizado tu navegador de $browser a la versión más reciente?
+* (link: &quot;Autre navigateur&quot;)[(set: $browser to &quot;other&quot;)(goto: &quot;Other or Unsure which Browser&quot;)]</tw-passagedata>
+<tw-passagedata pid="3" name="Updated Browser" tags="" position="811,604">Votre navigateur $browser est-il à jour ?
 
-Pour des instructions sur comment vérifier la dernière version de $browser, que vous utilisez, &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;cliquez ici&lt;/a&gt;.
+Pour savoir si vous utilisez la dernière version de $browser, &lt;a href=&quot;http://www.whatbrowser.org/intl/fr/&quot;&gt;cliquez ici&lt;/a&gt;.
 
-Si cela ne résout pas votre problème 
- [[CONTINUEZ-&gt;Checked Incognito/Private Browsing]].</tw-passagedata>
+Si cela ne résout pas votre problème, cliquez sur [[Continuer-&gt;Checked Incognito/Private Browsing]].</tw-passagedata>
 <tw-passagedata pid="4" name="Checked Incognito/Private Browsing" tags="" position="811,740">Ce problème peut venir d&#39;un module installé sur votre navigateur. Veuillez ouvrir $browser dans une fenêtre privée et vérifiez si le problème persiste.
 
-Rendez-vous sur $browser et cliquez sur le bouton du menu principal (les barres horizontales). Dans le menu déroulant cliquez sur Nouvelle Fenêtre de Navigation Privée.
-
-Vous pouvez également utiliser les touches CTRL+SHIFT+P de votre clavier.
+Pour le navigateur $browser, appuyez et maintenez enfoncé les touches suivantes pour ouvrir une fenêtre en mode incognito/navigation privée:
+(if: $browser is &quot;Chrome&quot;)[(print: &quot;Ctrl + Shift + N&quot;)](if: $browser is &quot;Firefox&quot;)[(print: &quot;Ctrl + Shift + P&quot;)](if: $browser is &quot;Internet Explorer&quot;)[(print: &quot;Ctrl + Shift + P&quot;)](if: $browser is &quot;Safari&quot;)[(print: &quot;Shift + Command + N&quot;)]
 
 Cela vous a-t-il aidé ?
-[[OUI-&gt;extension issue?]].
-[[NON-&gt;Used a Different Browser]]</tw-passagedata>
-<tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,453">Wix est compatible avec les navigateurs suivants &lt;a href=&quot;https://www.wix.com/support/html5/article/supported-browsers&quot;&gt;ici&lt;/a&gt;
+[[Oui-&gt;extension issue?]].
+[[Non-&gt;Used a Different Browser]]</tw-passagedata>
+<tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,453">Wix est compatible avec &lt;a href=&quot;https://support.wix.com/fr/article/navigateurs-compatibles&quot;&gt;les navigateurs suivants&lt;/a&gt;
 
-[[retourner-&gt;Chose Browser]].</tw-passagedata>
+[[Retour-&gt;Chose Browser]].</tw-passagedata>
 <tw-passagedata pid="6" name="Used a Different Browser" tags="" position="811,892">Laissez ce tutoriel ouvert et utilisez un autre navigateur à jour pour télécharger votre site ou votre Éditeur 
  
 Navigateurs suggérés : 
@@ -81,10 +81,10 @@ Cela vous a-t-il aidé ?
 [[Oui-&gt;internet connection issue template]]
 [[Non-&gt;changed computer?]]
 [[Je n&#39;ai pas accès à une connexion internet diffèrente-&gt;changed computer?]]</tw-passagedata>
-<tw-passagedata pid="8" name="internet connection issue template" tags="" position="500,1402">Il semblerait que ce problème soit dû à un ou plusieurs programmes de sécurité internet.
+<tw-passagedata pid="8" name="internet connection issue template" tags="" position="499,1401">Il semblerait que ce problème soit dû à un ou plusieurs programmes de sécurité internet.
  
-Afin de nous permettre d&#39;investiguer, veuillez ouvrir un sujet ici et assurez-
-vous de nous founir également les instructions suivantes :
+Afin de nous permettre d&#39;investiguer, veuillez ouvrir un sujet &lt;a href=&quot;https://support.wix.com/fr/contact&quot; target=&quot;_blank&quot;&gt;ici&lt;/a&gt; et assurez-vous de nous founir également les instructions suivantes :
+
 J&#39;ai reproduit les étapes de votre outil de dépannage. Le problème que je rencontre est dû à un ou plusieurs programme de sécurité internet.
  
 Veuillez-nous communiquer les informations suivantes :
@@ -98,16 +98,16 @@ ordinateur (antivirus, pare-feu, etc...).
 4. Une capture d&#39;écran du problème si possible. Pour des instructions sur comment prendre une capture d&#39;écran, [[cliquez ici.-&gt;Screenshot please]] 
 
 (history:)</tw-passagedata>
-<tw-passagedata pid="9" name="changed computer?" tags="" position="910,1208">Intenta conectarte a Wix desde otra computadora. Por favor, inicia sesión en tu cuenta de Wix e intenta abrir el editor o tu sitio web nuevamente.
+<tw-passagedata pid="9" name="changed computer?" tags="" position="1044,1221">Connectez-vous à Wix à partir d&#39;un ordinateur différent. Connectez-vous à votre compte Wix et essayez d&#39;ouvrir votre Éditeur/site.
 
-¿Fue Útil?
-* [[si-&gt;local issue template]]
-* [[no-&gt;non-local issue template]]
-* [[No tengo otra computadora-&gt;possibly local issue template]]</tw-passagedata>
-<tw-passagedata pid="10" name="local issue template" tags="" position="799,1402">Il semblerait que ce problème soit dû à un ou plusieurs programmes de sécurité internet.
+Cela vous a-t-il aidé ?
+* [[Oui-&gt;local issue template]]
+* [[Non-&gt;non-local issue template]]
+* [[Non ordinateur différent-&gt;possibly local issue template]]</tw-passagedata>
+<tw-passagedata pid="10" name="local issue template" tags="" position="1195,1393">Il semblerait que ce problème soit dû à un ou plusieurs programmes de sécurité internet.
  
-Afin de nous permettre d&#39;investiguer, veuillez ouvrir un sujet ici et assurez-
-vous de nous founir également les instructions suivantes :
+Afin de nous permettre d&#39;investiguer, veuillez ouvrir un sujet &lt;a href=&quot;https://support.wix.com/fr/contact&quot; target=&quot;_blank&quot;&gt;ici&lt;/a&gt; et assurez-vous de nous founir également les instructions suivantes :
+
 J&#39;ai reproduit les étapes de votre outil de dépannage. Le problème que je rencontre est dû à un ou plusieurs programme de sécurité internet.
  
 Veuillez-nous communiquer les informations suivantes :
@@ -121,10 +121,9 @@ ordinateur (antivirus, pare-feu, etc...).
 4. Une capture d&#39;écran du problème si possible. Pour des instructions sur comment prendre une capture d&#39;écran, [[cliquez ici.-&gt;Screenshot please]] 
 
 (history:)</tw-passagedata>
-<tw-passagedata pid="11" name="non-local issue template" tags="" position="1003,1402">Il semblerait que ce problème soit dû à un ou plusieurs programmes de sécurité internet.
+<tw-passagedata pid="11" name="non-local issue template" tags="" position="766,1394">Il semblerait que ce problème soit dû à un ou plusieurs programmes de sécurité internet.
  
-Afin de nous permettre d&#39;investiguer, veuillez ouvrir un sujet ici et assurez-
-vous de nous founir également les instructions suivantes :
+Afin de nous permettre d&#39;investiguer, veuillez ouvrir un sujet &lt;a href=&quot;https://support.wix.com/fr/contact&quot; target=&quot;_blank&quot;&gt;ici&lt;/a&gt; et assurez-vous de nous founir également les instructions suivantes :
 J&#39;ai reproduit les étapes de votre outil de dépannage. Le problème que je rencontre est dû à un ou plusieurs programme de sécurité internet.
  
 Veuillez-nous communiquer les informations suivantes :
@@ -138,10 +137,10 @@ ordinateur (antivirus, pare-feu, etc...).
 4. Une capture d&#39;écran du problème si possible. Pour des instructions sur comment prendre une capture d&#39;écran, [[cliquez ici.-&gt;Screenshot please]] 
 
 (history:)</tw-passagedata>
-<tw-passagedata pid="12" name="possibly local issue template" tags="" position="1208,1406">Il semblerait que ce problème soit dû à un ou plusieurs programmes de sécurité internet.
+<tw-passagedata pid="12" name="possibly local issue template" tags="" position="1033,1396">Il semblerait que ce problème soit dû à un ou plusieurs programmes de sécurité internet.
  
-Afin de nous permettre d&#39;investiguer, veuillez ouvrir un sujet ici et assurez-
-vous de nous founir également les instructions suivantes :
+Afin de nous permettre d&#39;investiguer, veuillez ouvrir un sujet &lt;a href=&quot;https://support.wix.com/fr/contact&quot; target=&quot;_blank&quot;&gt;ici&lt;/a&gt; et assurez-vous de nous founir également les instructions suivantes :
+
 J&#39;ai reproduit les étapes de votre outil de dépannage. Le problème que je rencontre est dû à un ou plusieurs programme de sécurité internet.
  
 Veuillez-nous communiquer les informations suivantes :
@@ -155,17 +154,17 @@ ordinateur (antivirus, pare-feu, etc...).
 4. Une capture d&#39;écran du problème si possible. Pour des instructions sur comment prendre une capture d&#39;écran, [[cliquez ici.-&gt;Screenshot please]] 
 
 (history:)</tw-passagedata>
-<tw-passagedata pid="13" name="Start Over" tags="header" position="1005,291">&lt;u&gt;Wix Troubleshooter&lt;/u&gt; &lt;i&gt;[[Recommencer-&gt;Welcome]]&lt;/i&gt;
+<tw-passagedata pid="13" name="Start Over" tags="header" position="1005,291">&lt;u&gt;Outil de dépannage Wix&lt;/u&gt; &lt;i&gt;[[Retour-&gt;Bienvenue]]&lt;/i&gt;
 
 </tw-passagedata>
-<tw-passagedata pid="14" name="extension issue?" tags="" position="1005,741">Il semblerait qu&#39;un des modules de votre navigateur ou une extension est la source de votre problème.
+<tw-passagedata pid="14" name="extension issue?" tags="" position="1005,740">Il semblerait qu&#39;un module ou une extension de votre navigateur soit la source de votre problème
  
-Veuillez désactiver le module/l&#39;extension de votre navigateur, un par un, afin de déterminer laquelle cause ce problème.
+Veuillez désactiver les modules et extensions de votre navigateur, l&#39;un après l&#39;autre, afin de déterminer la source du problème que vous rencontrez.
  
 
 Pour des instructions sur comment désactiver des modules sur Google Chrome, &lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769&quot;&gt;cliquez ici.&lt;/a&gt;.
 
-Si cela ne résout pas votre problème [[CONTINUEZ-&gt;cacheCookies]]
+Si cela ne résout pas votre problème, cliquez sur [[Continuer-&gt;cacheCookies]]
 </tw-passagedata>
 <tw-passagedata pid="15" name="Screenshot please" tags="" position="1003,1552"> Ajouter une capture d&#39;écran permettra à notre Équipe d&#39;Assistance de mieux comprendre votre question.  &lt;a href=&quot;https://support.wix.com/fr/article/ajouter-une-capture-d%C3%A9cran-%C3%A0-un-sujet&quot; target=&quot;_blank&quot;&gt;Ajouter une capture d&#39;écran à un sujet
 &lt;/a&gt;.
