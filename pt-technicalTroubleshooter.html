@@ -24,7 +24,9 @@ tw-passage {
 	text-align:left;
 }
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 </script><tw-passagedata pid="1" name="Welcome" tags="" position="806,290">&lt;img src=&quot;https://static.wixstatic.com/media/9edcba_1c27a53f223b4ae1b999741855663eb8.png&quot; width=&quot;100%&quot; alt=&quot;dead computer&quot;&gt;
 
@@ -45,21 +47,18 @@ Este tutorial lhe guiará pelos passos básicos para solucionar os problemas mai
 * (link: &quot;macOS Safari&quot;)[(set: $browser to &quot;Safari&quot;)(goto: &quot;Updated Browser&quot;)]
 * (link: &quot;Microsoft Internet Explorer&quot;)[(set: $browser to &quot;Internet Explorer&quot;)(goto: &quot;Updated Browser&quot;)]
 * (link: &quot;Microsoft 10 Edge&quot;)[(set: $browser to &quot;Edge&quot;)(goto: &quot;Updated Browser&quot;)]
-* (link: &quot;Other Browser or Unsure which browser&quot;)[(set: $browser to &quot;other&quot;)(goto: &quot;Other or Unsure which Browser&quot;)]</tw-passagedata>
+* (link: &quot;Outro navegador / Não sei qual é o meu navegador&quot;)[(set: $browser to &quot;other&quot;)(goto: &quot;Other or Unsure which Browser&quot;)]</tw-passagedata>
 <tw-passagedata pid="3" name="Updated Browser" tags="" position="813,594">Seu $browser está atualizado?
-Para instruções sobre como saber a versão de seu navegador $browser, &lt;a href=&quot;http://www.whatbrowser.org/intl/pt-BR/&quot;target=&quot;_blank&quot;&gt;clique aqui.&lt;/a&gt;.
+Para saber a versão do seu navegador $browser, &lt;a href=&quot;http://www.whatbrowser.org/intl/pt-BR/&quot;target=&quot;_blank&quot;&gt; clique aqui. &lt;/a&gt;
 
-Caso ainda enfrente dificuldades, clique em [[CONTINUAR-&gt;Checked Incognito/Private Browsing]].</tw-passagedata>
+Caso o problema persista, clique em [[CONTINUAR-&gt;Checked Incognito/Private Browsing]].</tw-passagedata>
 <tw-passagedata pid="4" name="Checked Incognito/Private Browsing" tags="" position="810,739">Para verificar se um problema específico está relacionado ao seu navegador, recomendamos que você abra seu navegador em janela anônima / navegação privada.
 
 Para abrir seu navegador em janela anônima / navegação privada, siga as instruções abaixo:
-(if: $browser is &quot;Chrome&quot;)[(print: &quot;Ctrl + Shift + N&quot;)]
-(if: $browser is &quot;Firefox&quot;)[(print: &quot;Ctrl + Shift + P&quot;)]
-(if: $browser is &quot;Internet Explorer&quot;)[(print: &quot;Ctrl + Shift + P&quot;)]
-(if: $browser is &quot;Safari&quot;)[(print: &quot;Shift + Command + N&quot;)]
+Pressione as teclas (if: $browser is &quot;Chrome&quot;)[(print: &quot;Ctrl + Shift + N&quot;)](if: $browser is &quot;Firefox&quot;)[(print: &quot;Ctrl + Shift + P&quot;)](if: $browser is &quot;Internet Explorer&quot;)[(print: &quot;Ctrl + Shift + P&quot;)](if: $browser is &quot;Safari&quot;)[(print: &quot;Shift + Command + N&quot;)] em seu teclado.
 
 Foi útil?
-[[sim-&gt;extension issue?]].
+[[sim-&gt;cacheCookies]].
 [[não-&gt;Used a Different Browser]]</tw-passagedata>
 <tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1000,453">O Wix é compatível com os seguintes navegadores. 
 
@@ -68,9 +67,9 @@ Firefox
 Safari para Mac (versão 8 e acima)
 Internet Explorer (versão 11)
 
-Para fazer o download da versão mais recente de cada navegador, &lt;a href=&quot;https://support.wix.com/pt/article/navegadores-compat%C3%ADveis&quot;target=&quot;_blank&quot;&gt;clique abaixo:&lt;/a&gt;
+Para fazer o download da versão mais recente de cada navegador, &lt;a href=&quot;https://support.wix.com/pt/article/navegadores-compat%C3%ADveis&quot;target=&quot;_blank&quot;&gt;clique aqui.&lt;/a&gt;
 
-[[para trás-&gt;Chose Browser]].</tw-passagedata>
+[[Voltar-&gt;Chose Browser]].</tw-passagedata>
 <tw-passagedata pid="6" name="Used a Different Browser" tags="" position="811,892">Por favor, deixe esta janela aberta e use outro navegador, com a versão atualizada, para abrir seu site Wix e/ou Editor.
  
 Navegadores sugeridos:
@@ -150,30 +149,30 @@ Descrição da questão enfrentada, com detalhes.
 3. Quais programa de segurança estão instalados em seu computador (antivírus, firewall, etc.).
  
 4. Um screenshot do problema, se possível. Para instruções sobre como tirar um screenshot, [[clique aqui.-&gt;Screenshot please]].  </tw-passagedata>
-<tw-passagedata pid="13" name="Start Over" tags="header" position="1005,291">&lt;u&gt;Wix Análise de Problemas Interativo&lt;/u&gt; &lt;i&gt;[[RECOMEÇAR-&gt;Welcome]]&lt;/i&gt;
+<tw-passagedata pid="13" name="Start Over" tags="header" position="1005,291">&lt;u&gt;Tutorial Para Análise de Problemas&lt;/u&gt; &lt;i&gt;[[RECOMEÇAR-&gt;Welcome]]&lt;/i&gt;
 
 </tw-passagedata>
-<tw-passagedata pid="14" name="extension issue?" tags="" position="1004,904">Parece que uma das extensões de seu navegador é a causa do problema.
+<tw-passagedata pid="14" name="extension issue?" tags="" position="1138,1201">Parece que uma das extensões de seu navegador é a causa do problema.
  
 Por favor, tente desativar as extensões de seu navegador, uma de cada vez, para determinar qual delas está causando o problema.
  
-Para instruções sobre como desativar extensões do Google Chrome,&lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769&quot;target=&quot;_blank&quot;&gt; clique aqui. &lt;/a&gt; .
+(if: $browser is &quot;Chrome&quot;)[Para instruções sobre como desativar extensões do $browser,&lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769&quot;target=&quot;_blank&quot;&gt; clique aqui. &lt;/a&gt;]
 
-Caso ainda enfrente dificuldades, clique em [[continuar-&gt;cacheCookies]]</tw-passagedata>
-<tw-passagedata pid="15" name="Screenshot please" tags="" position="1003,1552">Para mais informações sobre como tirar um screenshot &lt;a href=&quot;https://support.wix.com/pt/article/adicionando-um-screenshot-a-um-t%C3%B3pico&quot; target=&quot;_blank&quot;&gt;clic aqui&lt;/a&gt;.
+Caso ainda enfrente dificuldades, clique em [[continuar-&gt;local issue template]]</tw-passagedata>
+<tw-passagedata pid="15" name="Screenshot please" tags="" position="1003,1551">Para mais informações sobre como tirar um screenshot &lt;a href=&quot;https://support.wix.com/pt/article/adicionando-um-screenshot-a-um-t%C3%B3pico&quot; target=&quot;_blank&quot;&gt;clique aqui.&lt;/a&gt;.
 
 (set: $history to (history:))
 (set: $previous to $history&#39;s last)
 
 [[Continuar-&gt;$previous]]</tw-passagedata>
-<tw-passagedata pid="16" name="cacheCookies" tags="" position="1228,1099">Abra o $browser e limpe a memória cache e os cookies.
+<tw-passagedata pid="16" name="cacheCookies" tags="" position="988,765">Abra o $browser e limpe a memória cache e os cookies.
 
 &lt;a href=&#39;https://support.wix.com/pt/article/limpando-os-cookies-do-wix&#39; target=&quot;_blank&quot;&gt; limpar os cookies do seu navegador
 &lt;/a&gt;
 &lt;a href=&#39;https://support.wix.com/pt/article/limpando-o-cache-do-navegador&#39; target=&quot;_blank&quot;&gt;Limpando o Cache do Navegador
 &lt;/a&gt;
 
-Caso ainda enfrente dificuldades, clique em [[CONTINUAR-&gt;local issue template]]
+Caso ainda enfrente dificuldades, clique em [[CONTINUAR-&gt;extension issue?]]
 </tw-passagedata>
 </tw-storydata>
 
