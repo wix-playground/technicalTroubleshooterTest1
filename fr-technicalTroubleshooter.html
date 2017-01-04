@@ -24,7 +24,9 @@ tw-passage {
 	text-align:left;
 }
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 </script><tw-passagedata pid="1" name="Welcome" tags="" position="806,290">&lt;img src=&quot;https://static.wixstatic.com/media/9edcba_1c27a53f223b4ae1b999741855663eb8.png&quot; width=&quot;100%&quot; alt=&quot;dead computer&quot;&gt;
 
@@ -60,11 +62,9 @@ Vous pouvez également utiliser les touches CTRL+SHIFT+P de votre clavier.
 Cela vous a-t-il aidé ?
 [[OUI-&gt;extension issue?]].
 [[NON-&gt;Used a Different Browser]]</tw-passagedata>
-<tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,453">Please check &lt;a href=&quot;https://www.wix.com/support/html5/article/supported-browsers&quot;&gt;our list of Supported Browsers&lt;/a&gt; to make sure you are using a supported browser.
+<tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,453">Wix est compatible avec les navigateurs suivants &lt;a href=&quot;https://www.wix.com/support/html5/article/supported-browsers&quot;&gt;ici&lt;/a&gt;
 
-If you are not using a supported browser, please try using a supported browser, and check if the issue still occurs.
-
-[[Start Over-&gt;Chose Browser]].</tw-passagedata>
+[[retourner-&gt;Chose Browser]].</tw-passagedata>
 <tw-passagedata pid="6" name="Used a Different Browser" tags="" position="811,892">Laissez ce tutoriel ouvert et utilisez un autre navigateur à jour pour télécharger votre site ou votre Éditeur 
  
 Navigateurs suggérés : 
@@ -72,29 +72,30 @@ Navigateurs suggérés :
 (unless: $browser is &quot;Firefox&quot;)[* &lt;a href=&quot;https://www.getfirefox.com&quot;&gt;Firefox&lt;/a&gt;]
 
 Reproduisez-vous ce problème sur un autre navigateur ? [[CONTINUEZ-&gt;Checked Network issues]]</tw-passagedata>
-<tw-passagedata pid="7" name="Checked Network issues" tags="" position="811,1036">Hay veces que tu router, el administrador del sistema o el firewall de la red de internet puede bloquear la conexión o crear conflictos. Al usar una conexión de internet diferente puedes resolver el problema.
+<tw-passagedata pid="7" name="Checked Network issues" tags="" position="811,1036">Il peut arriver que votre routeur, votre système administrateur ou votre pare-feu de réseau bloque votre connexion. Utilisez une connexion internet différente pour faire le test.
  
-Por favor intenta conectar tu computadora a otra red de conexión a internet,
-luego, incia sesión en tu cuenta de Wix y prueba abrir tu sitio web y/o el editor neuvamente
+Connectez votre ordinateur à une connexion internet différente, puis 
+connectez-vous à votre compte Wix et essayez de vous connecter à votre Éditeur/site.
 
-¿Fue Útil?
-[[Si-&gt;internet connection issue template]]
-[[No-&gt;changed computer?]]
-[[No tengo acceso a otra red de internet-&gt;changed computer?]]</tw-passagedata>
-<tw-passagedata pid="8" name="internet connection issue template" tags="" position="501,1403">Parece que el problema que estás experimentando está relacionado con tu conexión a internet.
+Cela vous a-t-il aidé ?
+[[Oui-&gt;internet connection issue template]]
+[[Non-&gt;changed computer?]]
+[[Je n&#39;ai pas accès à une connexion internet diffèrente-&gt;changed computer?]]</tw-passagedata>
+<tw-passagedata pid="8" name="internet connection issue template" tags="" position="500,1402">Il semblerait que ce problème soit dû à un ou plusieurs programmes de sécurité internet.
  
-Para poder investigar y ayudarte a resolverlo, por favor envía un ticket al foro y asegúrate de incluir la siguiente información:  
-He realizado los pasos del tutorial interactivo para solucionar problemas generales. El error que estoy experimentando está relacionado con mi conexión a internet.
+Afin de nous permettre d&#39;investiguer, veuillez ouvrir un sujet ici et assurez-
+vous de nous founir également les instructions suivantes :
+J&#39;ai reproduit les étapes de votre outil de dépannage. Le problème que je rencontre est dû à un ou plusieurs programme de sécurité internet.
  
-Adicionalmente, por favor envíanos la siguiente información:
+Veuillez-nous communiquer les informations suivantes :
+1. Le problème exact que vous rencontrez.
  
-1. La descripción detallada del problema que estás experimentando.
+2. Les différents navigateurs que vous avez testés en indiquant également la version.
  
-2. Los diferentes navegadores que probaste, por favor incluye la versión de dicho navegador.
+3. Tous les programmes de sécurité internet que vous avez installé sur votre
+ordinateur (antivirus, pare-feu, etc...).
  
-3. Cualquier programa de seguridad de internet que tienes instalado en tu computadora (antivirus, firewall, etc.).
- 
-4. Una captura de pantalla del problema, si es posible tomarla. Para ver instrucciones sobre cómo tomar una captura de pantalla, por favor usa [[clic aqui-&gt;Screenshot please]] 
+4. Une capture d&#39;écran du problème si possible. Pour des instructions sur comment prendre une capture d&#39;écran, [[cliquez ici.-&gt;Screenshot please]] 
 
 (history:)</tw-passagedata>
 <tw-passagedata pid="9" name="changed computer?" tags="" position="910,1208">Intenta conectarte a Wix desde otra computadora. Por favor, inicia sesión en tu cuenta de Wix e intenta abrir el editor o tu sitio web nuevamente.
@@ -103,48 +104,58 @@ Adicionalmente, por favor envíanos la siguiente información:
 * [[si-&gt;local issue template]]
 * [[no-&gt;non-local issue template]]
 * [[No tengo otra computadora-&gt;possibly local issue template]]</tw-passagedata>
-<tw-passagedata pid="10" name="local issue template" tags="" position="800,1403">Parece que el problema que estás experimentando es un error local en tu computadora.
+<tw-passagedata pid="10" name="local issue template" tags="" position="799,1402">Il semblerait que ce problème soit dû à un ou plusieurs programmes de sécurité internet.
  
-Para poder investigar y ayudarte a resolver, por favor envía un ticket al foro y asegúrate de incluir la siguiente información:  
-He realizado los pasos del tutorial interactivo para solucionar problemas generales. El error que estoy experimentando no ocurre en el modo de &quot;navegador incógnito&quot; pero persiste incluso después deshabilitar las extensiones del navegador y borra la caché e historial.
+Afin de nous permettre d&#39;investiguer, veuillez ouvrir un sujet ici et assurez-
+vous de nous founir également les instructions suivantes :
+J&#39;ai reproduit les étapes de votre outil de dépannage. Le problème que je rencontre est dû à un ou plusieurs programme de sécurité internet.
  
-Adicionalmente, por favor envíanos la siguiente información:
+Veuillez-nous communiquer les informations suivantes :
+1. Le problème exact que vous rencontrez.
  
-1. La descripción detallada del problema que estás experimentando.
+2. Les différents navigateurs que vous avez testés en indiquant également la version.
  
-2. Los diferentes navegadores que probaste, por favor incluye la versión de dicho navegador.
+3. Tous les programmes de sécurité internet que vous avez installé sur votre
+ordinateur (antivirus, pare-feu, etc...).
  
-3. Cualquier programa de seguridad de internet que tienes instalado en tu computadora (antivirus, firewall, etc.).
+4. Une capture d&#39;écran du problème si possible. Pour des instructions sur comment prendre une capture d&#39;écran, [[cliquez ici.-&gt;Screenshot please]] 
+
+(history:)</tw-passagedata>
+<tw-passagedata pid="11" name="non-local issue template" tags="" position="1003,1402">Il semblerait que ce problème soit dû à un ou plusieurs programmes de sécurité internet.
  
-4. Una captura de pantalla del problema, si es posible tomarla. Para ver instrucciones sobre cómo tomar una captura de pantalla, por favor usa [[clic aqui-&gt;Screenshot please]] </tw-passagedata>
-<tw-passagedata pid="11" name="non-local issue template" tags="" position="1003,1402">Para poder investigar y ayudarte a resolver, por favor envía un ticket al equipo Wix haciendo &lt;a href=&quot;https://support.wix.com/es/submit-a-ticket&quot;&gt;clic aquí&lt;/a&gt; y asegúrate de incluir la siguiente información.
+Afin de nous permettre d&#39;investiguer, veuillez ouvrir un sujet ici et assurez-
+vous de nous founir également les instructions suivantes :
+J&#39;ai reproduit les étapes de votre outil de dépannage. Le problème que je rencontre est dû à un ou plusieurs programme de sécurité internet.
  
-He realizado los pasos del tutorial interactivo para solucionar problemas generales. El error que estoy experimentando no sucede usando el navegador en modo &quot;incógnito&quot; y persiste incluso después de deshabilitar las extensiones del navegador y borrar la caché e historial.
+Veuillez-nous communiquer les informations suivantes :
+1. Le problème exact que vous rencontrez.
  
-Adicionalmente, por favor envíanos la siguiente información:
+2. Les différents navigateurs que vous avez testés en indiquant également la version.
  
-1. La descripción detallada del problema que estás experimentando.
+3. Tous les programmes de sécurité internet que vous avez installé sur votre
+ordinateur (antivirus, pare-feu, etc...).
  
-2. Los diferentes navegadores que probaste, por favor incluye la versión de dicho navegador.
+4. Une capture d&#39;écran du problème si possible. Pour des instructions sur comment prendre une capture d&#39;écran, [[cliquez ici.-&gt;Screenshot please]] 
+
+(history:)</tw-passagedata>
+<tw-passagedata pid="12" name="possibly local issue template" tags="" position="1208,1406">Il semblerait que ce problème soit dû à un ou plusieurs programmes de sécurité internet.
  
-3. Cualquier programa de seguridad de internet que tienes instalado en tu computadora (antivirus, firewall, etc.).
+Afin de nous permettre d&#39;investiguer, veuillez ouvrir un sujet ici et assurez-
+vous de nous founir également les instructions suivantes :
+J&#39;ai reproduit les étapes de votre outil de dépannage. Le problème que je rencontre est dû à un ou plusieurs programme de sécurité internet.
  
-4. Una captura de pantalla del problema, si es posible tomarla. Para ver instrucciones sobre cómo tomar una captura de pantalla, por favor usa [[este enlace-&gt;Screenshot please]] 
-</tw-passagedata>
-<tw-passagedata pid="12" name="possibly local issue template" tags="" position="1208,1406">Para poder investigar y ayudarte a resolver, por favor envía un ticket al equipo Wix haciendo &lt;a href=&quot;https://support.wix.com/es/submit-a-ticket&quot;&gt;clic aquí&lt;/a&gt; y asegúrate de incluir la siguiente información.
+Veuillez-nous communiquer les informations suivantes :
+1. Le problème exact que vous rencontrez.
  
-He realizado los pasos del tutorial interactivo para solucionar problemas generales. El error que estoy experimentando no sucede usando el navegador en modo &quot;incógnito&quot; y persiste incluso después de deshabilitar las extensiones del navegador y borrar la caché e historial.
+2. Les différents navigateurs que vous avez testés en indiquant également la version.
  
-Adicionalmente, por favor envíanos la siguiente información:
+3. Tous les programmes de sécurité internet que vous avez installé sur votre
+ordinateur (antivirus, pare-feu, etc...).
  
-1. La descripción detallada del problema que estás experimentando.
- 
-2. Los diferentes navegadores que probaste, por favor incluye la versión de dicho navegador.
- 
-3. Cualquier programa de seguridad de internet que tienes instalado en tu computadora (antivirus, firewall, etc.).
- 
-4. Una captura de pantalla del problema, si es posible tomarla. Para ver instrucciones sobre cómo tomar una captura de pantalla, por favor usa [[este enlace-&gt;Screenshot please]].</tw-passagedata>
-<tw-passagedata pid="13" name="Start Over" tags="header" position="1005,291">&lt;u&gt;Wix Troubleshooter&lt;/u&gt; &lt;i&gt;[[Start Over-&gt;Welcome]]&lt;/i&gt;
+4. Une capture d&#39;écran du problème si possible. Pour des instructions sur comment prendre une capture d&#39;écran, [[cliquez ici.-&gt;Screenshot please]] 
+
+(history:)</tw-passagedata>
+<tw-passagedata pid="13" name="Start Over" tags="header" position="1005,291">&lt;u&gt;Wix Troubleshooter&lt;/u&gt; &lt;i&gt;[[Recommencer-&gt;Welcome]]&lt;/i&gt;
 
 </tw-passagedata>
 <tw-passagedata pid="14" name="extension issue?" tags="" position="1005,741">Il semblerait qu&#39;un des modules de votre navigateur ou une extension est la source de votre problème.
@@ -156,13 +167,13 @@ Pour des instructions sur comment désactiver des modules sur Google Chrome, &lt
 
 Si cela ne résout pas votre problème [[CONTINUEZ-&gt;cacheCookies]]
 </tw-passagedata>
-<tw-passagedata pid="15" name="Screenshot please" tags="" position="1003,1552">Para agregando una captura de pantalla a tu ticket
- &lt;a href=&quot;https://support.wix.com/es/article/agregando-una-captura-de-pantalla-a-tu-ticket&quot;&gt;clic aqui&lt;/a&gt;.
+<tw-passagedata pid="15" name="Screenshot please" tags="" position="1003,1552"> Ajouter une capture d&#39;écran permettra à notre Équipe d&#39;Assistance de mieux comprendre votre question.  &lt;a href=&quot;https://support.wix.com/fr/article/ajouter-une-capture-d%C3%A9cran-%C3%A0-un-sujet&quot; target=&quot;_blank&quot;&gt;Ajouter une capture d&#39;écran à un sujet
+&lt;/a&gt;.
 
 (set: $history to (history:))
 (set: $previous to $history&#39;s last)
 
-[[Continuar-&gt;$previous]]</tw-passagedata>
+[[retourner-&gt;$previous]]</tw-passagedata>
 <tw-passagedata pid="16" name="cacheCookies" tags="" position="1228,1099">Ouvrez $browser, et supprimez les caches et les cookies du navigateur
 
 &lt;a href=&#39;https://support.wix.com/fr/article/limpiando-la-cach%C3%A9-de-tu-navegador&#39;&gt;Vider les caches du navigateur
