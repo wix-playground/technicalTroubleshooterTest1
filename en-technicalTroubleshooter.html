@@ -24,7 +24,9 @@ tw-passage {
 	text-align:left;
 }
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 </script><tw-passagedata pid="1" name="Welcome" tags="" position="806,290">&lt;img src=&quot;https://static.wixstatic.com/media/9edcba_1c27a53f223b4ae1b999741855663eb8.png&quot; width=&quot;100%&quot; alt=&quot;dead computer&quot;&gt;
 
@@ -53,13 +55,7 @@ If you experience the issue while using the latest version of your chosen browse
 
 By using Incognito/Private Browsing Mode, your browser will not use any cache or cookies you may have in your local storage. This will help us identify simple cache and cookie issues.
 
-If Incognito/Private Browsing Mode fixes the issue, simply
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.wix.com/support/html5/article/clearing-wix-cookies&quot;&gt;Clear your browser&#39;s cookies&lt;/a&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.wix.com/support/html5/article/clearing-your-browsers-cache&quot;&gt;Clear your browser&#39;s cache&lt;/a&gt;
-&lt;/ol&gt;
-
-If clearing your cookies and cache does not fix the issue, but incognito/private browsing mode does fix the issue [[click here-&gt;extension issue?]].
+If Incognito/Private Browsing Mode resolves the issue, [[click here-&gt;cacheCookies]]
 
 If using Incognito/Private Browsing Mode does not resolve the issue, please click [[Continue-&gt;Used a Different Browser]]</tw-passagedata>
 <tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,453">Please check &lt;a href=&quot;https://www.wix.com/support/html5/article/supported-browsers&quot;&gt;our list of Supported Browsers&lt;/a&gt; to make sure you are using a supported browser.
@@ -156,11 +152,15 @@ In addition, please provide us with the following details:
 <tw-passagedata pid="13" name="Start Over" tags="header" position="1005,291">&lt;u&gt;Wix Troubleshooter&lt;/u&gt; &lt;i&gt;[[Start Over-&gt;Welcome]]&lt;/i&gt;
 
 </tw-passagedata>
-<tw-passagedata pid="14" name="extension issue?" tags="" position="1005,741">One of your browser add-ons or extensions may be the source of the issue.
+<tw-passagedata pid="14" name="extension issue" tags="" position="1007,1043">One of your browser add-ons or extensions may be the source of the issue.
 
 Please try to disable your browser add-ons\extensions, one at a time, to determine which one is causing the issue.
 
-(if: $browser is &quot;Chrome&quot;)[For instructions on how to disable add-ons in Google Chrome, please &lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769&quot;&gt;click here&lt;/a&gt;.]</tw-passagedata>
+(if: $browser is &quot;Chrome&quot;)[For instructions on how to disable add-ons in Google Chrome, please &lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769&quot;&gt;click here&lt;/a&gt;.]
+
+It is also possible that security programs on your computer may be causing an issue. Please check if any ad-blockers, anti-malware, or firewalls on your computer may be causing an issue.
+
+To test this possiblity more easily, you can try [[using a different computer-&gt;changed computer?]] </tw-passagedata>
 <tw-passagedata pid="15" name="Screenshot please" tags="" position="1003,1552">For instructions on how to take a screenshot, click &lt;a href=&quot;https://www.wix.com/support/html5/article/adding-a-screenshot-to-a-ticket&quot;&gt;this link to our help center article&lt;/a&gt;.
 
 If you need to describe a series of steps, please record a screencast. For instructions from our help center, click &lt;a href=&quot;https://www.wix.com/support/html5/article/adding-a-video-to-a-ticket&quot;&gt;here&lt;/a&gt;
@@ -169,6 +169,14 @@ If you need to describe a series of steps, please record a screencast. For instr
 (set: $previous to $history&#39;s last)
 
 [[Go Back-&gt;$previous]]</tw-passagedata>
+<tw-passagedata pid="16" name="cacheCookies" tags="" position="1005,897">The first step to replicating incognito/private browsing mode in your normal brower is to: 
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.wix.com/support/html5/article/clearing-wix-cookies&quot;&gt;Clear your browser&#39;s cookies&lt;/a&gt;
+and
+&lt;li&gt;&lt;a href=&quot;https://www.wix.com/support/html5/article/clearing-your-browsers-cache&quot;&gt;Clear your browser&#39;s cache&lt;/a&gt;
+&lt;/ol&gt;
+
+If clearing your cookies and cache does not fix the issue, but incognito/private browsing mode does fix the issue [[click here-&gt;extension issue]].</tw-passagedata>
 </tw-storydata>
 
 
