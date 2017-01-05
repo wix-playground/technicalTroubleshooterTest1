@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by barakplasma (http://jsbin.com/xowara/4/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+textarea {
+  width: 100%;
+}
+#warnings {
+  color: red;
+}
+</style>
+</head>
+<body>
+  <textarea rows="20" id="userIn" oninput="update()"></textarea>
+  <div id="warnings"></div>
+  <div id="userOut"></div>
+<script id="jsbin-javascript">
+var userIn;
+
+function update(){
+  userIn = document.querySelector('#userIn').value;
+  //var iframer = `<iframe sandbox width="100%" srcdoc=\`${userIn}\`></iframe>`;
+  //console.log(iframer);
+  document.querySelector('#userOut').innerHTML = userIn;
+  warn();
+}
+function warn(){
+  var warnHere = document.querySelector('#warnings');
+  var problemsToLookFor = [
+    "http(?!s)",
+    "other HTML Element limitations go here"
+  ];
+  var regEx = new RegExp(problemsToLookFor.join('|'),'i');
+  if(regEx.test(userIn)){
+    warnHere.innerHTML = regEx.exec(userIn)[0];
+    
+    console.error("code may not work due to: %s ",warnHere.innerHTML);
+  }else{
+    warnHere.innerHTML = "";
+  };
+}
+</script>
+</body>
+</html>
