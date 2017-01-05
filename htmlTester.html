@@ -27,17 +27,18 @@ textarea {
   <div id="warnings"></div>
   <div id="userOut"></div>
 <script id="jsbin-javascript">
-var userIn;
+var userIn,userOut,warnHere;
 
 function update(){
   userIn = document.querySelector('#userIn').value;
   //var iframer = `<iframe sandbox width="100%" srcdoc=\`${userIn}\`></iframe>`;
   //console.log(iframer);
-  document.querySelector('#userOut').innerHTML = userIn;
+  userOut = document.querySelector('#userOut');
+  userOut.innerHTML = userIn;
   warn();
 }
 function warn(){
-  var warnHere = document.querySelector('#warnings');
+  warnHere = document.querySelector('#warnings');
   var problemsToLookFor = [
     "http(?!s)",
     "other HTML Element limitations go here"
@@ -45,10 +46,11 @@ function warn(){
   var regEx = new RegExp(problemsToLookFor.join('|'),'i');
   if(regEx.test(userIn)){
     warnHere.innerHTML = regEx.exec(userIn)[0];
-    
+    userOut.style.visibility = "hidden";
     console.error("code may not work due to: %s ",warnHere.innerHTML);
   }else{
     warnHere.innerHTML = "";
+    userOut.style.visibility = "visible";
   };
 }
 </script>
