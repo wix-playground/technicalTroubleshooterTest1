@@ -24,150 +24,147 @@ tw-passage {
 	text-align:left;
 }
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
-</script><tw-passagedata pid="1" name="Welcome" tags="" position="806,290">&lt;img src=&quot;https://static.wixstatic.com/media/9edcba_1c27a53f223b4ae1b999741855663eb8.png&quot; width=&quot;100%&quot; alt=&quot;dead computer&quot;&gt;
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Welcome" tags="" position="806,290">&lt;img src=&quot;https://static.wixstatic.com/media/9edcba_1c27a53f223b4ae1b999741855663eb8.png&quot; width=&quot;100%&quot; alt=&quot;dead computer&quot;&gt;
 
 &lt;h1 style=&quot;font-size: 29px; font-weight: normal;&quot;&gt;기술적인 문제가 발생했나요?&lt;/h1&gt;
  
-때로는 기술적인 문제가 일어날 수 있으며, 이에 대한 여러분의 인내와 이해심에 대해 무한한 감사드립니다. 문제를 정확히 파악하려면, 문제의 원인을 발견할 때까지 모든 가능성을 좁혀가야 합니다.
- 
-이 지침서에서는 발생할 수 있는 일반적인 문제를 해결하기 위한 기본 단계로 여러분을 안내합니다. 
+종종 발생할 수 있는 문제에 대한 양해와 이해 감사드립니다. 문제를 정확하게 파악하려면 가능한 발생 원인을 단계별로 확인해야 합니다.
 
-[[시작하기-&gt;Chose Browser]]
-</tw-passagedata>
-<tw-passagedata pid="2" name="Chose Browser" tags="" position="808,452">사용중인 브라우저는 무엇인가요?
+아래 시작하기를 클릭해 문제해결사를 시작하세요.
 
+
+[[시작하기-&gt;Chose Browser]]</tw-passagedata>
+<tw-passagedata pid="2" name="Chose Browser" tags="" position="808,452">사용하는 브라우저는 무엇인가요?
 * (link: &quot;Google Chrome&quot;)[(set: $browser to &quot;Chrome&quot;)(goto: &quot;Updated Browser&quot;)]
 * (link: &quot;Mozilla Firefox&quot;)[(set: $browser to &quot;Firefox&quot;)(goto: &quot;Updated Browser&quot;)]
 * (link: &quot;macOS Safari&quot;)[(set: $browser to &quot;Safari&quot;)(goto: &quot;Updated Browser&quot;)]
 * (link: &quot;Microsoft Internet Explorer&quot;)[(set: $browser to &quot;Internet Explorer&quot;)(goto: &quot;Updated Browser&quot;)]
 * (link: &quot;Microsoft 10 Edge&quot;)[(set: $browser to &quot;Edge&quot;)(goto: &quot;Updated Browser&quot;)]
-* (link: &quot;Other Browser or Unsure which browser&quot;)[(set: $browser to &quot;other&quot;)(goto: &quot;Other or Unsure which Browser&quot;)]</tw-passagedata>
-<tw-passagedata pid="3" name="Updated Browser" tags="" position="813,594">가장 최신 버전의 $browser 브라우저를 사용하고 있나요?
+* (link: &quot;기타 브라우저&quot;)[(set: $browser to &quot;other&quot;)(goto: &quot;Other or Unsure which Browser&quot;)]
+</tw-passagedata>
+<tw-passagedata pid="3" name="Updated Browser" tags="" position="813,594">$browser 브라우저를 사용중이라면,&lt;a href=&quot;https://whatbrowser.org/&quot; target=&quot;_blank&quot;&gt;whatbrowser.org&lt;/a&gt; 사이트를 방문해 $browser 브라우저의 가장 최신 버전을 사용하고 있는지 확인하세요.
 
-사용중인 $browser 브라우저 버전을 확인하는 방법에 대한 자세한 내용은 &lt;a href=&quot;https://whatbrowser.org/&quot;&gt;여기&lt;/a&gt; 를 클릭해 참고하세요.
+최신 버전을 사용하지 않고 있다면, 브라우저를 업데이트한 후에도 문제가 지속되는지 다시 한번 확인하세요.
 
-아직도 문제가 지속된다면, [[계속하기-&gt;Checked Incognito/Private Browsing]] 를 클릭하세요</tw-passagedata>
-<tw-passagedata pid="4" name="Checked Incognito/Private Browsing" tags="" position="811,740">비공개 또는 시크릿 브라우징 모드로 브라우저를 열 경우에는 내 사이트에서 발생하는 특정 이슈가 내 브라우저에 국한된 오류인지 확인하는데 도움을 줍니다.
+최신 버전을 사용 중임에도 불구하고 문제가 발생한다면, [[계속하기-&gt;Checked Incognito/Private Browsing]]를 클릭하세요.
+</tw-passagedata>
+<tw-passagedata pid="4" name="Checked Incognito/Private Browsing" tags="" position="808,742">브라우저를 업데이트했음에도 문제가 지속된다면, &lt;a href=&quot;https://support.wix.com/ko/article/%EB%B9%84%EA%B3%B5%EA%B0%9C-%EB%B0%8F-%EC%8B%9C%ED%81%AC%EB%A6%BF-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A7%95-%EB%AA%A8%EB%93%9C-%EC%97%B4%EA%B8%B0&quot;&gt;비공개 또는 시크릿 브라우징 모드&lt;/a&gt;에서 브라우저를 열어보세요.
 
-비공개 또는 시크릿 브라우징 모드를 열려면:
-(if: $browser is &quot;Chrome&quot;)[(print: &quot;Ctrl + Shift + N&quot;)]
-(if: $browser is &quot;Firefox&quot;)[(print: &quot;Ctrl + Shift + P&quot;)]
-(if: $browser is &quot;Internet Explorer&quot;)[(print: &quot;Ctrl + Shift + P&quot;)]
-(if: $browser is &quot;Safari&quot;)[(print: &quot;Shift + Command + N&quot;)]
+$browser 브라우저를 사용중이라면, 키보드에서 다음 키를 눌러 비공개 또는 시크릿 브라우징 모드를 엽니다: 
+(if: $browser is &quot;Chrome&quot;)[(print: &quot;Ctrl + Shift + N&quot;)](if: $browser is &quot;Firefox&quot;)[(print: &quot;Ctrl + Shift + P&quot;)](if: $browser is &quot;Internet Explorer&quot;)[(print: &quot;Ctrl + Shift + P&quot;)](if: $browser is &quot;Safari&quot;)[(print: &quot;Shift + Command + N&quot;)]
 
-도움이 되셨나요?
-[[예-&gt;extension issue?]].
-[[아니-&gt;Used a Different Browser]]</tw-passagedata>
-<tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,453">우리를 확인해주세요&lt;a href=&quot;https://support.wix.com/ko/article/%EC%A7%80%EC%9B%90-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80&quot;&gt;지원되는 브라우저 목록&lt;/a&gt; 지원되는 브라우저를 사용하고 있는지 확인하십시오.
+비공개 또는 시크릿 브라우징 모드를 사용할 경우 내 브라우저는 로컬 저장 공간에 있을 수 있는 캐시 및 쿠키를 사용하지 않게되며, 이는 간단한 캐시 및 쿠키 문제를 확인할 수 있도록 합니다. 
 
-지원되는 브라우저를 사용하지 않는 경우 지원되는 브라우저를 사용해보고 문제가 계속 발생하는지 확인하십시오.
 
-[[다시 시작하다-&gt;Chose Browser]].</tw-passagedata>
-<tw-passagedata pid="6" name="Used a Different Browser" tags="" position="811,892">지침서를 열어둔 채로 다른 브라우저를 사용해 사이트 또는
-에디터를 로딩해 보세요.
- 
-다음 브라우저를 사용해 보시기 바랍니다: 
+비공개 또는 시크릿 브라우징 모드를 사용해 문제가 해결되었다면, [[여기&gt;-&gt;extension issue?]]를 클릭하세요.
+
+비공개 또는 시크릿 브라우징 모드를 사용했음에도 문제가 해결되지 않았다면, [[여기-&gt;Used a Different Browser]]를 클릭하세요.
+</tw-passagedata>
+<tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,453">&lt;a href=&quot;https://support.wix.com/ko/article/%EC%A7%80%EC%9B%90-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80&quot;&gt;여기&lt;/a&gt;를 클릭해 Wix가 지원하는 브라우저를 사용 중인지 확인하세요. 
+사용 중인 브라우저가 지원되지 않는다면, 지원되는 브라우저를 사용해 문제가 지속되는지 확인하세요. 
+
+[[다시 시작하기-&gt;Chose Browser]].</tw-passagedata>
+<tw-passagedata pid="6" name="Used a Different Browser" tags="" position="798,879">문제해결사 창을 열어둔 채, 업데이트된 다른 브라우저를 사용해 내 사이트 또는 에디터를 로딩해 보세요. 
+추천 브라우저:
 (unless: $browser is &quot;Chrome&quot;)[* &lt;a href=&quot;https://www.google.com/chrome/browser/desktop/index.html&quot;&gt;Google Chrome&lt;/a&gt;]
 (unless: $browser is &quot;Firefox&quot;)[* &lt;a href=&quot;https://www.getfirefox.com&quot;&gt;Firefox&lt;/a&gt;]
 
-다른 브라우저 사용시에도 동일한 문제가 발생하나요? [[잇다-&gt;Checked Network issues]]</tw-passagedata>
-<tw-passagedata pid="7" name="Checked Network issues" tags="" position="811,1036">때로는 라우터, 시스템 관리자, 또는 네트워크 방화벽이 연결을
-차단할 수 있습니다. 이 경우에는 다른 인터넷 연결 방법을 사용해 원인을 확인할 수 있습니다.
+다른 브라우저를 사용해 해당 문제가 브라우저와 관련되어 있는지 확인할 수 있습니다. 
+모든 브라우저에서 문제가 발생한다면, [[계속하기-&gt;Checked Network issues]]를 클릭하세요.
+</tw-passagedata>
+<tw-passagedata pid="7" name="Checked Network issues" tags="" position="811,1036">라우터, 시스템 관리자, 또는 네트워크 방화벽 등이 Wix 서버와의 연결을 차단하고 있을 수 있습니다. 해당 문제는 다른 인터넷 연결을 사용해 확인할 수 있습니다.
  
-컴퓨터를 다른 인터넷에 연결해 Wix 계정에 로그인한 후, 내 사이트 또는 에디터를
-열어보세요.
+컴퓨터를 다른 인터넷에 연결해 보세요. 
+컴퓨터를 스마트폰 데이터에 연결해 다른 인터넷 환경에서 문제가 발생하는지 확인할 수 있습니다. 또는, 인터넷 카페나 도서관 등의 장소에서 와이파이 네트워크를 사용할 수도 있습니다.
 
-도움이 되셨나요?
-[[예-&gt;internet connection issue template]]
-[[아니-&gt;changed computer?]]
-[[다른 인터넷 연결방법을 사용할 수 없습니다.-&gt;changed computer?]]</tw-passagedata>
-<tw-passagedata pid="8" name="internet connection issue template" tags="" position="500,1404">현재 내 인터넷 연결방법이 문제의 원인이 되는 것으로 파악됩니다.
- 
-문제의 원인을 좀 더 자세히 살펴보기 위해 다음 정보를 &lt;a href=&quot;https://support.wix.com/ko/submit-a-ticket&quot; target=&quot;_blank&quot;&gt;보내주세요&lt;/a&gt;:  
- 
-문제 해결 지침서의 단계별 지침을 따른 결과, 겪고 있는 문제가 사용중인 인터넷 보안
-프로그램과 연관되어 있는 것 같습니다. 
- 
-문의사항 제출시에는 다음 정보도 함께 알려주시기 바랍니다:
- 
-1. 겪고있는 정확한 문제
- 
-2. 시도해본 모든 브라우저 및 브라우저 버전
- 
-3. 컴퓨터에 설치되어 있는 인터넷 보안 프로그램 (안티 바이러스, 방화벽 등)
- 
-4. 문제의 스크린샷. 스크린샷을 찍는 방법에 대한 지침은 &lt;a href=&quot;https://support.wix.com/ko/article/%EB%AC%B8%EC%9D%98%EC%82%AC%ED%95%AD%EC%97%90-%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7-%EC%B2%A8%EB%B6%80%ED%95%98%EA%B8%B0&quot; target=&quot;_blank&quot;&gt;여기&lt;/a&gt;에서 확인하세요. 
-(history:)</tw-passagedata>
-<tw-passagedata pid="9" name="changed computer?" tags="" position="910,1208">다른 컴퓨터를 사용해 Wix에 접속해 봅니다.
-Wix 계정에 로그인한 후, 내 사이트 또는 에디터를 열어보세요. 
+인터넷 연결 방법을 변경한 후에는, Wix 계정에 로그인해 내 사이트 또는 에디터를 다시 로딩해 보세요. 
 
-도움이 되셨나요?
+인터넷 연결 방법 변경이 문제 해결에 도움이 되었나요?
+[[예&gt;-&gt;internet connection issue template]]
+[[아니요-&gt;changed computer]]
+[[다른 인터넷 연결 방법에 대한 액세스가 없습니다.-&gt;changed computer]]
+</tw-passagedata>
+<tw-passagedata pid="8" name="internet connection issue template" tags="" position="500,1404">발생한 문제의 원인은 인터넷 연결과 연관이 있을 것으로 판단됩니다.
+
+보다 면밀히 문제를 살펴보고 도움을 드릴 수 있도록 &lt;a href=&quot;https://ko.wix.com/support/html5/contact&quot; target=&quot;_blank&quot;&gt;여기&lt;/a&gt;를 클릭해 반드시 다음의 정보와 함께 문의사항을 제출하세요.
+
+다음을 복사해 문의사항에 첨부해주세요.
+(history:), 네트워크 변경이 도움이되었으며 인터넷 연결 문제 가능
+
+추가로 다음 사항도 함께 알려주세요.
+0. 겪고있는 문제에 대한 자세한 설명
+0. 문제를 확인할 수 있는 전체 화면 스크린샷 ([[스크린샷 캡처 방법 확인하기-&gt;Screenshot please]])
+0. 인터넷 서비스 제공자 홈페이지 링크
+0. 사용한 브라우저 목록 (브라우저 버전 포함)
+0. 컴퓨터에 설치한 인터넷 보안 프로그램 (안티바이러스, 방화벽 등) 목록
+</tw-passagedata>
+<tw-passagedata pid="9" name="changed computer" tags="" position="833,1211">다른 컴퓨터에서 Wix에 접속을 시도해 보세요. Wix 계정에 로그인한 후, 다시 사이트나 에디터를 로딩합니다.
+
+도움이 되었나요?
 * [[예-&gt;local issue template]]
-* [[아니-&gt;non-local issue template]]
-* [[다른 컴퓨터를 가지고 있지 않습니다.-&gt;possibly local issue template]]</tw-passagedata>
-<tw-passagedata pid="10" name="local issue template" tags="" position="800,1403">내 컴퓨터의 로컬 이슈가 문제의 원인이 되는 것으로 파악됩니다.
- 
-문제의 원인을 좀 더 자세히 살펴보기 위해 다음 정보와 함께 &lt;a href=&quot;https://support.wix.com/ko/contact&quot;&gt;여기&lt;/a&gt;에 문의사항을 제출해 주세요: 
- 
-문제 해결 지침서의 단계별 지침을 따른 결과, 겪고 있는 문제가 사용중인 인터넷 보안
-프로그램과 연관되어 있는 것 같습니다. 
- 
-문의사항 제출시에는 다음 정보도 함께 알려주시기 바랍니다:
- 
-1. 겪고있는 정확한 문제
- 
-2. 시도해본 모든 브라우저 및 브라우저 버전
- 
-3. 컴퓨터에 설치되어 있는 인터넷 보안 프로그램 (안티 바이러스, 방화벽 등)
- 
-4. 문제의 스크린샷. 스크린샷을 찍는 방법에 대한 지침은 &lt;a href=&quot;https://support.wix.com/ko/article/%EB%AC%B8%EC%9D%98%EC%82%AC%ED%95%AD%EC%97%90-%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7-%EC%B2%A8%EB%B6%80%ED%95%98%EA%B8%B0&quot; target=&quot;_blank&quot;&gt;여기&lt;/a&gt;에서 확인하세요. </tw-passagedata>
-<tw-passagedata pid="11" name="non-local issue template" tags="" position="1002,1402">문제의 원인을 좀 더 자게히 살펴보기 위해 다음 정보와 함께
-&lt;a href=&quot;https://support.wix.com/ko/contact&quot;&gt;여기&lt;/a&gt;에 문의사항을 제출해 주세요:
- 
-문제 해결 지침서의 단계별 지침을 따른 결과, 겪고 있는 문제가 사용중인 인터넷 보안
-프로그램과 연관되어 있는 것 같습니다. 
- 
-문의사항 제출시에는 다음 정보도 함께 알려주시기 바랍니다:
- 
-1. 겪고있는 정확한 문제
- 
-2. 시도해본 모든 브라우저 및 브라우저 버전
- 
-3. 컴퓨터에 설치되어 있는 인터넷 보안 프로그램 (안티 바이러스, 방화벽 등)
- 
-4. 문제의 스크린샷. 스크린샷을 찍는 방법에 대한 지침은 &lt;a href=&quot;https://support.wix.com/ko/article/%EB%AC%B8%EC%9D%98%EC%82%AC%ED%95%AD%EC%97%90-%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7-%EC%B2%A8%EB%B6%80%ED%95%98%EA%B8%B0&quot; target=&quot;_blank&quot;&gt;여기&lt;/a&gt;에서 확인하세요. </tw-passagedata>
-<tw-passagedata pid="12" name="possibly local issue template" tags="" position="1208,1405">문제의 원인을 좀 더 자게히 살펴보기 위해 다음 정보와 함께
-&lt;a href=&quot;https://support.wix.com/ko/contact&quot;&gt;여기&lt;/a&gt;에 문의사항을 제출해 주세요:
- 
-문제 해결 지침서의 단계별 지침을 따른 결과, 겪고 있는 문제가 사용중인 인터넷 보안
-프로그램과 연관되어 있는 것 같습니다. 
- 
-문의사항 제출시에는 다음 정보도 함께 알려주시기 바랍니다:
- 
-1. 겪고있는 정확한 문제
- 
-2. 시도해본 모든 브라우저 및 브라우저 버전
- 
-3. 컴퓨터에 설치되어 있는 인터넷 보안 프로그램 (안티 바이러스, 방화벽 등)
- 
-4. 문제의 스크린샷. 스크린샷을 찍는 방법에 대한 지침은 &lt;a href=&quot;https://support.wix.com/ko/article/%EB%AC%B8%EC%9D%98%EC%82%AC%ED%95%AD%EC%97%90-%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7-%EC%B2%A8%EB%B6%80%ED%95%98%EA%B8%B0&quot; target=&quot;_blank&quot;&gt;여기&lt;/a&gt;에서 확인하세요. </tw-passagedata>
-<tw-passagedata pid="13" name="Start Over" tags="header" position="1004,291">&lt;u&gt;Wix Troubleshooter&lt;/u&gt; &lt;i&gt;[[다시 시작하기-&gt;Welcome]]&lt;/i&gt;
+* [[아니오-&gt;non-local issue template]]
+* [[다른 컴퓨터가 없습니다.-&gt;possibly local issue template]]</tw-passagedata>
+<tw-passagedata pid="10" name="local issue template" tags="" position="1368,1408">발생한 문제의 원인은 사용 중인 컴퓨터일 것으로 판단됩니다.
+
+보다 면밀히 문제를 살펴보고 도움을 드릴 수 있도록 &lt;a href=&quot;https://ko.wix.com/support/html5/contact&quot; target=&quot;_blank&quot;&gt;여기&lt;/a&gt;를 클릭해 반드시 다음의 정보와 함께 문의사항을 제출하세요.
+
+다음을 복사해 문의사항에 첨부하세요.
+(history:), 다른 컴퓨터를 사용해 문제 해결, 로컬 문제
+
+추가로 다음 사항도 함께 알려주세요.
+0. 겪고 있는 문제에 대한 자세한 설명
+0. 문제를 확인할 수 있는 전체 화면 스크린샷 ([[스크린샷 캡처 방법 확인하기-&gt;Screenshot please]])
+0. 사용한 브라우저 목록 (브라우저 버전 포함)
+0. 컴퓨터에 설치한 인터넷 보안 프로그램 (안티바이러스, 방화벽 등) 목록</tw-passagedata>
+<tw-passagedata pid="11" name="non-local issue template" tags="" position="816,1394">보다 면밀히 문제를 살펴보고 도움을 드릴 수 있도록 &lt;a href=&quot;https://ko.wix.com/support/html5/contact&quot; target=&quot;_blank&quot;&gt;여기&lt;/a&gt;를 클릭하고, 반드시 다음의 정보를 포함해 문의사항을 제출해주세요.
+
+다음을 복사해 문의사항에 첨부하세요.
+(history:), 컴퓨터 변경으로 문제 해결 불가, 로컬 문제 아님
+
+추가로 다음 사항도 함께 알려주세요.
+0. 겪고 있는 문제에 대한 자세한 설명
+0. 문제를 확인할 수 있는 전체 화면 스크린샷 ([[스크린샷 캡처 방법 확인하기-&gt;Screenshot please]])
+0. 사용한 브라우저 목록 (브라우저 버전 포함)
+0. 컴퓨터에 설치한 인터넷 보안 프로그램 (안티바이러스, 방화벽 등) 목록</tw-passagedata>
+<tw-passagedata pid="12" name="possibly local issue template" tags="" position="1015,1401">보다 면밀히 문제를 살펴보고 도움을 드릴 수 있도록 &lt;a href=&quot;https://ko.wix.com/support/html5/contact&quot; target=&quot;_blank&quot;&gt;여기&lt;/a&gt;를 클릭하고, 반드시 다음의 정보를 포함해 문의사항을 제출해주세요.
+
+다음을 복사해 문의사항에 첨부하세요.
+(history:), 다른 컴퓨터에서 시도하지 않음, 로컬 문제일 수 있음
+
+추가로 다음 사항도 함께 알려주세요.
+0. 겪고 있는 문제에 대한 자세한 설명
+0. 문제를 확인할 수 있는 전체 화면 스크린샷 ([[스크린샷 캡처 방법 확인하기-&gt;Screenshot please]])
+0. 사용한 브라우저 목록 (브라우저 버전 포함)
+0. 컴퓨터에 설치한 인터넷 보안 프로그램 (안티바이러스, 방화벽 등) 목록
+</tw-passagedata>
+<tw-passagedata pid="13" name="Start Over" tags="header" position="1004,291">&lt;u&gt;Wix 문제해결사&lt;/u&gt; &lt;i&gt;[[다시 시작하기&gt;Welcome]]&lt;/i&gt;
 
 </tw-passagedata>
-<tw-passagedata pid="14" name="extension issue?" tags="" position="1005,741">브라우저 확장 기능중 하나가 문제의 원인이 된 것으로 판단됩니다.
- 
-문제의 원인을 파악하기 위해 브라우저 부가기능 및 확장자를 한번에 하나씩 해제하시기 바랍니다.
+<tw-passagedata pid="14" name="extension issue?" tags="" position="1005,741">사용 중인 브라우저 확장 프로그램이 문제의 원인일 수 있습니다.
 
-아직도 문제가 지속된다면, [[계속하기-&gt;cacheCookies]]를 클릭하세요.
- 
-</tw-passagedata>
+브라우저 확장 프로그램을 하나씩 비활성화해 문제를 일으키고 있는 프로그램을 확인하세요.
+
+(if: $browser is &quot;Chrome&quot;)[Google Chrome에서 확장 프로그램을 비활성화하는 방법은 &lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769?hl=ko&quot;&gt;여기&lt;/a&gt;를 클릭해 확인하세요.]
+
+또는, 사용 중인 컴퓨터에 설치된 보안 프로그램이 문제의 원인일 수 있습니다. 광고 차단 프로그램, 안티 멀웨어, 방화벽 등이 문제를 일으키고 있는지 확인하세요.
+
+[[다른 컴퓨터-&gt;cacheCookies]]를 사용해 해당 가능성을 쉽게 확인할 수 있습니다.</tw-passagedata>
 <tw-passagedata pid="15" name="cacheCookies" tags="" position="1228,1099">캐시 및 쿠키를 삭제하십시오.
 &lt;a href=&#39;https://support.wix.com/ko/article/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EC%BA%90%EC%8B%9C-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0&#39; target=&quot;_blank&quot;&gt;브라우저 캐시 삭제하기
 &lt;/a&gt;
 
 여전히 문제가 발생하는 경우를 클릭하십시오 [[계속하기-&gt;local issue template]]</tw-passagedata>
+<tw-passagedata pid="16" name="Screenshot please" tags="" position="896,1570">스크린샷 캡처 방법은 &lt;a href=&quot;https://ko.wix.com/support/html5/article/adding-a-screenshot-to-a-ticket&quot;&gt;도움말 센터&lt;/a&gt;에서 확인할 수 있습니다.
+
+겪고 있는 문제를 단계별로 설명하려면, 동영상을 녹화하세요. &lt;a href=&quot;https://ko.wix.com/support/html5/article/adding-a-video-to-a-ticket&quot;&gt;여기&lt;/a&gt;를 클릭해 도움말 센터에서 관련 지침을 확인할 수 있습니다.
+
+(set: $history to (history:))
+(set: $previous to $history&#39;s last)
+
+[[뒤로-&gt;$previous]]
+</tw-passagedata>
+<tw-passagedata pid="17" name="다시 시작하기&gt;Welcome" tags="" position="1004,416">Double-click this passage to edit it.</tw-passagedata>
 </tw-storydata>
 
 
