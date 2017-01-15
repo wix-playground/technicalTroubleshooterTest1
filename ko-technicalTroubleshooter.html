@@ -49,7 +49,7 @@ tw-passage {
 
 최신 버전을 사용 중임에도 불구하고 문제가 발생한다면, [[계속하기-&gt;Checked Incognito/Private Browsing]]를 클릭하세요.
 </tw-passagedata>
-<tw-passagedata pid="4" name="Checked Incognito/Private Browsing" tags="" position="808,742">브라우저를 업데이트했음에도 문제가 지속된다면, &lt;a href=&quot;https://support.wix.com/ko/article/%EB%B9%84%EA%B3%B5%EA%B0%9C-%EB%B0%8F-%EC%8B%9C%ED%81%AC%EB%A6%BF-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A7%95-%EB%AA%A8%EB%93%9C-%EC%97%B4%EA%B8%B0&quot;&gt;비공개 또는 시크릿 브라우징 모드&lt;/a&gt;에서 브라우저를 열어보세요.
+<tw-passagedata pid="4" name="Checked Incognito/Private Browsing" tags="" position="808,742">브라우저를 업데이트했음에도 문제가 지속된다면, &lt;a href=&quot;https://support.wix.com/ko/article/%EB%B9%84%EA%B3%B5%EA%B0%9C-%EB%B0%8F-%EC%8B%9C%ED%81%AC%EB%A6%BF-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A7%95-%EB%AA%A8%EB%93%9C-%EC%97%B4%EA%B8%B0&quot; target=&quot;_blank&quot;&gt;비공개 또는 시크릿 브라우징 모드&lt;/a&gt;에서 브라우저를 열어보세요.
 
 $browser 브라우저를 사용중이라면, 키보드에서 다음 키를 눌러 비공개 또는 시크릿 브라우징 모드를 엽니다: 
 (if: $browser is &quot;Chrome&quot;)[(print: &quot;Ctrl + Shift + N&quot;)](if: $browser is &quot;Firefox&quot;)[(print: &quot;Ctrl + Shift + P&quot;)](if: $browser is &quot;Internet Explorer&quot;)[(print: &quot;Ctrl + Shift + P&quot;)](if: $browser is &quot;Safari&quot;)[(print: &quot;Shift + Command + N&quot;)]
@@ -61,14 +61,14 @@ $browser 브라우저를 사용중이라면, 키보드에서 다음 키를 눌�
 
 비공개 또는 시크릿 브라우징 모드를 사용했음에도 문제가 해결되지 않았다면, [[여기-&gt;Used a Different Browser]]를 클릭하세요.
 </tw-passagedata>
-<tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,453">&lt;a href=&quot;https://support.wix.com/ko/article/%EC%A7%80%EC%9B%90-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80&quot;&gt;여기&lt;/a&gt;를 클릭해 Wix가 지원하는 브라우저를 사용 중인지 확인하세요. 
+<tw-passagedata pid="5" name="Other or Unsure which Browser" tags="" position="1001,453">&lt;a href=&quot;https://support.wix.com/ko/article/%EC%A7%80%EC%9B%90-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80&quot; target=&quot;_blank&quot;&gt;여기&lt;/a&gt;를 클릭해 Wix가 지원하는 브라우저를 사용 중인지 확인하세요. 
 사용 중인 브라우저가 지원되지 않는다면, 지원되는 브라우저를 사용해 문제가 지속되는지 확인하세요. 
 
 [[다시 시작하기-&gt;Chose Browser]].</tw-passagedata>
 <tw-passagedata pid="6" name="Used a Different Browser" tags="" position="798,879">문제해결사 창을 열어둔 채, 업데이트된 다른 브라우저를 사용해 내 사이트 또는 에디터를 로딩해 보세요. 
 추천 브라우저:
-(unless: $browser is &quot;Chrome&quot;)[* &lt;a href=&quot;https://www.google.com/chrome/browser/desktop/index.html&quot;&gt;Google Chrome&lt;/a&gt;]
-(unless: $browser is &quot;Firefox&quot;)[* &lt;a href=&quot;https://www.getfirefox.com&quot;&gt;Firefox&lt;/a&gt;]
+(unless: $browser is &quot;Chrome&quot;)[* &lt;a href=&quot;https://www.google.com/chrome/browser/desktop/index.html&quot; target=&quot;_blank&quot;&gt;Google Chrome&lt;/a&gt;]
+(unless: $browser is &quot;Firefox&quot;)[* &lt;a href=&quot;https://www.getfirefox.com&quot; target=&quot;_blank&quot;&gt;Firefox&lt;/a&gt;]
 
 다른 브라우저를 사용해 해당 문제가 브라우저와 관련되어 있는지 확인할 수 있습니다. 
 모든 브라우저에서 문제가 발생한다면, [[계속하기-&gt;Checked Network issues]]를 클릭하세요.
@@ -145,7 +145,7 @@ $browser 브라우저를 사용중이라면, 키보드에서 다음 키를 눌�
 
 브라우저 확장 프로그램을 하나씩 비활성화해 문제를 일으키고 있는 프로그램을 확인하세요.
 
-(if: $browser is &quot;Chrome&quot;)[Google Chrome에서 확장 프로그램을 비활성화하는 방법은 &lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769?hl=ko&quot;&gt;여기&lt;/a&gt;를 클릭해 확인하세요.]
+(if: $browser is &quot;Chrome&quot;)[Google Chrome에서 확장 프로그램을 비활성화하는 방법은 &lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769?hl=ko&quot; target=&quot;_blank&quot;&gt;여기&lt;/a&gt;를 클릭해 확인하세요.]
 
 또는, 사용 중인 컴퓨터에 설치된 보안 프로그램이 문제의 원인일 수 있습니다. 광고 차단 프로그램, 안티 멀웨어, 방화벽 등이 문제를 일으키고 있는지 확인하세요.
 
@@ -155,9 +155,9 @@ $browser 브라우저를 사용중이라면, 키보드에서 다음 키를 눌�
 &lt;/a&gt;
 
 여전히 문제가 발생하는 경우를 클릭하십시오 [[계속하기-&gt;local issue template]]</tw-passagedata>
-<tw-passagedata pid="16" name="Screenshot please" tags="" position="896,1570">스크린샷 캡처 방법은 &lt;a href=&quot;https://ko.wix.com/support/html5/article/adding-a-screenshot-to-a-ticket&quot;&gt;도움말 센터&lt;/a&gt;에서 확인할 수 있습니다.
+<tw-passagedata pid="16" name="Screenshot please" tags="" position="896,1570">스크린샷 캡처 방법은 &lt;a href=&quot;https://ko.wix.com/support/html5/article/adding-a-screenshot-to-a-ticket&quot; target=&quot;_blank&quot;&gt;도움말 센터&lt;/a&gt;에서 확인할 수 있습니다.
 
-겪고 있는 문제를 단계별로 설명하려면, 동영상을 녹화하세요. &lt;a href=&quot;https://ko.wix.com/support/html5/article/adding-a-video-to-a-ticket&quot;&gt;여기&lt;/a&gt;를 클릭해 도움말 센터에서 관련 지침을 확인할 수 있습니다.
+겪고 있는 문제를 단계별로 설명하려면, 동영상을 녹화하세요. &lt;a href=&quot;https://ko.wix.com/support/html5/article/adding-a-video-to-a-ticket&quot; target=&quot;_blank&quot;&gt;여기&lt;/a&gt;를 클릭해 도움말 센터에서 관련 지침을 확인할 수 있습니다.
 
 (set: $history to (history:))
 (set: $previous to $history&#39;s last)
