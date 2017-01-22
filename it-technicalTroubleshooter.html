@@ -29,7 +29,9 @@ tw-passage {
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -55,10 +57,10 @@ Questo tutorial ti guiderà attraverso i passi base per la risoluzione dei probl
 * (link: &quot;Microsoft 10 Edge&quot;)[(set: $browser to &quot;Edge&quot;)(goto: &quot;Browser aggiornato&quot;)]
 * (link: &quot;Altro browser o non quale browser sto utilizzando&quot;)[(set: $browser to &quot;other&quot;)(goto: &quot;Altro browser o non sicuro su quale browser si utilizza&quot;)]
 </tw-passagedata>
-<tw-passagedata pid="3" name="Modalità in incognito/Navigazione privata verificata" tags="" position="803,714">Siccome il problema non si è risolto aggiornando il browser, prova ad &lt;a href=&quot;https://support.wix.com/it/article/aprire-il-tuo-browser-in-modalit%C3%A0-incognito&quot; target=&quot;_blank&quot;&gt;Aprire il tuo browser in modalità incognito&lt;/a&gt;.
+<tw-passagedata pid="3" name="Modalità in incognito/Navigazione privata verificata" tags="" position="802,714">Siccome il problema non si è risolto aggiornando il browser, prova ad &lt;a href=&quot;https://support.wix.com/it/article/aprire-il-tuo-browser-in-modalit%C3%A0-incognito&quot; target=&quot;_blank&quot;&gt;Aprire il tuo browser in modalità incognito&lt;/a&gt;.
 
 Per $browser, clicca e tieni premuto i seguenti tasti per aprire la modalità browser in incognito:
-(set: $browser is &quot;Chrome&quot;)[(print: &quot;Ctrl + Shift + N&quot;)](set: $browser is &quot;Firefox&quot;)[(print: &quot;Ctrl + Shift + P&quot;)](set: $browser is &quot;Internet Explorer&quot;)[(print: &quot;Ctrl + Shift + P&quot;)](set: $browser is &quot;Safari&quot;)[(print: &quot;Shift + Command + N&quot;)]
+(if: $browser is &quot;Chrome&quot;)[(print: &quot;Ctrl + Shift + N&quot;)](if: $browser is &quot;Firefox&quot;)[(print: &quot;Ctrl + Shift + P&quot;)](if: $browser is &quot;Internet Explorer&quot;)[(print: &quot;Ctrl + Shift + P&quot;)](if: $browser is &quot;Safari&quot;)[(print: &quot;Shift + Command + N&quot;)]
 
 Utilizzando la modalità Incognito/navigazione privata, il tuo browser non attiverà la cache o cookie che potrebbero essere presenti nella memoria locale. Questo ci aiuterà ad identificare semplici problemi di cache e cookie.
 
@@ -82,8 +84,8 @@ Se nessuno dei due browser funziona, clicca [[Continua-&gt;Problemi di network v
 
 Se non stai utilizzando un browser supportato, prova ad utilizzarne uno presente nella lista e controlla se il problema persiste o meno.
 
-[[Ricomincia-&gt;Scegli browser]]</tw-passagedata>
-<tw-passagedata pid="6" name="Problemi di network verificati" tags="" position="750,1050">A volte il tuo router, l’amministratore di sistema, o il tuo firewall di rete, potrebbero bloccare la tua connessione ai nostri server. Utilizzare un’altra connessione internet, ti permetterà di verificare se questo è il problema.
+[[Ricomincia-&gt;Benvenuto]]</tw-passagedata>
+<tw-passagedata pid="6" name="Problemi di network verificati" tags="" position="801,1040">A volte il tuo router, l’amministratore di sistema, o il tuo firewall di rete, potrebbero bloccare la tua connessione ai nostri server. Utilizzare un’altra connessione internet, ti permetterà di verificare se questo è il problema.
  
 Prova a connettere il tuo computer ad una connessione internet diversa. 
 Un modo per procedere è quello di collegare il computer alla connessione dati di uno smartphone. 
@@ -95,7 +97,7 @@ Dopo aver cambiato la connessione internet, accedi al tuo account Wix e prova nu
 Cambiare la connessione internet ha aiutato?
 [[Sì-&gt;template problemi connessione internet]]
 [[No-&gt;utilizzando un diverso computer]]
-[[Non ho accesso ad una connessione internet differente-&gt;cambiato computer]]
+[[Non ho accesso ad una connessione internet differente-&gt;utilizzando un diverso computer]]
 </tw-passagedata>
 <tw-passagedata pid="7" name="utilizzando un diverso computer" tags="" position="950,1250">Prova a connetterti a Wix da un diverso computer. Accedi al tuo account Wix e prova ad aprire nuovamente il tuo sito e/o editor.
 
@@ -173,14 +175,14 @@ Se ripulire la tua cache e i tuoi cookies non risolve il problema, ma andare in 
 
 Prova a disattivare le estensioni/add-ons del tuo browser, una alla volta, in modo da determinare quale sta causando il problema.
 
-(set: $browser è &quot;Chrome&quot;)[Per istruzioni su come disattivare add-ons in Google Chrome &lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769&quot; target=&quot;_blank&quot;&gt;clicca qui&lt;/a&gt;.]
+(if: $browser è &quot;Chrome&quot;)[Per istruzioni su come disattivare add-ons in Google Chrome &lt;a href=&quot;https://support.google.com/chrome_webstore/answer/2664769&quot; target=&quot;_blank&quot;&gt;clicca qui&lt;/a&gt;.]
 
 È anche possibile che i programmi di sicurezza sul tuo computer stiano causando il problema. Verifica se degli ad-blockers, anti-malware o firewalls sul tuo computer possono essere la causa del problema.
 
 Per testare questa possibilità più facilmente, puoi provare [[utilizzando un diverso computer]] </tw-passagedata>
-<tw-passagedata pid="16" name="Browser aggiornato" tags="" position="801,575">Se stai utilizzando $browser, controlla &lt;a href=&quot;https://whatbrowser.org/&quot; target=&quot;_blank&quot;&gt;whatbrowser.org&lt;/a&gt; per assicurarti che tu stia utilizzando l’ultima versione d $browser.
+<tw-passagedata pid="16" name="Browser aggiornato" tags="" position="801,575">Se stai utilizzando $browser, controlla &lt;a href=&quot;https://whatbrowser.org/&quot; target=&quot;_blank&quot;&gt;whatbrowser.org&lt;/a&gt; per assicurarti che tu stia utilizzando l’ultima versione di $browser.
 
-Se non stai utilizzando l’ultima versione d $browser, aggiorna il browser e quindi verifica se il problema persiste. 
+Se non stai utilizzando l’ultima versione di $browser, aggiorna il browser e quindi verifica se il problema persiste. 
 
 Se stai riscontrando il problema mentre utilizzi l’ultima versione del browser che hai scelto, e il problema persiste, clicca [[Continua-&gt;Modalità in incognito/Navigazione privata verificata]].
 </tw-passagedata>
